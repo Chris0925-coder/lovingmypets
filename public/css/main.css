@@ -103,7 +103,7 @@ body {
 }
 
 
-/*HEro Container*/
+/*Hero Container*/
 
 .hero__container {
 	max-width: 800px;
@@ -199,7 +199,6 @@ body {
 	flex-direction: column;
 	cursor: default;
 /*	gap: 0.1em;*/
-
 	/*place-content: center;
 	justify-content: center;
 	align-content: center;*/
@@ -381,7 +380,7 @@ body {
 /*	border: 1px solid green;*/
 	justify-content: center;
 	place-content: center;
-	width: 200px;
+	width: 400px;
 	height: auto;
 	margin: 0.4em;
 /*	top: 0;*/
@@ -404,7 +403,7 @@ body {
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 150px;
+	height: 200px;
 	margin: 0.2em;
 /*	border: 1px solid yellow;*/
 
@@ -445,6 +444,11 @@ body {
   	filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 }
 
+.bi-tiktok::after {
+	filter: drop-shadow(5px 5px 0 #F70250) contrast(150%) brightness(110%);
+  	z-index: -1;
+}
+
 .bi-instagram {
 	font-size: 1.4rem;
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -454,14 +458,27 @@ body {
   	padding: .1em;
  }
 
- .bi-twitter-x {
+.bi-twitter-x {
  	font-size: 1.4rem;
  	color: #1b1b1b;
  }
 
+ .bi-instagram:hover, .bi-tiktok:hover, .bi-twitter-x:hover {
+ 	display: block;
+ 	position: relative;
+ 	padding: .4em;
+ 	scale: 1.2;
+ 	transition: all .5s ease-in-out;
+ }
 
 .copyright {
 	text-align: center;
+}
+
+.form__main {
+	display: flex;
+	position: relative;
+	flex-direction: column;
 }
 /* .bi-youtube {
 	color: #c4302b;
@@ -478,5 +495,16 @@ body {
 		margin: 0;
 	}
 
+	.nav__menu {
+		display: block;
+	}
+
+	.nav__link--menu {
+		display: none;
+	}
+
+	.gallery {
+		height: 400px;
+	}
 
 }
