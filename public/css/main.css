@@ -411,6 +411,12 @@ body {
 	height: 100%;
 }
 
+.inst__cont {
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
 .instagram-media {
 	justify-self: center;
 	margin: 0 auto;
