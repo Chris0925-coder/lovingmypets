@@ -6,11 +6,11 @@ const inicio = document.getElementById("inicio");
 const galleryContent = document.querySelector(".gallery__content--titulo");
 const navBoton = document.querySelector(".nav__menu");
 const navLink = document.querySelector(".nav__link");
-// const navBotonClose = document.querySelector('.nav__close');
+const navBotonClose = document.querySelector('.nav__close');
 
-// navBotonClose.addEventListener('click', () => {
-// 	navLink.classList.toggle("nav__link--menu");
-// });
+navBotonClose.addEventListener('click', () => {
+	navLink.classList.toggle("nav__link--menu");
+});
 
 navBoton.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
