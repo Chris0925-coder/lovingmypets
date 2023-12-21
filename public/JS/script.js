@@ -4,7 +4,18 @@ const lady = document.getElementById("lady");
 const paka = document.getElementById("paka");
 const inicio = document.getElementById("inicio");
 const galleryContent = document.querySelector(".gallery__content--titulo");
+const navBoton = document.querySelector(".nav__menu");
+const navLink = document.querySelector(".nav__link");
+// const navBotonClose = document.querySelector('.nav__close');
 
+// navBotonClose.addEventListener('click', () => {
+// 	navLink.classList.toggle("nav__link--menu");
+// });
+
+navBoton.addEventListener('click', () => {
+	navLink.classList.toggle("nav__link--menu");
+
+});
 
 let galleryItems = [{
 	foto: `<img src="public/img/malosoC.jpg" alt="#" class="item__image">
@@ -15,7 +26,7 @@ let galleryItems = [{
 								tempor incididunt ut labore et dolore magna aliqua.
 							</span>
 						</figcaption>`,
-	fotoA: `<img src="public/img/malososA.jpg" alt="#" class="item__image">
+	fotoA: `<img src="public/img/malososB.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
 							<h3 class="item__name">LOREM</h3>
 							<span class="item__role">
@@ -23,7 +34,7 @@ let galleryItems = [{
 								tempor incididunt ut labore et dolore magna aliqua.
 							</span>
 						</figcaption>`,
-	fotoB: `<img src="public/img/malososB.jpg" alt="#" class="item__image">
+	fotoB: `<img src="public/img/malosoE.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
 							<h3 class="item__name">LOREM</h3>
 							<span class="item__role">
