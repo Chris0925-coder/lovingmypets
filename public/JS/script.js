@@ -7,6 +7,8 @@ const galleryContent = document.querySelector(".gallery__content--titulo");
 const navBoton = document.querySelector(".nav__menu");
 const navLink = document.querySelector(".nav__link");
 const navBotonClose = document.querySelector('.nav__close');
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
 
 navBotonClose.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
@@ -35,6 +37,22 @@ let galleryItems = [{
 							</span>
 						</figcaption>`,
 	fotoB: `<img src="public/img/malosoE.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`,
+	fotoC: `<img src="public/img/malososD.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`,
+	fotoD: `<img src="public/img/sweethome.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
 							<h3 class="item__name">LOREM</h3>
 							<span class="item__role">
@@ -159,6 +177,16 @@ let galleryCont = {
 	`
 };
 
+let slideIndex = 2;
+let slideIndexB = 2;
+
+
+// console.log(galLeng);
+let items = Object.values (galleryItems[0]);
+// console.log(items);
+
+
+
 
 
 // console.log(galleryItems);
@@ -243,15 +271,49 @@ QQ(blacky, 1);
 QQ(lady, 2);
 QQ(paka, 3);
 
+// const wrap = document.querySelector('.primary__gallery--wrapper');
+
+
+
+
 inicio.addEventListener('click', () => {
+	prev.style.display = "block";
+	next.style.display = "block";
+	prev.addEventListener('click', () => {
+			for (i = 5; i < items.length; i--) {
+				gallery.innerHTML = items[i];
+			}
+			slideIndex--;
+			if (slideIndex <= 0) {slideIndex = 5};
+			gallery.innerHTML = items[slideIndex-1];
+		});
+
+	next.addEventListener('click', () => {
+		slideIndexB++;
+		for (i = 0; i < items.length; i++) {
+			gallery.innerHTML = items[i];
+		}
+		if(slideIndexB > items.length) {
+		    slideIndexB = 1;
+		}
+		gallery.innerHTML = items[slideIndexB-1];
+	});
+
+	// wrap.innerHTML += `<button class="prev">prev</button>`+`
+					// <button class="next">next</button>`;
+
 	gallery.innerHTML = begin[0];
 	galleryContent.innerHTML = galleryCont.malosos;
 	boton[0].children[1].style.opacity = 0.2;
 	boton[0].children[0].style.opacity = 1;
 	boton[0].children[2].style.opacity = 1;
+
 });
 
+
 blacky.addEventListener('click', () => {
+	prev.style.display = "none";
+	next.style.display = "none";
 	gallery.innerHTML = begin[1];
 	galleryContent.innerHTML = galleryCont.blacky;
 	boton[0].children[1].style.opacity = 0.2;
@@ -260,6 +322,8 @@ blacky.addEventListener('click', () => {
 });
 
 lady.addEventListener('click', () => {
+	prev.style.display = "none";
+	next.style.display = "none";
 	gallery.innerHTML = begin[2];
 	galleryContent.innerHTML = galleryCont.lady;
 	boton[0].children[1].style.opacity = 0.2;
@@ -268,6 +332,8 @@ lady.addEventListener('click', () => {
 });
 
 paka.addEventListener('click', () => {
+	prev.style.display = "none";
+	next.style.display = "none";
 	gallery.innerHTML = begin[3];
 	galleryContent.innerHTML = galleryCont.paka;
 	boton[0].children[1].style.opacity = 0.2;

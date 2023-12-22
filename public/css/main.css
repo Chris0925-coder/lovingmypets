@@ -307,6 +307,38 @@ body {
 	}*/
 }
 
+.prev {
+	display: none;
+	position: absolute;
+	border: none;
+	background: none;
+	left: 0;
+	top: 50%;
+	margin: 1em;
+	padding: .9em .3em;
+	color: yellow;
+	z-index: 5000;
+	background-color: #1c1c1c8c;
+}
+
+.next {
+	display: none;
+	position: absolute;
+	border: none;
+	background: none;
+	right: 0;
+	top: 50%;
+	margin: 1em;
+	padding: .9em .3em;
+	color: yellow;
+	z-index: 5000;
+	background-color: #1c1c1c8c;
+}
+
+.prev:hover, .next:hover {
+	filter: drop-shadow(4px 6px 5px #ececec8c);
+}
+
 .item__description {
 	align-self: flex-end;
 /*	text-transform: uppercase;*/
