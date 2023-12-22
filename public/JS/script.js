@@ -109,6 +109,30 @@ let galleryItems = [{
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.
 							</span>
+						</figcaption>`,
+	fotoC: `<img src="public/img/ladyA.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`,
+	fotoD: `<img src="public/img/ladyE.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`,
+	fotoE: `<img src="public/img/ladyF.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
 						</figcaption>`
 	},
 	{ 	
@@ -183,7 +207,7 @@ let slideIndexB = 2;
 
 // console.log(galLeng);
 let items = Object.values (galleryItems[0]);
-// console.log(items);
+console.log(items);
 
 
 
@@ -273,18 +297,13 @@ QQ(paka, 3);
 
 // const wrap = document.querySelector('.primary__gallery--wrapper');
 
-
-
-
-inicio.addEventListener('click', () => {
-	prev.style.display = "block";
-	next.style.display = "block";
+function arrows(a) {
 	prev.addEventListener('click', () => {
-			for (i = 5; i < items.length; i--) {
+			for (i = a; i < items.length; i--) {
 				gallery.innerHTML = items[i];
 			}
 			slideIndex--;
-			if (slideIndex <= 0) {slideIndex = 5};
+			if (slideIndex <= 0) {slideIndex = a};
 			gallery.innerHTML = items[slideIndex-1];
 		});
 
@@ -298,6 +317,32 @@ inicio.addEventListener('click', () => {
 		}
 		gallery.innerHTML = items[slideIndexB-1];
 	});
+};
+
+
+inicio.addEventListener('click', () => {
+	prev.style.display = "block";
+	next.style.display = "block";
+	arrows(5);
+	// prev.addEventListener('click', () => {
+	// 		for (i = 5; i < items.length; i--) {
+	// 			gallery.innerHTML = items[i];
+	// 		}
+	// 		slideIndex--;
+	// 		if (slideIndex <= 0) {slideIndex = 5};
+	// 		gallery.innerHTML = items[slideIndex-1];
+	// 	});
+
+	// next.addEventListener('click', () => {
+	// 	slideIndexB++;
+	// 	for (i = 0; i < items.length; i++) {
+	// 		gallery.innerHTML = items[i];
+	// 	}
+	// 	if(slideIndexB > items.length) {
+	// 	    slideIndexB = 1;
+	// 	}
+	// 	gallery.innerHTML = items[slideIndexB-1];
+	// });
 
 	// wrap.innerHTML += `<button class="prev">prev</button>`+`
 					// <button class="next">next</button>`;
@@ -322,8 +367,10 @@ blacky.addEventListener('click', () => {
 });
 
 lady.addEventListener('click', () => {
-	prev.style.display = "none";
-	next.style.display = "none";
+	prev.style.display = "block";
+	next.style.display = "block";
+	items = Object.values (galleryItems[2]);
+	arrows(6);
 	gallery.innerHTML = begin[2];
 	galleryContent.innerHTML = galleryCont.lady;
 	boton[0].children[1].style.opacity = 0.2;
