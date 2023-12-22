@@ -201,8 +201,7 @@ let galleryCont = {
 	`
 };
 
-let slideIndex = 2;
-let slideIndexB = 2;
+
 
 
 // console.log(galLeng);
@@ -298,10 +297,12 @@ QQ(paka, 3);
 // const wrap = document.querySelector('.primary__gallery--wrapper');
 
 function arrows(a) {
+	let slideIndex = 2;
+	let slideIndexB = 2;
 	prev.addEventListener('click', () => {
-			for (i = a; i < items.length; i--) {
-				gallery.innerHTML = items[i];
-			}
+			// for (i = a; i < items.length; i--) {
+			// 	gallery.innerHTML = items[i];
+			// }
 			slideIndex--;
 			if (slideIndex <= 0) {slideIndex = a};
 			gallery.innerHTML = items[slideIndex-1];
@@ -321,31 +322,12 @@ function arrows(a) {
 
 
 inicio.addEventListener('click', () => {
+	// slideIndex = 0;
+ 	// slideIndexB = 0;
+	items = Object.values (galleryItems[0]);
 	prev.style.display = "block";
 	next.style.display = "block";
 	arrows(5);
-	// prev.addEventListener('click', () => {
-	// 		for (i = 5; i < items.length; i--) {
-	// 			gallery.innerHTML = items[i];
-	// 		}
-	// 		slideIndex--;
-	// 		if (slideIndex <= 0) {slideIndex = 5};
-	// 		gallery.innerHTML = items[slideIndex-1];
-	// 	});
-
-	// next.addEventListener('click', () => {
-	// 	slideIndexB++;
-	// 	for (i = 0; i < items.length; i++) {
-	// 		gallery.innerHTML = items[i];
-	// 	}
-	// 	if(slideIndexB > items.length) {
-	// 	    slideIndexB = 1;
-	// 	}
-	// 	gallery.innerHTML = items[slideIndexB-1];
-	// });
-
-	// wrap.innerHTML += `<button class="prev">prev</button>`+`
-					// <button class="next">next</button>`;
 
 	gallery.innerHTML = begin[0];
 	galleryContent.innerHTML = galleryCont.malosos;
@@ -367,6 +349,8 @@ blacky.addEventListener('click', () => {
 });
 
 lady.addEventListener('click', () => {
+	// slideIndex = 0;
+ 	// slideIndexB = 0;
 	prev.style.display = "block";
 	next.style.display = "block";
 	items = Object.values (galleryItems[2]);
