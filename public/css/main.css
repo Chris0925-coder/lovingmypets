@@ -456,6 +456,21 @@ body {
 	justify-content: center;
 }
 
+.comment__button {
+	color: #c3c3c3;
+	border: none;
+	width: fit-content;
+	padding: .4em;
+}
+
+.comment__button:hover {
+	color: #2c2c2c;
+}
+
+#mail::placeholder, 
+#comments::placeholder {
+	padding: .5em;
+}
 
 /*FOOTER*/
 .foot {
