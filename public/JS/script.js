@@ -22,31 +22,25 @@ navBoton.addEventListener('click', () => {
 let galleryItems = [{
 	foto: `<img src="public/img/malosoC.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
-							<span class="item__role">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
+							<h3 class="item__name">Bonnie & Clyde</h3>
+							<span class="item__role">Se cuenta que hay actualmente entre 10.000 y 15.000 ejemplares en libertad.
 							</span>
 						</figcaption>`,
 	fotoA: `<img src="public/img/malososB.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
-							<span class="item__role">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
+							<h3 class="item__name">Bonnie & Clyde</h3>
+							<span class="item__role">Afortunadamente, se reporta que el perico verde es una especie clasificada como de preocupación menor.
 							</span>
 						</figcaption>`,
 	fotoB: `<img src="public/img/malosoE.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
-							<span class="item__role">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
+							<h3 class="item__name">Bonnie & Clyde</h3>
+							<span class="item__role">Sin embargo, la tala de árboles, la minería ilegal, la construcción de poblados, los incendios forestales y la captura para el tráfico ilegal como mascotas disminuyó su población en estado salvaje, haciendo que en un posible futuro, la UICN lo clasifique como especie en peligro de extinción.
 							</span>
 						</figcaption>`,
 	fotoC: `<img src="public/img/malososD.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
+							<h3 class="item__name">Bonnie & Clyde</h3>
 							<span class="item__role">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.
@@ -54,12 +48,13 @@ let galleryItems = [{
 						</figcaption>`,
 	fotoD: `<img src="public/img/sweethome.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
+							<h3 class="item__name">Bonnie & Clyde</h3>
 							<span class="item__role">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.
 							</span>
-						</figcaption>`},
+						</figcaption>`
+	},
 	{ 	
 	foto: `<img src="public/img/blackyA.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
@@ -147,31 +142,27 @@ let galleryItems = [{
 	{ 	
 	foto: `<img src="public/img/pakaA.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
+							<h3 class="item__name">PAKA</h3>
 							<span class="item__role">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
+								 Aunque su lenguaje corporal es el mismo, las amazonas panameñas son mucho menos propensas a volverse físicamente agresivas. Muchos otros loros amazónicos se venden erróneamente como amazonas de Panamá, debido a su escasez y popularidad.
 							</span>
 						</figcaption>`,
 	fotoA: `<img src="public/img/pakaB.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
-							<span class="item__role">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
+							<h3 class="item__name">PAKA</h3>
+							<span class="item__role">Las amazonas panameñas son extremadamente juguetonas, pueden ser excelentes conversadoras y tienden a ser ruidosas a veces.
 							</span>
 						</figcaption>`,
 	fotoB: `<img src="public/img/pakaC.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
+							<h3 class="item__name">PAKA</h3>
 							<span class="item__role">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
+								Los adultos miden aproximadamente 35 centímetros (13,8 pulgadas).
 							</span>
 						</figcaption>`,
 	fotoC: `<img src="public/img/pakaD.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
+							<h3 class="item__name">PAKA</h3>
 							<span class="item__role">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.
@@ -179,7 +170,7 @@ let galleryItems = [{
 						</figcaption>`,
 	fotoD: `<img src="public/img/pakaE.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
-							<h3 class="item__name">LOREM</h3>
+							<h3 class="item__name">PAKA</h3>
 							<span class="item__role">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.
@@ -198,11 +189,8 @@ let galleryItems = [{
 let galleryCont = {
 	malosos:
 	`
-	<span class="content__primary" id="titulo__A">MALOSOS</span>
-			      <span class="content__secondary"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			      consequat.</p></span>
+	<span class="content__primary" id="titulo__A">Brotogeris tirica</span>
+			      <blockquote class="content__secondary"><p>El periquito verde, catita tirica o perico rico (Brotogeris tirica) es una especie de ave psitaciforme de la familia Psittacidae que se distribuye en Brasil y Bolivia. Su hábitat natural son los bosques tropicales de baja altitud, los bosques montanos y las zonas degradadas. En estado natural, los periquitos verdes tienen una dieta muy variada, pudiendo consumir desde semillas, frutas y flores hasta pequeños insectos y larvas. Su esperanza de vida es de aproximadamente 15 años.</p><cite><a href="https://es.wikipedia.org/wiki/Brotogeris_tirica#:~:text=El%20periquito%20verde%2C%20catita%20tirica%20o%20perico%20rico,altitud%2C%20los%20bosques%20montanos%20y%20las%20zonas%20degradadas." target="_blank">Wikipedia</a></cite></blockquote>
 
 	`,
 	blacky:
@@ -225,11 +213,8 @@ let galleryCont = {
 	`,
 	paka:
 	`
-	<span class="content__primary" id="titulo__A">PAKA</span>
-			      <span class="content__secondary"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			      consequat.</p></span>
+	<span class="content__primary" id="titulo__A">The Panama amazon</span>
+			      <blockquote class="content__secondary"><p>La amazona de Panamá, también conocida como amazona de cabeza amarilla de Panamá, (Amazona ochrocephala panamensis) es una subespecie de la amazona de corona amarilla, y es endémica de Panamá (incluidas las Islas de las Perlas y Coiba) y el noroeste de Colombia.  En avicultura, a veces se enumera como una especie separada (Amazona panamensis), y esto es potencialmente correcto; al menos como especie filogenética.</p><cite><a href="https://en.wikipedia.org/wiki/Panama_amazon" target="_blank">Wikipedia</a></cite></blockquote>
 
 	`
 };
