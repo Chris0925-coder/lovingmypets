@@ -135,7 +135,7 @@ let galleryItems = [{
 								 Aunque su lenguaje corporal es el mismo, las amazonas panameñas son mucho menos propensas a volverse físicamente agresivas. Muchos otros loros amazónicos se venden erróneamente como amazonas de Panamá, debido a su escasez y popularidad.
 							</span>
 						</figcaption>`,
-	fotoA: `<img src="public/img/pakaB.jpg" alt="Loro class="item__image">
+	fotoA: `<img src="public/img/pakaB.jpg" alt="Loro" class="item__image">
 						<figcaption class="item__description">
 							<h3 class="item__name">PAKA</h3>
 							<span class="item__role">Las amazonas panameñas son extremadamente juguetonas, pueden ser excelentes conversadoras y tienden a ser ruidosas a veces.

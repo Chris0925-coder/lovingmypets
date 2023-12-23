@@ -248,19 +248,19 @@ body {
 	position: relative;
 	isolation: isolate;
 	display: flex;
-/*	flex: 1;*/
-/*	max-width: 1028px;*/
+	/* flex: 1; */
+	/*	max-width: 1028px;*/
 	height: 600px;
-/*	background: linear-gradient(336deg, rgba(0, 0, 0, .6)0%, rgba(0, 0, 0, 0.0)100%);*/
+	/*	background: linear-gradient(336deg, rgba(0, 0, 0, .6)0%, rgba(0, 0, 0, 0.0)100%);*/
 	padding: 15px;
 	opacity: 1;
 	overflow: hidden;
 	transition: flex 0.5, opacity 0.25s;
 	margin-bottom: 20px;
-/*	margin: 0 auto;*/
-/*	place-content: center;*/
-/*justify-self: center;*/
-/*	border: 1px solid darkred;*/
+	/*	margin: 0 auto;*/
+	/*	place-content: center;*/
+	/*justify-self: center;*/
+	/*	border: 1px solid darkred;*/
 }
 
 .gallery__item:hover {
