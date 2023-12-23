@@ -84,7 +84,16 @@ let galleryItems = [{
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.
 							</span>
-						</figcaption>`},
+						</figcaption>`,
+	fotoC: `<img src="public/img/blackyD.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`
+	},
 	{ 	
 	foto: `<img src="public/img/ladyB.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
@@ -153,6 +162,30 @@ let galleryItems = [{
 							</span>
 						</figcaption>`,
 	fotoB: `<img src="public/img/pakaC.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`,
+	fotoC: `<img src="public/img/pakaD.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`,
+	fotoD: `<img src="public/img/pakaE.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>`,
+	fotoE: `<img src="public/img/pakaF.jpg" alt="#" class="item__image">
 						<figcaption class="item__description">
 							<h3 class="item__name">LOREM</h3>
 							<span class="item__role">
@@ -339,8 +372,10 @@ inicio.addEventListener('click', () => {
 
 
 blacky.addEventListener('click', () => {
-	prev.style.display = "none";
-	next.style.display = "none";
+	prev.style.display = "block";
+	next.style.display = "block";
+	items = Object.values (galleryItems[1]);
+	arrows(4);
 	gallery.innerHTML = begin[1];
 	galleryContent.innerHTML = galleryCont.blacky;
 	boton[0].children[1].style.opacity = 0.2;
@@ -363,8 +398,10 @@ lady.addEventListener('click', () => {
 });
 
 paka.addEventListener('click', () => {
-	prev.style.display = "none";
-	next.style.display = "none";
+	prev.style.display = "block";
+	next.style.display = "block";
+	items = Object.values (galleryItems[3]);
+	arrows(6);
 	gallery.innerHTML = begin[3];
 	galleryContent.innerHTML = galleryCont.paka;
 	boton[0].children[1].style.opacity = 0.2;
