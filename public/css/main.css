@@ -467,9 +467,15 @@ body {
 	color: #2c2c2c;
 }
 
+#mail, 
+#comments {
+	border-color: #c4c4c4;
+/*	border: #2c2c2c;*/
+}
+
 #mail::placeholder, 
 #comments::placeholder {
-	padding: .5em;
+	padding: 0.4em;
 }
 
 /*FOOTER*/
