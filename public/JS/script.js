@@ -224,67 +224,217 @@ const begin = [
 // let i = gallery.innerHTML = begin[0];
 // galleryItems.style.zIndex = -1;
 
-const boton = document.getElementsByClassName('button__sliders');
+let boton = document.querySelector('.button__sliders');
+let sliderBoton = [
+	`<button class="slide"></button>`,
+	`<button class="slideA"></button>`,
+	`<button class="slideB"></button>`,
+	`<button class="slideC"></button>`,
+	`<button class="slideD"></button>`,
+	`<button class="slideE"></button>`
+	];
+// [0]
+// let v = document.createElement('div');
+// let x = v.append(sliderBoton[1]);
+// innerHTML
+boton.innerHTML = sliderBoton;
 
-boton[0].children[1].style.opacity = 0.2;
+// boton.append(b);
+console.log(boton);
+// let a = `<button class="slide"></button>`;
+// document.boton.append(`<button class="slide"></button>`);
+// console.log(v.innerText);
+boton.children[1].style.opacity = "0.2";
+boton.children[3].style.display = "none";
+boton.children[4].style.display = "none";
+boton.children[5].style.display = "none";
 
-boton[0].children[0].addEventListener('click', () => {
+boton.children[0].addEventListener('click', () => {
 
-	boton[0].children[0].style.opacity = 0.2;
-	boton[0].children[1].style.opacity = 1;
-	boton[0].children[2].style.opacity = 1;
+	boton.children[0].style.opacity = 0.2;
+	boton.children[1].style.opacity = 1;
+	boton.children[2].style.opacity = 1;
+	// boton.children[3].style.opacity = 1;
+	// boton.children[4].style.opacity = 1;
+	// boton.children[5].style.opacity = 1;
+	// boton.children[6].style.opacity = 1;
 	gallery.innerHTML = galleryItems[0].foto;
 
 });
 
-boton[0].children[1].addEventListener('click', () => {
+boton.children[1].addEventListener('click', () => {
 
-	boton[0].children[1].style.opacity = 0.2;
-	boton[0].children[0].style.opacity = 1;
-	boton[0].children[2].style.opacity = 1;
+	boton.children[1].style.opacity = 0.2;
+	boton.children[0].style.opacity = 1;
+	boton.children[2].style.opacity = 1;
+	// boton.children[3].style.opacity = 1;
+	// boton.children[4].style.opacity = 1;
+	// boton.children[5].style.opacity = 1;
+	// boton.children[6].style.opacity = 1;
 	gallery.innerHTML = galleryItems[0].fotoA;
 
 });
 
-boton[0].children[2].addEventListener('click', () => {
+boton.children[2].addEventListener('click', () => {
 
-	boton[0].children[2].style.opacity = 0.2;
-	boton[0].children[1].style.opacity = 1;
-	boton[0].children[0].style.opacity = 1;
+	boton.children[2].style.opacity = 0.2;
+	boton.children[1].style.opacity = 1;
+	boton.children[0].style.opacity = 1;
+	// boton.children[3].style.opacity = 1;
+	// boton.children[4].style.opacity = 1;
+	// boton.children[5].style.opacity = 1;
+	// boton.children[6].style.opacity = 1;
 	gallery.innerHTML = galleryItems[0].fotoB;
 
 });
+
+// boton.children[3].addEventListener('click', () => {
+
+// 	boton.children[3].style.opacity = 0.2;
+// 	boton.children[1].style.opacity = 1;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[4].style.opacity = 1;
+// 	boton.children[5].style.opacity = 1;
+// 	boton.children[6].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	gallery.innerHTML = galleryItems[0].fotoC;
+
+// });
+
+// boton.children[4].addEventListener('click', () => {
+
+// 	boton.children[4].style.opacity = 0.2;
+// 	boton.children[1].style.opacity = 1;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[3].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	boton.children[5].style.opacity = 1;
+// 	boton.children[6].style.opacity = 1;
+// 	gallery.innerHTML = galleryItems[0].fotoD;
+
+// });
+
+// boton.children[5].addEventListener('click', () => {
+
+// 	boton.children[5].style.opacity = 0.2;
+// 	boton.children[1].style.opacity = 1;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[3].style.opacity = 1;
+// 	boton.children[4].style.opacity = 1;
+// 	boton.children[6].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	gallery.innerHTML = galleryItems[0].fotoE;
+
+// });
+
+// boton.children[6].addEventListener('click', () => {
+
+// 	boton.children[6].style.opacity = 0.2;
+// 	boton.children[1].style.opacity = 1;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[3].style.opacity = 1;
+// 	boton.children[4].style.opacity = 1;
+// 	boton.children[5].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	gallery.innerHTML = galleryItems[0].fotoB;
+
+// });
 
 
 function QQ(a, c) {
 	a.addEventListener('click', () => {
 		if(true) {
-			boton[0].children[0].addEventListener('click', () => {
+			boton.children[0].addEventListener('click', () => {
 
-				boton[0].children[0].style.opacity = 0.2;
-				boton[0].children[1].style.opacity = 1;
-				boton[0].children[2].style.opacity = 1;
+				boton.children[0].style.opacity = 0.2;
+				boton.children[1].style.opacity = 1;
+				boton.children[2].style.opacity = 1;
+				boton.children[3].style.opacity = 1;
+				boton.children[4].style.opacity = 1;
+				boton.children[5].style.opacity = 1;
+				// boton.children[6].style.opacity = 1;
 				gallery.innerHTML = galleryItems[c].foto;
 
 			});
 
-			boton[0].children[1].addEventListener('click', () => {
+			boton.children[1].addEventListener('click', () => {
 
-				boton[0].children[1].style.opacity = 0.2;
-				boton[0].children[0].style.opacity = 1;
-				boton[0].children[2].style.opacity = 1;
+				boton.children[1].style.opacity = 0.2;
+				boton.children[0].style.opacity = 1;
+				boton.children[2].style.opacity = 1;
+				boton.children[3].style.opacity = 1;
+				boton.children[4].style.opacity = 1;
+				boton.children[5].style.opacity = 1;
+				// boton.children[6].style.opacity = 1;
 				gallery.innerHTML = galleryItems[c].fotoA;
 
 			});
 
-			boton[0].children[2].addEventListener('click', () => {
+			boton.children[2].addEventListener('click', () => {
 
-				boton[0].children[2].style.opacity = 0.2;
-				boton[0].children[1].style.opacity = 1;
-				boton[0].children[0].style.opacity = 1;
+				boton.children[2].style.opacity = 0.2;
+				boton.children[1].style.opacity = 1;
+				boton.children[0].style.opacity = 1;
+				boton.children[3].style.opacity = 1;
+				boton.children[4].style.opacity = 1;
+				boton.children[5].style.opacity = 1;
+				// boton.children[6].style.opacity = 1;
 				gallery.innerHTML = galleryItems[c].fotoB;
 
 			});
+
+
+			boton.children[3].addEventListener('click', () => {
+
+				boton.children[3].style.opacity = 0.2;
+				boton.children[1].style.opacity = 1;
+				boton.children[0].style.opacity = 1;
+				boton.children[4].style.opacity = 1;
+				boton.children[5].style.opacity = 1;
+				// boton.children[6].style.opacity = 1;
+				boton.children[2].style.opacity = 1;
+				gallery.innerHTML = galleryItems[c].fotoC;
+
+			});
+
+			boton.children[4].addEventListener('click', () => {
+
+				boton.children[4].style.opacity = 0.2;
+				boton.children[1].style.opacity = 1;
+				boton.children[0].style.opacity = 1;
+				boton.children[3].style.opacity = 1;
+				boton.children[2].style.opacity = 1;
+				boton.children[5].style.opacity = 1;
+				// boton.children[6].style.opacity = 1;
+				gallery.innerHTML = galleryItems[c].fotoD;
+
+			});
+
+			boton.children[5].addEventListener('click', () => {
+
+				boton.children[5].style.opacity = 0.2;
+				boton.children[1].style.opacity = 1;
+				boton.children[0].style.opacity = 1;
+				boton.children[3].style.opacity = 1;
+				boton.children[4].style.opacity = 1;
+				// boton.children[6].style.opacity = 1;
+				boton.children[2].style.opacity = 1;
+				gallery.innerHTML = galleryItems[c].fotoE;
+
+			});
+
+			// boton.children[6].addEventListener('click', () => {
+
+			// 	boton.children[6].style.opacity = 0.2;
+			// 	boton.children[1].style.opacity = 1;
+			// 	boton.children[0].style.opacity = 1;
+			// 	boton.children[3].style.opacity = 1;
+			// 	boton.children[4].style.opacity = 1;
+			// 	boton.children[5].style.opacity = 1;
+			// 	boton.children[2].style.opacity = 1;
+			// 	gallery.innerHTML = galleryItems[c].fotoB;
+
+			// });
 		}
 	})
 };
@@ -322,6 +472,9 @@ function arrows(a) {
 
 
 inicio.addEventListener('click', () => {
+	boton.children[3].style.display = "block";
+	boton.children[4].style.display = "block";
+	boton.children[5].style.display = "none";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	items = Object.values (galleryItems[0]);
@@ -331,26 +484,35 @@ inicio.addEventListener('click', () => {
 
 	gallery.innerHTML = begin[0];
 	galleryContent.innerHTML = galleryCont.malosos;
-	boton[0].children[1].style.opacity = 0.2;
-	boton[0].children[0].style.opacity = 1;
-	boton[0].children[2].style.opacity = 1;
+	boton.children[1].style.opacity = 0.2;
+	boton.children[0].style.opacity = 1;
+	boton.children[2].style.opacity = 1;
+	boton.children[3].style.opacity = 1;
+	boton.children[4].style.opacity = 1;
+	// boton.children[5].style.opacity = 1;
 
 });
 
 
 blacky.addEventListener('click', () => {
+	boton.children[4].style.display = "none";
+	boton.children[5].style.display = "none";
 	prev.style.display = "block";
 	next.style.display = "block";
 	items = Object.values (galleryItems[1]);
 	arrows(4);
 	gallery.innerHTML = begin[1];
 	galleryContent.innerHTML = galleryCont.blacky;
-	boton[0].children[1].style.opacity = 0.2;
-	boton[0].children[0].style.opacity = 1;
-	boton[0].children[2].style.opacity = 1;
+	boton.children[1].style.opacity = 0.2;
+	boton.children[0].style.opacity = 1;
+	boton.children[2].style.opacity = 1;
+	boton.children[3].style.opacity = 1;
 });
 
 lady.addEventListener('click', () => {
+	boton.children[3].style.display = "block";
+	boton.children[4].style.display = "block";
+	boton.children[5].style.display = "block";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	prev.style.display = "block";
@@ -359,21 +521,32 @@ lady.addEventListener('click', () => {
 	arrows(6);
 	gallery.innerHTML = begin[2];
 	galleryContent.innerHTML = galleryCont.lady;
-	boton[0].children[1].style.opacity = 0.2;
-	boton[0].children[0].style.opacity = 1;
-	boton[0].children[2].style.opacity = 1;
+	boton.children[1].style.opacity = 0.2;
+	boton.children[0].style.opacity = 1;
+	boton.children[2].style.opacity = 1;
+	boton.children[3].style.opacity = 1;
+	boton.children[4].style.opacity = 1;
+	boton.children[5].style.opacity = 1;
+
 });
 
 paka.addEventListener('click', () => {
+	boton.children[3].style.display = "block";
+	boton.children[4].style.display = "block";
+	boton.children[5].style.display = "block";
 	prev.style.display = "block";
 	next.style.display = "block";
 	items = Object.values (galleryItems[3]);
 	arrows(6);
 	gallery.innerHTML = begin[3];
 	galleryContent.innerHTML = galleryCont.paka;
-	boton[0].children[1].style.opacity = 0.2;
-	boton[0].children[0].style.opacity = 1;
-	boton[0].children[2].style.opacity = 1;
+	boton.children[1].style.opacity = 0.2;
+	boton.children[0].style.opacity = 1;
+	boton.children[2].style.opacity = 1;
+	boton.children[3].style.opacity = 1;
+	boton.children[4].style.opacity = 1;
+	boton.children[5].style.opacity = 1;
+
 });
 // if (f) {
 	

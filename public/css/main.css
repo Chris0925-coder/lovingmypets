@@ -226,7 +226,8 @@ body {
 	gap: 0.4em;
 }
 
-.slide, .slideA, .slideB {
+.slide, .slideA, .slideB, 
+.slideC, .slideD, .slideE {
 /*	display: flex;*/
 	position: relative;
 	bottom: 0;
@@ -240,7 +241,8 @@ body {
 
 }
 
-.slide:hover, .slideA:hover, .slideB:hover {
+.slide:hover, .slideA:hover, .slideB:hover,
+.slideC:hover, .slideD:hover, .slideE:hover {
 	filter: drop-shadow(1px 1px 10px #2b2b2b);
 /*	border: 1px solid black;*/
 }
