@@ -388,11 +388,13 @@ function arrows(a) {
 	let slideIndex = 2;
 	let slideIndexB = 2;
 	prev.addEventListener('click', () => {
-			// for (i = a; i < items.length; i--) {
-			// 	gallery.innerHTML = items[i];
-			// }
+			for (i = 0; i < items.length; i++) {
+				gallery.innerHTML = items[i];
+				boton.children[i].style.opacity = "1";
+			}
 			slideIndex--;
 			if (slideIndex <= 0) {slideIndex = a};
+			boton.children[slideIndex-1].style.opacity = "0.2";
 			gallery.innerHTML = items[slideIndex-1];
 		});
 
@@ -400,10 +402,12 @@ function arrows(a) {
 		slideIndexB++;
 		for (i = 0; i < items.length; i++) {
 			gallery.innerHTML = items[i];
+			boton.children[i].style.opacity = "1";
 		}
 		if(slideIndexB > items.length) {
 		    slideIndexB = 1;
 		}
+		boton.children[slideIndexB-1].style.opacity = "0.2";
 		gallery.innerHTML = items[slideIndexB-1];
 	});
 };
