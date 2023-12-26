@@ -16,7 +16,12 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	width: 100%;
-	min-height: 100vh;
+/*	min-height: 100lvh;*/
+}
+
+header {
+	min-height: 100lvh;
+	min-height: 100dvh;
 }
 
 .container {

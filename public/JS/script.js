@@ -206,7 +206,7 @@ let galleryCont = {
 
 // console.log(galLeng);
 let items = Object.values (galleryItems[0]);
-console.log(items);
+// console.log(items);
 
 
 
@@ -438,6 +438,7 @@ inicio.addEventListener('click', () => {
 
 
 blacky.addEventListener('click', () => {
+	boton.children[3].style.display = "block";
 	boton.children[4].style.display = "none";
 	boton.children[5].style.display = "none";
 	prev.style.display = "block";
