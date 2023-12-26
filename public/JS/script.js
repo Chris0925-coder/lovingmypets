@@ -386,7 +386,7 @@ QQ(paka, 3);
 
 function arrows(a) {
 	let slideIndex = 2;
-	let slideIndexB = 2;
+	// let slideIndexB = 2;
 	prev.addEventListener('click', () => {
 			for (i = 0; i < items.length; i++) {
 				gallery.innerHTML = items[i];
@@ -399,16 +399,16 @@ function arrows(a) {
 		});
 
 	next.addEventListener('click', () => {
-		slideIndexB++;
+		slideIndex++;
 		for (i = 0; i < items.length; i++) {
 			gallery.innerHTML = items[i];
 			boton.children[i].style.opacity = "1";
 		}
-		if(slideIndexB > items.length) {
-		    slideIndexB = 1;
+		if(slideIndex > items.length) {
+		    slideIndex = 1;
 		}
-		boton.children[slideIndexB-1].style.opacity = "0.2";
-		gallery.innerHTML = items[slideIndexB-1];
+		boton.children[slideIndex-1].style.opacity = "0.2";
+		gallery.innerHTML = items[slideIndex-1];
 	});
 };
 
@@ -423,7 +423,8 @@ inicio.addEventListener('click', () => {
 	prev.style.display = "block";
 	next.style.display = "block";
 	arrows(5);
-
+	// gallery.style.backgroundColor = "#ffffff00";
+	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
 	gallery.innerHTML = begin[0];
 	galleryContent.innerHTML = galleryCont.malosos;
 	boton.children[1].style.opacity = 0.2;
@@ -443,6 +444,8 @@ blacky.addEventListener('click', () => {
 	next.style.display = "block";
 	items = Object.values (galleryItems[1]);
 	arrows(4);
+	// gallery.style.backgroundColor = "#654321";
+	gallery.style.background = 'linear-gradient(336deg, #654321 0%, rgba(0, 0, 0, 0.0)100%)';
 	gallery.innerHTML = begin[1];
 	galleryContent.innerHTML = galleryCont.blacky;
 	boton.children[1].style.opacity = 0.2;
@@ -461,6 +464,8 @@ lady.addEventListener('click', () => {
 	next.style.display = "block";
 	items = Object.values (galleryItems[2]);
 	arrows(6);
+	// gallery.style.backgroundColor = "#404040";
+	gallery.style.background = 'linear-gradient(336deg, #404040 0%, rgba(0, 0, 0, 0.0)100%)';
 	gallery.innerHTML = begin[2];
 	galleryContent.innerHTML = galleryCont.lady;
 	boton.children[1].style.opacity = 0.2;
@@ -480,6 +485,8 @@ paka.addEventListener('click', () => {
 	next.style.display = "block";
 	items = Object.values (galleryItems[3]);
 	arrows(6);
+	// gallery.style.backgroundColor = "#ffffff00";
+	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
 	gallery.innerHTML = begin[3];
 	galleryContent.innerHTML = galleryCont.paka;
 	boton.children[1].style.opacity = 0.2;
@@ -491,7 +498,7 @@ paka.addEventListener('click', () => {
 
 });
 // if (f) {
-	
+// gallery.style.backgroundColor = "none";
 // } else if (k) {
 // 	gallery.innerHTML = begin[2];
 // } else {
