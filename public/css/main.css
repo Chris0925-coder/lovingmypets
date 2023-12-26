@@ -251,11 +251,11 @@ body {
 	position: relative;
 	isolation: isolate;
 	display: flex;
-/*	 flex: 0 0 200px; */
+	/*	 flex: 0 0 200px; */
 	/*	max-width: 1028px;*/
-	height: 600px;
-	/*	background: linear-gradient(336deg, rgba(0, 0, 0, .6)0%, rgba(0, 0, 0, 0.0)100%);*/
-	padding: 15px;
+	height: 500px;
+	background: linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%);
+	padding: .5em;
 	opacity: 1;
 	overflow: hidden;
 	transition: opacity 0.25s;
@@ -283,12 +283,13 @@ body {
 	z-index: -1;
 	width: 100%;
 	height: 100%;
-	object-fit: fill;
+	object-fit: contain;
 	border-radius: 0.4em;
+	padding: .5em;
 /*	animation: move-izq-der;*/
 	animation: opacity 5s 1;
 /*	animation-fill-mode: forwards;*/
-/*	filter: drop-shadow(2px 2px 7px #303030);*/
+	filter: drop-shadow(2px 2px 7px #303030);
 }
 
 @keyframes opacity {
@@ -458,25 +459,22 @@ body {
 }
 
 .gallery {
-/*	display: flex;*/
+	/* display: flex; */
 	position: relative;
 	width: auto;
-	height: 600px;
+	height: 400px;
 	margin: 0.2em;
-/*	border: 1px solid yellow;*/
-	
-
+	/*	border: 1px solid yellow;*/
 	flex: 1 0 100%;
 	scroll-snap-align: center;
-	scroll-snap-stop: always;
-}
+	scroll-snap-stop: always;}
 
 .gallery img {
 	display: block;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	object-fit: fill;
+	object-fit: contain;
 }
 
 .inst__cont {
@@ -646,7 +644,7 @@ body {
 	}
 
 	.gallery {
-		height: 400px;
+		/* height: 600px; */
 	}
 
 }
