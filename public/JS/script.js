@@ -506,3 +506,7 @@ paka.addEventListener('click', () => {
 	gallery.innerHTML = begin[0];
 	galleryContent.innerHTML = galleryCont.malosos;
 // };
+
+let date = document.querySelector('.date');
+
+date.append(new Date ().getFullYear ());
