@@ -36,7 +36,7 @@ header {
 	width: 100%;
 	height: 100vh;
 	min-height: 600px;
-	max-height: 100dvh;
+	max-height: 100lvh;
 	position: relative;
 	display: grid;
 	grid-template-rows: 100px 1fr;
@@ -49,12 +49,11 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100%;
-/*	background-image: url('../img/fer2.jfif');*/
 	background-image: linear-gradient(180deg, #8F97798c 0%, #ffffff8c 100%), url('../img/ladyA.jpg');
 	background-size: 100% 100%;
-	background-position: top;
+	background-position: bottom;
 	background-repeat: no-repeat;
-	object-fit: fill;
+	object-fit: cover;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 70%, 0 80%);
 	z-index: -1;
 }
@@ -151,28 +150,17 @@ header {
 }
 
 .primary__gallery--content {
-/*	display: block;*/
-/*	position: relative;*/
 	width: 100%;
 	height: auto;
 /*	margin: 0 auto;*/
 	padding: 10px 0;
-/*	right: -50%;*/
-/*	left: -50%;*/
-/*	border: 1px solid blue;*/
-/*	align-items: center;*/
-/*	place-content: center;*/
 }
 
 
 .gallery__content--titulo {
 	margin-top: 10px;
 	margin-bottom: 50px;
-	/*margin-left: auto;
-	margin-right: auto;*/
 	cursor: default;
-/*	text-align: center;*/
-/*	border: 1px solid yellow;*/
 }
 
 .gallery__content--titulo span {
@@ -473,13 +461,13 @@ header {
 	/* display: flex; */
 	position: relative;
 	width: auto;
-	height: 700px;
+	height: 600px;
 	margin: 0.2em;
 	/*	border: 1px solid yellow;*/
 	flex: 1 0 100%;
 	scroll-snap-align: center;
 	scroll-snap-stop: always;
-/*	object-position: 100% 100%;*/
+	/*	object-position: 100% 100%;*/
 }
 
 .gallery img {
@@ -487,14 +475,16 @@ header {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: 50% 15%;
+	object-fit: fill;
+	/* object-position: 50% 15%; */
 }
 
 .inst__cont {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4em;
 	position: relative;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .comment__button {
@@ -584,8 +574,20 @@ header {
 /*.bi-facebook {
 	color: #3b5998;
 }*/
+/*#inst {
+	display:block; 
+	height:50px; 
+	margin:0 auto 12px; 
+	width:50px;
+	background-image: url('../img/inst.svg');
+}*/
+
 
 @media screen and (max-width: 768px) {
+
+	.hero:before {
+		background-size: cover;
+	}
 
 	.gallery__contain--img {
 		width: 100%;
