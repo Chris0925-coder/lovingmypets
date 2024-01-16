@@ -196,15 +196,17 @@ header {
 	/*place-content: center;
 	justify-content: center;
 	align-content: center;*/
-	/*	align-items: center;*/
+	/* align-items: center; */
 	/*	border: 1px solid black;*/
-	max-width: 2056px;
+	width: 100%;
 	height: auto;
-	/*	border: 1px solid green;*/
+	/* justify-content: center; */
+	/* border: 1px solid green; */
 	margin: 0 auto;
 	/*	scroll-snap-type: x mandatory;*/
 	/*background: linear-gradient(to bottom rgba(0, 0, 0,0.2)10%, rgba(0, 0, 0, 0.8)100%);
 	z-index: 4000;*/
+	place-content: center;
 }
 
 .button__sliders {
@@ -245,7 +247,7 @@ header {
 	isolation: isolate;
 	display: flex;
 	/*	 flex: 0 0 200px; */
-	/*	max-width: 1028px;*/
+	width: 100%;
 	height: 500px;
 	background: linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%);
 	padding: .5em;
@@ -253,6 +255,7 @@ header {
 	overflow: hidden;
 	transition: opacity 0.25s;
 	margin-bottom: 20px;
+	/* justify-content: center; */
 	border-radius: .4em;
 }
 
