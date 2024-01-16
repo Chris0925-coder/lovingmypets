@@ -115,10 +115,10 @@ header {
 	display: grid;
 	--padding-container: 0;
 	grid-auto-rows: max-content;
-/*	border: 1px solid black;*/
+	/*	border: 1px solid black;*/
 	align-content: center;
 	gap: 1em;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	text-align: left;
 }
 
@@ -192,17 +192,17 @@ header {
 	position: relative;
 	flex-direction: column;
 	cursor: default;
-/*	gap: 0.1em;*/
+	/*	gap: 0.1em;*/
 	/*place-content: center;
 	justify-content: center;
 	align-content: center;*/
-/*	align-items: center;*/
-/*	border: 1px solid black;*/
-	max-width: 1028px;
+	/*	align-items: center;*/
+	/*	border: 1px solid black;*/
+	max-width: 2056px;
 	height: auto;
-/*	border: 1px solid green;*/
+	/*	border: 1px solid green;*/
 	margin: 0 auto;
-/*	scroll-snap-type: x mandatory;*/
+	/*	scroll-snap-type: x mandatory;*/
 	/*background: linear-gradient(to bottom rgba(0, 0, 0,0.2)10%, rgba(0, 0, 0, 0.8)100%);
 	z-index: 4000;*/
 }
@@ -460,8 +460,8 @@ header {
 .gallery {
 	/* display: flex; */
 	position: relative;
-	width: auto;
-	height: 600px;
+	max-width: 1028px;
+	height: 480px;
 	margin: 0.2em;
 	/*	border: 1px solid yellow;*/
 	flex: 1 0 100%;
