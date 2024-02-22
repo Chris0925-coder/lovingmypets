@@ -26,7 +26,7 @@ header {
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 2800px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: var(--padding-container);
@@ -55,7 +55,7 @@ header {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	object-fit: fill;
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 70%, 0 80%);
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 77%, 0 80%);
 	z-index: -1;
 /*	align-items: center;*/
 /*	filter: blur(10px);*/
@@ -65,6 +65,7 @@ header {
 .nav {
 	--padding-container: 0;
 	padding: 0 5%;
+/*	width: 100%;*/
 	height: 100%;
 	display: flex;
 	align-items: center;
