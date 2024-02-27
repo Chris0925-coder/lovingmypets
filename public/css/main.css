@@ -557,7 +557,11 @@ header {
 
 #mail::placeholder, 
 #comments::placeholder {
-	padding: 0.4em;
+/*	padding: 0.1em;*/
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	place-content: bottom;
 }
 
 /*FOOTER*/
