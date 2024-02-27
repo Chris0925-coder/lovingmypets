@@ -176,7 +176,8 @@ header {
 	width: 100%;
 	height: auto;
 	align-items: center;
-	margin: 0;
+	margin: 0 auto;
+/*	object-position: center;*/
 }
 
 .primary__gallery--content {
@@ -430,10 +431,10 @@ header {
 	margin: 0 auto;
 	width: 100%;
 	height: auto;
-	place-content: center;
+/*	place-content: center;*/
 	/* justify-content: center; */
 	/* border: 1px solid yellow; */
-	}
+}
 
 .gallery__contain a {
 	display: flex;
@@ -443,7 +444,7 @@ header {
 	/* justify-content: center; */
 	cursor: pointer;
 	gap: 0.4em;
-	width: 1280px;
+	width:100%;
 	height: auto;
 	text-decoration: none;
 	color: #2b2b2b;
@@ -502,10 +503,11 @@ header {
 	/* display: flex; */
 	position: relative;
 	max-width: 1028px;
-	height: 480px;
+	height: 600px;
 	margin: 0.2em;
 	/*	border: 1px solid yellow;*/
 	flex: 1 0 100%;
+	scrollbar-width: none;
 	scroll-snap-align: center;
 	scroll-snap-stop: always;
 	/*	object-position: 100% 100%;*/
@@ -526,7 +528,15 @@ header {
 	gap: 0.4em;
 	position: relative;
 	justify-content: space-around;
+	border: 1px solid black;
+/*	padding: 0 auto;*/
+
 }
+
+/*.tiktok-embed {
+	margin: 18px 0;
+	padding: 0;
+}*/
 
 .comment__button {
 	color: #c3c3c3;
