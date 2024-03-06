@@ -18,6 +18,7 @@ navBoton.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
 });
 
+
 let galleryItems = [{
 	foto: `<img src="public/img/malosoC.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
