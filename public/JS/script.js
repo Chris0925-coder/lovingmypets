@@ -176,8 +176,9 @@ let galleryItems = [{
 let galleryCont = {
 	malosos:
 	`
-	<span class="content__primary" id="titulo__A">Brotogeris tirica</span>
-		<blockquote class="content__secondary"><p>El periquito verde, catita tirica o perico rico (Brotogeris tirica) es una especie de ave psitaciforme de la familia Psittacidae que se distribuye en Brasil y Bolivia. Su hábitat natural son los bosques tropicales de baja altitud, los bosques montanos y las zonas degradadas. En estado natural, los periquitos verdes tienen una dieta muy variada, pudiendo consumir desde semillas, frutas y flores hasta pequeños insectos y larvas. Su esperanza de vida es de aproximadamente 15 años.</p><cite><a href="https://es.wikipedia.org/wiki/Brotogeris_tirica#:~:text=El%20periquito%20verde%2C%20catita%20tirica%20o%20perico%20rico,altitud%2C%20los%20bosques%20montanos%20y%20las%20zonas%20degradadas." target="_blank">Wikipedia</a></cite></blockquote>
+	<span class="content__primary" id="titulo__A">Brotogeris jugularis</span>
+		<blockquote class="content__secondary"><p>El periquito bronceado o catita churica (Brotogeris jugularis) es una especie de ave psitaciforme de la familia de los psitácidos extendida por el Neotrópico, desde el sur de México hasta Colombia y Venezuela.</p> 
+			<p>Tanto el macho como la hembra adultos tienen un plumaje que va del amarillo verdoso al verde oliva, un toque azul en la corona, una mancha naranja en la garganta, y un toque azul en la parte baja del dorso.</p><cite><a href="https://es.wikipedia.org/wiki/Brotogeris_jugularis" target="_blank">Wikipedia</a></cite></blockquote>
 
 	`,
 	blacky:
