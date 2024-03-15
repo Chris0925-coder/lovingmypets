@@ -53,7 +53,15 @@ let galleryItems = [{
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.
 				</span>
-			</figcaption>`
+			</figcaption>`,
+	fotoE: `<img src="public/img/bebe.jpg" alt="periquitos verdes" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">Bonnie & Clyde</h3>
+				<span class="item__role">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</span>
+			</figcaption>`		
 	},
 	{ 	
 	foto: `<img src="public/img/blackyA.jpg" alt="perro mestizo" class="item__image">
@@ -128,7 +136,7 @@ let galleryItems = [{
 			</figcaption>`
 	},
 	{ 	
-	foto: `<img src="public/img/pakaA.jpg" alt="Loro" class="item__image">
+	foto: `<img src="public/img/paka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA</h3>
 				<span class="item__role">
@@ -417,13 +425,13 @@ function arrows(a) {
 inicio.addEventListener('click', () => {
 	boton.children[3].style.display = "block";
 	boton.children[4].style.display = "block";
-	boton.children[5].style.display = "none";
+	boton.children[5].style.display = "block";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	items = Object.values (galleryItems[0]);
 	prev.style.display = "block";
 	next.style.display = "block";
-	arrows(5);
+	arrows(6);
 	// gallery.style.backgroundColor = "#ffffff00";
 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
 	gallery.innerHTML = begin[0];
