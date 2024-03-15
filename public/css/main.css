@@ -721,10 +721,11 @@ header {
 	background-image: url('../img/inst.svg');
 }*/
 .ads {
-/*	display: grid;*/
+	display: grid;
 	overflow: hidden;
-	border: 1px solid black;
-	margin: 0 auto;
+	place-content: center;
+/*	border: 1px solid black;*/
+/*	margin: 0 auto;*/
 }
 
 @media screen and (max-width: 768px) {
