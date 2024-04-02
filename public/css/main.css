@@ -25,12 +25,19 @@ header {
 /*	border: 1px solid black;*/
 }
 
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+
 .container {
 	width: 100%;
 	max-width: 2800px;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: var(--padding-container);
+/*	padding: var(--padding-container);*/
 }
 
 .hero {

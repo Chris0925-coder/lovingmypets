@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto | LovingMyPets</title>
+	<link rel="stylesheet" type="text/css" href="public/css/contacto.css">
+	<script type="text/javascript" src="public/js/contacto.js" defer></script>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+	<header class="hero">
+		<nav class="nav container">
+			<div class="nav__logo">
+				<img src="favicons/logo.png" alt="logo">
+				<!-- <h2 class="nav__title">LovingMyPets</h2> -->
+			</div>
+			<div class="nav__collapse">
+				<button class="nav__menu"><img src="public/img/menu.svg" class="nav__img" alt="icon-menu"></button>
+			<!-- </div> -->
+
+				<ul class="nav__link nav__link--menu">
+					<li class="nav__items">
+						<a href="index.html" class="nav__links">Inicio</a>
+					</li>
+					<li class="nav__items">
+						<a href="acercade.html" class="nav__links">Acerca de</a>
+					</li>
+					<li class="nav__items active">
+						<a href="/" class="nav__links">Contacto</a>
+					</li>
+					<!-- <li class="nav__items">
+						<a href="#" class="nav__links">Blog</a>
+					</li> -->
+					<button class="nav__close"><img src="public/img/close.svg" alt="close-btn"></button>
+				</ul>
+			</div>
+			
+		</nav>
+
+		<section class="hero__container container">
+			<h1 class="hero__title">Espacio de  mis mascotas</h1>
+			<p class="hero__paragraph">Lo mejor de nuestras mascotas. Siguenos en nuestras redes sociales y conoce mas sobre estas.</p>
+			<!-- <a href="https://www.instagram.com/loving.my_pets/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="cta">Instagram</a> -->
+		</section>
+	</header>
+	<main>
+		<section>
+			<div class="container ms-auto">
+        	<div id="contacto-body">
+        		<div class="col-xs-4 col-md-8" >
+        			<div class="card">
+        				<div class="card-header bg-dark text-white text-center">
+        					<h5 style="color: darkgray;">CONTACTO</h5>
+        				</div>
+        				<div class="card-body">
+        					<form action="https://formsubmit.co/christianguardia@ymail.com"method="post" onsubmit="return submitUserForm()" id="formula">
+        						<div class="form-group">
+        							<input type="email" name="email" class="form-control" placeholder="Email">
+        						</div>
+        					
+    						    <br>
+        					
+        						<div class="form-group">
+        							<textarea class="form-control" name="control" placeholder="Comentarios" cols="30" rows="10" required></textarea>
+        						</div>
+    							<br>
+        						<div class="form-group">
+        							<button title="Enviar" type="submit" class="btn btn-primary btn-block" id="demo-form">
+        								Enviar
+        							</button>
+        						</div>
+                      <input type="hidden" name="_next" value="https://chris0925-coder.github.io/lovingmypets/">
+                      <input type="hidden" name="_captcha" value="false">
+        		</form>
+                  <br>
+                  <!-- <form action="https://www.google.com/recaptcha/api/siteverify" method="post"> -->
+                      <!-- <div class="form-group"> -->
+                          <!-- <div class="g-recaptcha form-control" data-sitekey="6Le1UBwpAAAAAHzagcQvjzbPGK2g7TvoJiLyNSO5" data-callback="verifyCaptcha">    -->
+                          <!-- </div> -->
+                          <!-- <div id="g-recaptcha-error"></div> -->
+                      <!-- </div> -->
+                  <!-- </form> -->
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="foot">
+			<article class="foot__socialicon">
+				<!-- <span> -->
+					<a href="https://www.instagram.com/loving.my_pets/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="bi bi-instagram"></i></a>
+				<!-- </span> -->
+				<!-- <span> -->
+					<i class="bi bi-twitter-x"></i>
+				<!-- </span> -->
+				<!-- <span> -->
+					<a href="https://www.tiktok.com/@lovemypets30?is_from_webapp=1&sender_device=pc" target="_blank"><i class="bi bi-tiktok"></i></a>
+				<!-- </span> -->
+			</article>
+		</div>
+		<div class="copyright">
+            <!-- <span><a href="cookies.html">Política de Cookies</a></span> -->
+            <span>copyright &copy; <span class="date"></span></span>
+        </div>
+	</footer>
+
+</body>
+</html>
