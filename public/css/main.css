@@ -629,7 +629,7 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 }*/
 
-.comment__button {
+/*.comment__button {
 	color: #c3c3c3;
 	border: none;
 	width: fit-content;
@@ -643,17 +643,15 @@ h1,h2,h3,h4,h5,h6 {
 #mail, 
 #comments {
 	border-color: #c4c4c4;
-/*	border: #2c2c2c;*/
 }
 
 #mail::placeholder, 
 #comments::placeholder {
-/*	padding: 0.1em;*/
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	place-content: bottom;
-}
+}*/
 
 /*FOOTER*/
 .foot {

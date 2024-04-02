@@ -252,6 +252,11 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 1em;
 }
 
+.card-header h5 {
+	background-color: #3030308c;
+	margin-top: .3em;
+}
+
 .form-group input,.form-group textarea {
 /*	display: flex;*/
 	position: relative;
