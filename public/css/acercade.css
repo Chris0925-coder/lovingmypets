@@ -209,6 +209,7 @@ h1,h2,h3,h4,h5,h6 {
 	background-image: url('../img/malososA.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	z-index: -1;
 	padding: .6em;
 	border-top: 2px solid black;
