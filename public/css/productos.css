@@ -291,27 +291,35 @@ h1,h2,h3,h4,h5,h6 {
 
 .gallery-wrapper--buildpage {
 	display: flex;
-/*	position: absolute;*/
+	position: relative;
 	flex-direction: row;
 	width: 100%;
-	height: 500px;
+	min-height: 400px;
+
 	margin: 0 auto;
 /*	border: 1px solid black;*/
 }
 
 .gal-built {
 	display: flex;
-	position: absolute;
+	position: relative;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 1em;
 	place-items: center;
 	width: 100%;
-	height: auto;
+	min-height:auto;
 /*	border: 1px solid green;*/
+	object-position: center;
+}
+
+.gal-built a:hover {
+ filter: drop-shadow(7px 10px 7px black);
+ transition: all .5s ease-in-out;
 }
 
 .gal-built img {
+/*	position: absolute;*/
 	width: 200px;
 	height: 200px;
 	background-size: contain;
@@ -325,9 +333,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .title__buildpage {
-	position: absolute;
+	position: relative;
 	
-	bottom: 10%;
+/*	bottom: 20%;*/
 	border-bottom: 2px solid #808080;
 /*	border: 1px solid green;*/
 	width: auto;
@@ -336,7 +344,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .carousel-control-prev {
-	display: block;
+	display: none;
 	position: absolute;
 	top: 50%;
 	left: 10%;
@@ -344,17 +352,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .carousel-control-next {
-	display: block;
+	display: none;
 	position: absolute;
 	top: 50%;
 	right: 10%;
 	cursor: pointer;
 }
 
-.b {
-	display: none;
+/*.b {
+	display: flex;
 }
-
+*/
 /*CODE DESARROLLOHELPDESK.SITE*/
 
 @media screen and (max-width: 768px) {
@@ -442,4 +450,18 @@ h1,h2,h3,h4,h5,h6 {
 		right: 0;
 		margin: 2em;
 	}
+
+	.gal-built {
+		position: absolute;
+	}
+
+
+	.b {
+		display: none;
+	}
+
+	.carousel-control-prev, .carousel-control-next {
+		display: block;
+	}
+
 }
