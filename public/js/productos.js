@@ -87,10 +87,12 @@ sildeDisplay(slideB,index);
 const prev = document.getElementsByClassName('carousel-control-prev');
 const next = document.getElementsByClassName('carousel-control-next');
 // console.log(next);
-let slideIndex = 0;
+let slideIndex = 1;
+let slideIndexB = 1;
     // let slideIndexB = 2;
 
 function previus(a,b) {
+     // slideIndex = 0;
     prev[a].addEventListener('click', () => {
         for (i = 0; i < b.length; i++) {
             b[i].style.display = "none";
@@ -104,19 +106,29 @@ function previus(a,b) {
     });
 }
 
+// let slideIndex 
+
 function other(a,b) {
+    // slideIndex = 1;
     next[a].addEventListener('click', () => {
     
-        for (i = 0; i < b.length; i++) {
-            b[i].style.display = "none";
+        for (j = 0; j < b.length; j++) {
+            b[j].style.display = "none";
             // sliderButtoms[0].children[i].style.opacity = "0.3";
         }
-        slideIndex++;
-        if(slideIndex > b.length) {
-            slideIndex = 1;
+        
+        if(a == 1) {
+            slideIndexB++;
+            if(slideIndexB > b.length) {slideIndexB = 1}
+            b[slideIndexB-1].style.display = "flex";
+        } else {
+            slideIndex++;
+            if(slideIndex > b.length) {slideIndex = 1}
+            b[slideIndex-1].style.display = "flex";
         }
+    
         // sliderButtoms[0].children[slideIndex-1].style.opacity = "1";
-        b[slideIndex-1].style.display = "flex";
+        
         // clearInterval(timeA);
     });
 }
