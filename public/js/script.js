@@ -49,45 +49,52 @@ let title = [
 let galleryItems = [{
 	foto: `<img src="public/img/malosoC.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">Bonnie & Clyde</h3>
-				<span class="item__role">Se cuenta que hay actualmente entre 10.000 y 15.000 ejemplares en libertad.
-				</span>
+				<h3 class="item__name">Perico Barbinaranja</h3>
+				<h4 class="item__role">
+					<span>Brotogeris jugularis</span>
+					<span>Orange-chinned Parakeet</span>
+				</h4>
 			</figcaption>`,
 	fotoA: `<img src="public/img/malososB.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">Bonnie & Clyde</h3>
-				<span class="item__role">Afortunadamente, se reporta que el perico verde es una especie clasificada como de preocupación menor.
-				</span>
+				<h3 class="item__name">Perico Barbinaranja</h3>
+				<h4 class="item__role">
+					<span>Brotogeris jugularis</span>
+					<span>Orange-chinned Parakeet</span>
+				</h4>
+
 			</figcaption>`,
 	fotoB: `<img src="public/img/malosoE.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">Bonnie & Clyde</h3>
-				<span class="item__role">Sin embargo, la tala de árboles, la minería ilegal, la construcción de poblados, los incendios forestales y la captura para el tráfico ilegal como mascotas disminuyó su población en estado salvaje, haciendo que en un posible futuro, la UICN lo clasifique como especie en peligro de extinción.
-				</span>
+				<h3 class="item__name">Perico Barbinaranja</h3>
+				<h4 class="item__role">
+					<span>Brotogeris jugularis</span>
+					<span>Orange-chinned Parakeet</span>
+				</h4>
 			</figcaption>`,
 	fotoC: `<img src="public/img/malososD.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">Bonnie & Clyde</h3>
-				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
+				<h3 class="item__name">Perico Barbinaranja</h3>
+				<h4 class="item__role">
+					<span>Brotogeris jugularis</span>
+					<span>Orange-chinned Parakeet</span>
+				</h4>
 			</figcaption>`,
 	fotoD: `<img src="public/img/sweethome.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">Bonnie & Clyde</h3>
-				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
+				<h3 class="item__name">Perico Barbinaranja</h3>
+				<h4 class="item__role">
+					<span>Brotogeris jugularis</span>
+					<span>Orange-chinned Parakeet</span>
+				</h4>
 			</figcaption>`,
 	fotoE: `<img src="public/img/bebe.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">Bonnie & Clyde</h3>
-				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
+				<h3 class="item__name">Perico Barbinaranja</h3>
+				<h4 class="item__role">
+					<span>Brotogeris jugularis</span>
+					<span>Orange-chinned Parakeet</span>
+				</h4>
 			</figcaption>`		
 	},
 	{ 	
@@ -166,56 +173,50 @@ let galleryItems = [{
 	foto: `<img src="public/img/paka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
-				<span class="item__role">
-					Paka Alejandra
-					Llegó a nuestra familia el 2 de abril de 2020.
-					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
-				</span>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
 			</figcaption>`,
 	fotoA: `<img src="public/img/pakaB.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
-				<span class="item__role">
-					Paka Alejandra
-					Llegó a nuestra familia el 2 de abril de 2020.
-					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
-				</span>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
 			</figcaption>`,
 	fotoB: `<img src="public/img/pakaC.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
-				<span class="item__role">
-					Paka Alejandra
-					Llegó a nuestra familia el 2 de abril de 2020.
-					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
-				</span>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
 			</figcaption>`,
 	fotoC: `<img src="public/img/pakaD.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
-				<span class="item__role">
-					Paka Alejandra
-					Llegó a nuestra familia el 2 de abril de 2020.
-					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
-				</span>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
 			</figcaption>`,
 	fotoD: `<img src="public/img/pakaE.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
-				<span class="item__role">
-					Paka Alejandra
-					Llegó a nuestra familia el 2 de abril de 2020.
-					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
-				</span>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
 			</figcaption>`,
 	fotoE: `<img src="public/img/pakaF.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
-				<span class="item__role">
-					Paka Alejandra
-					Llegó a nuestra familia el 2 de abril de 2020.
-					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
-				</span>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
 			</figcaption>`
 }];
 
@@ -242,7 +243,8 @@ let galleryCont = {
 	paka:
 	`
 	<span class="content__primary" id="titulo__A">Los amazonas o loros amazónicos</span>
-		<blockquote class="content__secondary"><p>Son un grupo de psitácidas originarias de las selvas de centroamérica y sudamérica. Además del brillante plumaje y su potente y variada vocalización, se caracterizan por su gran inteligencia. En la naturaleza son animales muy sociales, que viven en grandes bandadas. Como animal de compañía suelen tener un buen temperamento, llegando a ser muy divertidos.</p></blockquote>
+		<blockquote class="content__secondary"><p>Son un grupo de psitácidas originarias de las selvas de centroamérica y sudamérica. Además del brillante plumaje y su potente y variada vocalización, se caracterizan por su gran inteligencia. En la naturaleza son animales muy sociales, que viven en grandes bandadas. Como animal de compañía suelen tener un buen temperamento, llegando a ser muy divertidos.</p>
+			<P>Llegó a nuestra familia el 2 de abril de 2020. No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.</p></blockquote>
 
 	`
 };
