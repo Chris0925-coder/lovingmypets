@@ -241,7 +241,7 @@ let sliderBoton = [
 	`<button class="slideC"></button>`,
 	`<button class="slideD"></button>`,
 	`<button class="slideE"></button>`
-	];
+];
 
 // let bb = sliderBoton.slice(',');
 // [0]
