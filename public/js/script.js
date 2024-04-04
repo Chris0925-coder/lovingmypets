@@ -1,15 +1,36 @@
 const gallery = document.querySelector('.gallery__item');
-const blacky = document.getElementById("blacky");
-const lady = document.getElementById("lady");
-const paka = document.getElementById("paka");
-const inicio = document.getElementById("inicio");
+const galleryB = document.querySelector('.gallery__itemB');
+const galleryC = document.querySelector('.gallery__itemC');
+const galleryD = document.querySelector('.gallery__itemD');
+// const blacky = document.getElementById("blacky");
+// const lady = document.getElementById("lady");
+// const paka = document.getElementById("paka");
+// const inicio = document.getElementById("inicio");
 const galleryContent = document.querySelector(".gallery__content--titulo");
+const galleryContentB = document.querySelector(".gallery__content--tituloB");
+const galleryContentC = document.querySelector(".gallery__content--tituloC");
+const galleryContentD = document.querySelector(".gallery__content--tituloD");
+const firstTitle = document.querySelector(".primary__gallery--title");
+const firstTitleB = document.querySelector(".primary__gallery--titleB");
+const firstTitleC = document.querySelector(".primary__gallery--titleC");
+const firstTitleD = document.querySelector(".primary__gallery--titleD");
+const rowGal = document.querySelector(".primary__gallery--content");
+const rowGalB = document.querySelector(".primary__gallery--contentB");
+const rowGalC = document.querySelector(".primary__gallery--contentC");
+const rowGalD = document.querySelector(".primary__gallery--contentD");
+// const galleryPrimaryB = document.querySelector(".primary__galleryB");
+// const ss = rowGalB.querySelector(".item:first-child");
 const navBoton = document.querySelector(".nav__menu");
 const navLink = document.querySelector(".nav__link");
 const navBotonClose = document.querySelector('.nav__close');
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-
+const prevB = document.querySelector(".prevB");
+const nextB = document.querySelector(".nextB");
+const prevC = document.querySelector(".prevC");
+const nextC = document.querySelector(".nextC");
+const prevD = document.querySelector(".prevD");
+const nextD = document.querySelector(".nextD");
 navBotonClose.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
 });
@@ -18,6 +39,12 @@ navBoton.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
 });
 
+let title = [
+	"PAKA ALEJANDRA",
+	"LOS MALOSOS",
+	"LADY MARGOT",
+	"BLACKY MATEO"
+];
 
 let galleryItems = [{
 	foto: `<img src="public/img/malosoC.jpg" alt="periquitos verdes" class="item__image">
@@ -138,46 +165,56 @@ let galleryItems = [{
 	{ 	
 	foto: `<img src="public/img/paka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA</h3>
+				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<span class="item__role">
-					 Aunque su lenguaje corporal es el mismo, las amazonas panameñas son mucho menos propensas a volverse físicamente agresivas. Muchos otros loros amazónicos se venden erróneamente como amazonas de Panamá, debido a su escasez y popularidad.
+					Paka Alejandra
+					Llegó a nuestra familia el 2 de abril de 2020.
+					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
 				</span>
 			</figcaption>`,
 	fotoA: `<img src="public/img/pakaB.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA</h3>
-				<span class="item__role">Las amazonas panameñas son extremadamente juguetonas, pueden ser excelentes conversadoras y tienden a ser ruidosas a veces.
+				<h3 class="item__name">Loro Coroniamarillo</h3>
+				<span class="item__role">
+					Paka Alejandra
+					Llegó a nuestra familia el 2 de abril de 2020.
+					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
 				</span>
 			</figcaption>`,
 	fotoB: `<img src="public/img/pakaC.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA</h3>
+				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<span class="item__role">
-					Los adultos miden aproximadamente 35 centímetros (13,8 pulgadas).
+					Paka Alejandra
+					Llegó a nuestra familia el 2 de abril de 2020.
+					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
 				</span>
 			</figcaption>`,
 	fotoC: `<img src="public/img/pakaD.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA</h3>
+				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
+					Paka Alejandra
+					Llegó a nuestra familia el 2 de abril de 2020.
+					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
 				</span>
 			</figcaption>`,
 	fotoD: `<img src="public/img/pakaE.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA</h3>
+				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
+					Paka Alejandra
+					Llegó a nuestra familia el 2 de abril de 2020.
+					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
 				</span>
 			</figcaption>`,
 	fotoE: `<img src="public/img/pakaF.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LOREM</h3>
+				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
+					Paka Alejandra
+					Llegó a nuestra familia el 2 de abril de 2020.
+					No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.
 				</span>
 			</figcaption>`
 }];
@@ -204,17 +241,17 @@ let galleryCont = {
 	`,
 	paka:
 	`
-	<span class="content__primary" id="titulo__A">The Panama amazon</span>
-		<blockquote class="content__secondary"><p>La amazona de Panamá, también conocida como amazona de cabeza amarilla de Panamá, (Amazona ochrocephala panamensis) es una subespecie de la amazona de corona amarilla, y es endémica de Panamá (incluidas las Islas de las Perlas y Coiba) y el noroeste de Colombia.  En avicultura, a veces se enumera como una especie separada (Amazona panamensis), y esto es potencialmente correcto; al menos como especie filogenética.</p><cite><a href="https://en.wikipedia.org/wiki/Panama_amazon" target="_blank">Wikipedia</a></cite></blockquote>
+	<span class="content__primary" id="titulo__A">Los amazonas o loros amazónicos</span>
+		<blockquote class="content__secondary"><p>Son un grupo de psitácidas originarias de las selvas de centroamérica y sudamérica. Además del brillante plumaje y su potente y variada vocalización, se caracterizan por su gran inteligencia. En la naturaleza son animales muy sociales, que viven en grandes bandadas. Como animal de compañía suelen tener un buen temperamento, llegando a ser muy divertidos.</p></blockquote>
 
 	`
 };
 
-
+// <span class="content__primary" id="titulo__A">The Panama amazon</span>
 
 
 // console.log(galLeng);
-let items = Object.values (galleryItems[0]);
+// let items = Object.values (galleryItems[0]);
 // console.log(items);
 
 
@@ -226,14 +263,19 @@ const begin = [
 	galleryItems[0].fotoA,
 	galleryItems[1].fotoA,
 	galleryItems[2].fotoA,
-	galleryItems[3].fotoA
+	galleryItems[3].fotoE
 ];
+
+// console.log(begin);
 // gallery.appendChild(galleryItems.foto);
 // boton[0].children[1].style.opacity = 0.2;
 // let i = gallery.innerHTML = begin[0];
 // galleryItems.style.zIndex = -1;
 
 let boton = document.querySelector('.button__sliders');
+let botonB = document.querySelector('.button__slidersB');
+let botonC = document.querySelector('.button__slidersC');
+let botonD = document.querySelector('.button__slidersD');
 let sliderBoton = [
 	`<button class="slide"></button>`,
 	`<button class="slideA"></button>`,
@@ -249,124 +291,127 @@ let sliderBoton = [
 // let x = v.append(sliderBoton[1]);
 // innerHTML
 boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
+botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
+botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
+botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
 
 // boton.append(b);
 // console.log(bb);
 // let a = `<button class="slide"></button>`;
 // document.boton.append(`<button class="slide"></button>`);
 // console.log(v.innerText);
-boton.children[1].style.opacity = "0.2";
-boton.children[3].style.display = "none";
-boton.children[4].style.display = "none";
-boton.children[5].style.display = "none";
+// boton.children[1].style.opacity = "0.2";
+// boton.children[3].style.display = "none";
+// boton.children[4].style.display = "none";
+// boton.children[5].style.display = "none";
 
-boton.children[0].addEventListener('click', () => {
+// boton.children[0].addEventListener('click', () => {
 
-	boton.children[0].style.opacity = 0.2;
-	boton.children[1].style.opacity = 1;
-	boton.children[2].style.opacity = 1;	
-	gallery.innerHTML = galleryItems[0].foto;
+// 	boton.children[0].style.opacity = 0.2;
+// 	boton.children[1].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;	
+// 	gallery.innerHTML = galleryItems[3].foto;
 
-});
+// });
 
-boton.children[1].addEventListener('click', () => {
+// boton.children[1].addEventListener('click', () => {
 
-	boton.children[1].style.opacity = 0.2;
-	boton.children[0].style.opacity = 1;
-	boton.children[2].style.opacity = 1;
-	gallery.innerHTML = galleryItems[0].fotoA;
+// 	boton.children[1].style.opacity = 0.2;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	gallery.innerHTML = galleryItems[3].fotoE;
 
-});
+// });
 
-boton.children[2].addEventListener('click', () => {
+// boton.children[2].addEventListener('click', () => {
 
-	boton.children[2].style.opacity = 0.2;
-	boton.children[1].style.opacity = 1;
-	boton.children[0].style.opacity = 1;
-	gallery.innerHTML = galleryItems[0].fotoB;
+// 	boton.children[2].style.opacity = 0.2;
+// 	boton.children[1].style.opacity = 1;
+// 	boton.children[0].style.opacity = 1;
+// 	gallery.innerHTML = galleryItems[3].fotoA;
 
-});
+// });
 
 
-function QQ(a, c) {
-	a.addEventListener('click', () => {
-		if(true) {
-			boton.children[0].addEventListener('click', () => {
+function QQ(a, c, d) {
+// 	a.addEventListener('click', () => {
+		// if(true) {
+			a.children[0].addEventListener('click', () => {
 
-				boton.children[0].style.opacity = 0.2;
-				boton.children[1].style.opacity = 1;
-				boton.children[2].style.opacity = 1;
-				boton.children[3].style.opacity = 1;
-				boton.children[4].style.opacity = 1;
-				boton.children[5].style.opacity = 1;
+				a.children[0].style.opacity = 0.2;
+				a.children[1].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[5].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
-				gallery.innerHTML = galleryItems[c].foto;
+				d.innerHTML = galleryItems[c].foto;
 
 			});
 
-			boton.children[1].addEventListener('click', () => {
+			a.children[1].addEventListener('click', () => {
 
-				boton.children[1].style.opacity = 0.2;
-				boton.children[0].style.opacity = 1;
-				boton.children[2].style.opacity = 1;
-				boton.children[3].style.opacity = 1;
-				boton.children[4].style.opacity = 1;
-				boton.children[5].style.opacity = 1;
+				a.children[1].style.opacity = 0.2;
+				a.children[0].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[5].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
-				gallery.innerHTML = galleryItems[c].fotoA;
+				d.innerHTML = galleryItems[c].fotoA;
 
 			});
 
-			boton.children[2].addEventListener('click', () => {
+			a.children[2].addEventListener('click', () => {
 
-				boton.children[2].style.opacity = 0.2;
-				boton.children[1].style.opacity = 1;
-				boton.children[0].style.opacity = 1;
-				boton.children[3].style.opacity = 1;
-				boton.children[4].style.opacity = 1;
-				boton.children[5].style.opacity = 1;
+				a.children[2].style.opacity = 0.2;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[5].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
-				gallery.innerHTML = galleryItems[c].fotoB;
+				d.innerHTML = galleryItems[c].fotoB;
 
 			});
 
 
-			boton.children[3].addEventListener('click', () => {
+			a.children[3].addEventListener('click', () => {
 
-				boton.children[3].style.opacity = 0.2;
-				boton.children[1].style.opacity = 1;
-				boton.children[0].style.opacity = 1;
-				boton.children[4].style.opacity = 1;
-				boton.children[5].style.opacity = 1;
-				// boton.children[6].style.opacity = 1;
-				boton.children[2].style.opacity = 1;
-				gallery.innerHTML = galleryItems[c].fotoC;
-
-			});
-
-			boton.children[4].addEventListener('click', () => {
-
-				boton.children[4].style.opacity = 0.2;
-				boton.children[1].style.opacity = 1;
-				boton.children[0].style.opacity = 1;
-				boton.children[3].style.opacity = 1;
-				boton.children[2].style.opacity = 1;
-				boton.children[5].style.opacity = 1;
-				// boton.children[6].style.opacity = 1;
-				gallery.innerHTML = galleryItems[c].fotoD;
+				a.children[3].style.opacity = 0.2;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[5].style.opacity = 1;
+				// a.children[6].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoC;
 
 			});
 
-			boton.children[5].addEventListener('click', () => {
+			a.children[4].addEventListener('click', () => {
 
-				boton.children[5].style.opacity = 0.2;
-				boton.children[1].style.opacity = 1;
-				boton.children[0].style.opacity = 1;
-				boton.children[3].style.opacity = 1;
-				boton.children[4].style.opacity = 1;
-				// boton.children[6].style.opacity = 1;
-				boton.children[2].style.opacity = 1;
-				gallery.innerHTML = galleryItems[c].fotoE;
+				a.children[4].style.opacity = 0.2;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				a.children[5].style.opacity = 1;
+				// a.children[6].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoD;
+
+			});
+
+			a.children[5].addEventListener('click', () => {
+
+				a.children[5].style.opacity = 0.2;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				// a.children[6].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoE;
 
 			});
 
@@ -382,122 +427,158 @@ function QQ(a, c) {
 			// 	gallery.innerHTML = galleryItems[c].fotoB;
 
 			// });
-		}
-	})
+		// }
+	// })
 };
 
-QQ(inicio, 0);
-QQ(blacky, 1);
-QQ(lady, 2);
-QQ(paka, 3);
+QQ(boton, 3, gallery);
+QQ(botonB, 2, galleryB);
+QQ(botonC, 0, galleryC);
+QQ(botonD, 1, galleryD);
+// QQ(blacky, 1);
+// QQ(lady, 2);
+// QQ(paka, 3);
 
 // const wrap = document.querySelector('.primary__gallery--wrapper');
 
-function arrows(a) {
+function arrows(a, b, c, d, e, f) {
 	let slideIndex = 2;
 	// let slideIndexB = 2;
-	prev.addEventListener('click', () => {
-			for (i = 0; i < items.length; i++) {
-				gallery.innerHTML = items[i];
-				boton.children[i].style.opacity = "1";
+	d.addEventListener('click', () => {
+			for (i = 0; i < f.length; i++) {
+				b.innerHTML = f[i];
+				c.children[i].style.opacity = "1";
 			}
 			slideIndex--;
 			if (slideIndex <= 0) {slideIndex = a};
-			boton.children[slideIndex-1].style.opacity = "0.2";
-			gallery.innerHTML = items[slideIndex-1];
+			c.children[slideIndex-1].style.opacity = "0.2";
+			b.innerHTML = f[slideIndex-1];
 		});
 
-	next.addEventListener('click', () => {
+	e.addEventListener('click', () => {
 		slideIndex++;
-		for (i = 0; i < items.length; i++) {
-			gallery.innerHTML = items[i];
-			boton.children[i].style.opacity = "1";
+		for (i = 0; i < f.length; i++) {
+			b.innerHTML = f[i];
+			c.children[i].style.opacity = "1";
 		}
-		if(slideIndex > items.length) {
+		if(slideIndex > f.length) {
 		    slideIndex = 1;
 		}
-		boton.children[slideIndex-1].style.opacity = "0.2";
-		gallery.innerHTML = items[slideIndex-1];
+		c.children[slideIndex-1].style.opacity = "0.2";
+		b.innerHTML = f[slideIndex-1];
 	});
 };
 
 
-inicio.addEventListener('click', () => {
-	boton.children[3].style.display = "block";
-	boton.children[4].style.display = "block";
-	boton.children[5].style.display = "block";
+// inicio.addEventListener('click', () => {
+// 	boton.children[3].style.display = "block";
+// 	boton.children[4].style.display = "block";
+// 	boton.children[5].style.display = "block";
+// 	items = Object.values (galleryItems[0]);
+// 	prev.style.display = "block";
+// 	next.style.display = "block";
+// 	arrows(6);
+// 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
+// 	gallery.innerHTML = begin[0];
+// 	firstTitle.innerHTML = title[1];
+// 	rowGal.style.flexDirection = "row-reverse";
+
+// 	galleryContent.innerHTML = galleryCont.malosos;
+// 	boton.children[1].style.opacity = 0.2;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	boton.children[3].style.opacity = 1;
+// 	boton.children[4].style.opacity = 1;
+// });
+
+
+// blacky.addEventListener('click', () => {
+// 	boton.children[3].style.display = "block";
+// 	boton.children[4].style.display = "none";
+// 	boton.children[5].style.display = "none";
+// 	prev.style.display = "block";
+// 	next.style.display = "block";
+// 	items = Object.values (galleryItems[1]);
+// 	arrows(4);
+// 	gallery.style.background = 'linear-gradient(336deg, #654321 0%, rgba(0, 0, 0, 0.0)100%)';
+// 	gallery.innerHTML = begin[1];
+// 	rowGal.style.flexDirection = "row-reverse";
+// 	firstTitle.innerHTML = title[3];
+
+// 	galleryContent.innerHTML = galleryCont.blacky;
+// 	boton.children[1].style.opacity = 0.2;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	boton.children[3].style.opacity = 1;
+// });
+function ladyA() {
+	botonB.children[3].style.display = "block";
+	botonB.children[4].style.display = "block";
+	botonB.children[5].style.display = "block";
+	// slideIndex = 0;
+ 	// slideIndexB = 0;
+	prevB.style.display = "block";
+	nextB.style.display = "block";
+	items = Object.values (galleryItems[2]);
+	// arrows(6);
+	arrows(6, galleryB, botonB,prevB,nextB,items);
+	// gallery.style.backgroundColor = "#404040";
+	galleryB.style.background = 'linear-gradient(336deg, #404040 0%, rgba(0, 0, 0, 0.0)100%)';
+	galleryB.innerHTML = begin[2];
+	firstTitleB.innerHTML = title[2];
+	rowGalB.style.flexDirection = "row-reverse";
+
+	galleryContentB.innerHTML = galleryCont.lady;
+	botonB.children[1].style.opacity = 0.2;
+	botonB.children[0].style.opacity = 1;
+	botonB.children[2].style.opacity = 1;
+	botonB.children[3].style.opacity = 1;
+	botonB.children[4].style.opacity = 1;
+	botonB.children[5].style.opacity = 1;
+};
+function malososA() {
+	botonC.children[3].style.display = "block";
+	botonC.children[4].style.display = "block";
+	botonC.children[5].style.display = "block";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	items = Object.values (galleryItems[0]);
-	prev.style.display = "block";
-	next.style.display = "block";
-	arrows(6);
+	prevC.style.display = "block";
+	nextC.style.display = "block";
+	// arrows(6);
+	arrows(6, galleryC, botonC,prevC,nextC,items);
+
 	// gallery.style.backgroundColor = "#ffffff00";
-	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
-	gallery.innerHTML = begin[0];
-	galleryContent.innerHTML = galleryCont.malosos;
-	boton.children[1].style.opacity = 0.2;
-	boton.children[0].style.opacity = 1;
-	boton.children[2].style.opacity = 1;
-	boton.children[3].style.opacity = 1;
-	boton.children[4].style.opacity = 1;
+	galleryC.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
+	galleryC.innerHTML = begin[0];
+	firstTitleC.innerHTML = title[1];
+	rowGalC.style.flexDirection = "row";
+
+	galleryContentC.innerHTML = galleryCont.malosos;
+	botonC.children[1].style.opacity = 0.2;
+	botonC.children[0].style.opacity = 1;
+	botonC.children[2].style.opacity = 1;
+	botonC.children[3].style.opacity = 1;
+	botonC.children[4].style.opacity = 1;
 	// boton.children[5].style.opacity = 1;
-
-});
-
-
-blacky.addEventListener('click', () => {
-	boton.children[3].style.display = "block";
-	boton.children[4].style.display = "none";
-	boton.children[5].style.display = "none";
-	prev.style.display = "block";
-	next.style.display = "block";
-	items = Object.values (galleryItems[1]);
-	arrows(4);
-	// gallery.style.backgroundColor = "#654321";
-	gallery.style.background = 'linear-gradient(336deg, #654321 0%, rgba(0, 0, 0, 0.0)100%)';
-	gallery.innerHTML = begin[1];
-	galleryContent.innerHTML = galleryCont.blacky;
-	boton.children[1].style.opacity = 0.2;
-	boton.children[0].style.opacity = 1;
-	boton.children[2].style.opacity = 1;
-	boton.children[3].style.opacity = 1;
-});
-
-lady.addEventListener('click', () => {
-	boton.children[3].style.display = "block";
-	boton.children[4].style.display = "block";
-	boton.children[5].style.display = "block";
-	// slideIndex = 0;
- 	// slideIndexB = 0;
-	prev.style.display = "block";
-	next.style.display = "block";
-	items = Object.values (galleryItems[2]);
-	arrows(6);
-	// gallery.style.backgroundColor = "#404040";
-	gallery.style.background = 'linear-gradient(336deg, #404040 0%, rgba(0, 0, 0, 0.0)100%)';
-	gallery.innerHTML = begin[2];
-	galleryContent.innerHTML = galleryCont.lady;
-	boton.children[1].style.opacity = 0.2;
-	boton.children[0].style.opacity = 1;
-	boton.children[2].style.opacity = 1;
-	boton.children[3].style.opacity = 1;
-	boton.children[4].style.opacity = 1;
-	boton.children[5].style.opacity = 1;
-
-});
-
-paka.addEventListener('click', () => {
+};
+function pakaA() {
 	boton.children[3].style.display = "block";
 	boton.children[4].style.display = "block";
 	boton.children[5].style.display = "block";
 	prev.style.display = "block";
 	next.style.display = "block";
 	items = Object.values (galleryItems[3]);
-	arrows(6);
+	// arrows(6);
+	arrows(6, gallery, boton, prev, next,items);
+
 	// gallery.style.backgroundColor = "#ffffff00";
 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
 	gallery.innerHTML = begin[3];
+	rowGal.style.flexDirection = "row";
+
+	firstTitle.innerHTML = title[0];
+
 	galleryContent.innerHTML = galleryCont.paka;
 	boton.children[1].style.opacity = 0.2;
 	boton.children[0].style.opacity = 1;
@@ -505,15 +586,85 @@ paka.addEventListener('click', () => {
 	boton.children[3].style.opacity = 1;
 	boton.children[4].style.opacity = 1;
 	boton.children[5].style.opacity = 1;
+};
+function blackyA() {
+	botonD.children[3].style.display = "block";
+	botonD.children[4].style.display = "none";
+	botonD.children[5].style.display = "none";
+	prevD.style.display = "block";
+	nextD.style.display = "block";
+	items = Object.values (galleryItems[1]);
+	// arrows(4);
+	arrows(4, galleryD, botonD,prevD,nextD,items);
 
-});
+	// gallery.style.backgroundColor = "#654321";
+	galleryD.style.background = 'linear-gradient(336deg, #654321 0%, rgba(0, 0, 0, 0.0)100%)';
+	galleryD.innerHTML = begin[1];
+	rowGalD.style.flexDirection = "row-reverse";
+	firstTitleD.innerHTML = title[3];
+
+	galleryContentD.innerHTML = galleryCont.blacky;
+	botonD.children[1].style.opacity = 0.2;
+	botonD.children[0].style.opacity = 1;
+	botonD.children[2].style.opacity = 1;
+	botonD.children[3].style.opacity = 1;
+};
+blackyA();
+pakaA();
+ladyA();
+malososA();
+// lady.addEventListener('click', () => {
+// 	boton.children[3].style.display = "block";
+// 	boton.children[4].style.display = "block";
+// 	boton.children[5].style.display = "block";
+// 	prev.style.display = "block";
+// 	next.style.display = "block";
+// 	items = Object.values (galleryItems[2]);
+// 	arrows(6);
+// 	gallery.style.background = 'linear-gradient(336deg, #404040 0%, rgba(0, 0, 0, 0.0)100%)';
+// 	gallery.innerHTML = begin[2];
+// 	firstTitle.innerHTML = title[2];
+// 	rowGal.style.flexDirection = "row";
+
+// 	galleryContent.innerHTML = galleryCont.lady;
+// 	boton.children[1].style.opacity = 0.2;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	boton.children[3].style.opacity = 1;
+// 	boton.children[4].style.opacity = 1;
+// 	boton.children[5].style.opacity = 1;
+// });
+
+// paka.addEventListener('click', () => {
+// 	boton.children[3].style.display = "block";
+// 	boton.children[4].style.display = "block";
+// 	boton.children[5].style.display = "block";
+// 	prev.style.display = "block";
+// 	next.style.display = "block";
+// 	items = Object.values (galleryItems[3]);
+// 	arrows(6);
+// 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
+// 	gallery.innerHTML = begin[3];
+// 	rowGal.style.flexDirection = "row";
+
+// 	firstTitle.innerHTML = title[0];
+
+// 	galleryContent.innerHTML = galleryCont.paka;
+// 	boton.children[1].style.opacity = 0.2;
+// 	boton.children[0].style.opacity = 1;
+// 	boton.children[2].style.opacity = 1;
+// 	boton.children[3].style.opacity = 1;
+// 	boton.children[4].style.opacity = 1;
+// 	boton.children[5].style.opacity = 1;
+// });
 // if (f) {
 // gallery.style.backgroundColor = "none";
 // } else if (k) {
 // 	gallery.innerHTML = begin[2];
 // } else {
-	gallery.innerHTML = begin[0];
-	galleryContent.innerHTML = galleryCont.malosos;
+	// gallery.innerHTML = begin[3];
+	// firstTitle.innerHTML = title[0];
+	// galleryContent.innerHTML = galleryCont.paka;
 // };
 
 let date = document.querySelector('.date');
