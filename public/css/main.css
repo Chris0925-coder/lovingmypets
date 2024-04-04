@@ -439,6 +439,14 @@ h1,h2,h3,h4,h5,h6 {
 	background-color: #1c1c1c8c;
 }
 
+.prev:hover,
+.prevB:hover,
+.prevC:hover,
+.prevD:hover {
+	filter: drop-shadow(4px 6px 5px #ececec8c);
+	cursor: pointer;
+}
+
 .next,
 .nextB,
 .nextC,
@@ -456,9 +464,17 @@ h1,h2,h3,h4,h5,h6 {
 	background-color: #1c1c1c8c;
 }
 
-.prev:hover, .next:hover {
+.next:hover,
+.nextB:hover,
+.nextC:hover,
+.nextD:hover {
 	filter: drop-shadow(4px 6px 5px #ececec8c);
+	cursor: pointer;
 }
+
+/*.prev:hover, .next:hover {
+	filter: drop-shadow(4px 6px 5px #ececec8c);
+}*/
 
 .item__description {
 	align-self: flex-end;
