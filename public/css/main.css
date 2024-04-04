@@ -776,14 +776,30 @@ h1,h2,h3,h4,h5,h6 {
 
 .card-body {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	border: 1px solid black;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
 	padding: 3em;
+	justify-content: center;
 }
-
+.form__main {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		max-width: 600px;
+		margin: 0 auto;
+		height: auto;
+	}
+	.form__main div{
+		display: flex;
+		position: relative;
+		justify-content: center;
+		max-width: 600px;
+		height: auto;
+	}
 @media screen and (max-width: 768px) {
 	.hero {
 		width: 100%;
@@ -893,13 +909,20 @@ h1,h2,h3,h4,h5,h6 {
 	}
 	.card {
 		border: 1px solid black;
-		width: 900px;
+		max-width: 900px;
 		height: auto;
 		margin: 0 auto;
 		padding: .3em;
 	}
 
-	.card-body form span {
+	.card-body .form__main {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		max-width: 600px;
+		height: auto;
+	}
+	.form__main div{
 		display: flex;
 		position: relative;
 		justify-content: center;
