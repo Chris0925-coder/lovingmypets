@@ -20,8 +20,8 @@ body {
 }
 
 header {
-	min-height: 100lvh;
-	min-height: 100dvh;
+	min-height: 70lvh;
+	min-height: 70dvh;
 /*	border: 1px solid black;*/
 }
 
@@ -42,13 +42,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .hero {
 	width: 100%;
-	height: 40dvh;
-	min-height: 300px;
+/*	max-height: 700px;*/
+	min-height: 500px;
 	max-height: 70lvh;
 	position: relative;
 	display: grid;
 	grid-template-rows: 100px 1fr;
 	align-items: center;
+/*	border: 1px solid black;*/
 }
 
 .hero:before {
@@ -60,7 +61,7 @@ h1,h2,h3,h4,h5,h6 {
 	height: 100%;
 	background-image: linear-gradient(180deg, #8F97798c 0%, #ffffff8c 100%), url('../../favicons/banner.jpg');
 	background-size: 100% 100%;
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	object-fit: fill;
 /*	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 77%, 0 80%);*/
@@ -832,14 +833,14 @@ h1,h2,h3,h4,h5,h6 {
 @media screen and (max-width: 768px) {
 	.hero {
 		width: 100%;
-		height: 100lvh;
-		max-height: 100lvh;
+/*		min-height: 50lvh;*/
+		max-height: 80lvh;
 	}
-	.hero:before {
+	/*.hero:before {
 		background-size: 100% 100%;
 		background-position: center;
 		object-fit: fill;
-	}
+	}*/
 
 	.gallery__contain--img {
 		width: 100%;
