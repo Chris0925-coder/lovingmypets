@@ -217,6 +217,30 @@ let galleryItems = [{
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
 				</h4>
+			</figcaption>`,
+	fotoF: `<img src="public/img/pakaenlarama.jpg" alt="Loro" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">Loro Coroniamarillo</h3>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
+			</figcaption>`,
+	fotoG: `<img src="public/img/pakapica.jpg" alt="Loro" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">Loro Coroniamarillo</h3>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
+			</figcaption>`,
+	fotoH: `<img src="public/img/ojopaka.jpg" alt="Loro" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">Loro Coroniamarillo</h3>
+				<h4 class="item__role">
+					<span>Amazona ochrocephala</span>
+					<span>Yellow-crowned Parrot</span>
+				</h4>
 			</figcaption>`
 }];
 
@@ -244,8 +268,8 @@ let galleryCont = {
 	`
 	<span class="content__primary" id="titulo__A">Los amazonas o loros amazónicos</span>
 		<blockquote class="content__secondary"><p>Son un grupo de psitácidas originarias de las selvas de centroamérica y sudamérica. Además del brillante plumaje y su potente y variada vocalización, se caracterizan por su gran inteligencia. En la naturaleza son animales muy sociales, que viven en grandes bandadas. Como animal de compañía suelen tener un buen temperamento, llegando a ser muy divertidos.</p><br>
-		<h4>Paka Alejandra</h4>
-			<P>Llegó a nuestra familia el 2 de abril de 2020. No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.</p></blockquote>
+
+			<P><span class="ale">Paka Alejandra</span> llegó a nuestra familia el 2 de abril de 2020. No sabemos con exactitud si es hembra o macho, pero le hemos consentido como si fuese hembra. Paka es muy inteligente y curiosa, le gusta comer de todo (las frutas le encantan), también le gusta cantar, que le hagan piojitos... pero lo que más disfruta es pasear.</p></blockquote>
 
 	`
 };
@@ -285,7 +309,10 @@ let sliderBoton = [
 	`<button class="slideB"></button>`,
 	`<button class="slideC"></button>`,
 	`<button class="slideD"></button>`,
-	`<button class="slideE"></button>`
+	`<button class="slideE"></button>`,
+	`<button class="slideF"></button>`,
+	`<button class="slideG"></button>`,
+	`<button class="slideH"></button>`
 ];
 
 // let bb = sliderBoton.slice(',');
@@ -293,10 +320,10 @@ let sliderBoton = [
 // let v = document.createElement('div');
 // let x = v.append(sliderBoton[1]);
 // innerHTML
-boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
-botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
-botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
-botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5];
+boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
+botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
+botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
+botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
 
 // boton.append(b);
 // console.log(bb);
@@ -347,6 +374,9 @@ function QQ(a, c, d) {
 				a.children[3].style.opacity = 1;
 				a.children[4].style.opacity = 1;
 				a.children[5].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].foto;
 
@@ -360,6 +390,9 @@ function QQ(a, c, d) {
 				a.children[3].style.opacity = 1;
 				a.children[4].style.opacity = 1;
 				a.children[5].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoA;
 
@@ -373,6 +406,9 @@ function QQ(a, c, d) {
 				a.children[3].style.opacity = 1;
 				a.children[4].style.opacity = 1;
 				a.children[5].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoB;
 
@@ -386,6 +422,9 @@ function QQ(a, c, d) {
 				a.children[0].style.opacity = 1;
 				a.children[4].style.opacity = 1;
 				a.children[5].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoC;
@@ -400,6 +439,9 @@ function QQ(a, c, d) {
 				a.children[3].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				a.children[5].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoD;
 
@@ -412,9 +454,60 @@ function QQ(a, c, d) {
 				a.children[0].style.opacity = 1;
 				a.children[3].style.opacity = 1;
 				a.children[4].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoE;
+
+			});
+
+			a.children[6].addEventListener('click', () => {
+
+				a.children[5].style.opacity = 1;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[6].style.opacity = 0.2;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				// a.children[6].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoF;
+
+			});
+
+			a.children[7].addEventListener('click', () => {
+
+				a.children[5].style.opacity = 1;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 0.2;
+				a.children[8].style.opacity = 1;
+				// a.children[6].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoG;
+
+			});
+
+			a.children[8].addEventListener('click', () => {
+
+				a.children[5].style.opacity = 1;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 0.2;
+				// a.children[6].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoH;
 
 			});
 
@@ -518,6 +611,9 @@ function ladyA() {
 	botonB.children[3].style.display = "block";
 	botonB.children[4].style.display = "block";
 	botonB.children[5].style.display = "block";
+	botonB.children[6].style.display = "none";
+	botonB.children[7].style.display = "none";
+	botonB.children[8].style.display = "none";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	prevB.style.display = "block";
@@ -538,11 +634,17 @@ function ladyA() {
 	botonB.children[3].style.opacity = 1;
 	botonB.children[4].style.opacity = 1;
 	botonB.children[5].style.opacity = 1;
+	botonB.children[6].style.opacity = 1;
+	botonB.children[7].style.opacity = 1;
+	botonB.children[8].style.opacity = 1;
 };
 function malososA() {
 	botonC.children[3].style.display = "block";
 	botonC.children[4].style.display = "block";
 	botonC.children[5].style.display = "block";
+	botonC.children[6].style.display = "none";
+	botonC.children[7].style.display = "none";
+	botonC.children[8].style.display = "none";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	items = Object.values (galleryItems[0]);
@@ -569,11 +671,14 @@ function pakaA() {
 	boton.children[3].style.display = "block";
 	boton.children[4].style.display = "block";
 	boton.children[5].style.display = "block";
+	boton.children[6].style.display = "block";
+	boton.children[7].style.display = "block";
+	boton.children[8].style.display = "block";
 	prev.style.display = "block";
 	next.style.display = "block";
 	items = Object.values (galleryItems[3]);
 	// arrows(6);
-	arrows(6, gallery, boton, prev, next,items);
+	arrows(9, gallery, boton, prev, next,items);
 
 	// gallery.style.backgroundColor = "#ffffff00";
 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
@@ -594,6 +699,9 @@ function blackyA() {
 	botonD.children[3].style.display = "block";
 	botonD.children[4].style.display = "none";
 	botonD.children[5].style.display = "none";
+	botonD.children[6].style.display = "none";
+	botonD.children[7].style.display = "none";
+	botonD.children[8].style.display = "none";
 	prevD.style.display = "block";
 	nextD.style.display = "block";
 	items = Object.values (galleryItems[1]);
