@@ -47,7 +47,7 @@ let title = [
 ];
 
 let galleryItems = [{
-	foto: `<img src="public/img/malosoC.jpg" alt="periquitos verdes" class="item__image">
+	foto: `<img src="public/img/malososB.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Perico Barbinaranja</h3>
 				<h4 class="item__role">
@@ -55,7 +55,7 @@ let galleryItems = [{
 					<span>Orange-chinned Parakeet</span>
 				</h4>
 			</figcaption>`,
-	fotoA: `<img src="public/img/malososB.jpg" alt="periquitos verdes" class="item__image">
+	fotoA: `<img src="public/img/malosoC.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Perico Barbinaranja</h3>
 				<h4 class="item__role">
@@ -178,7 +178,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoA: `<img src="public/img/pakaB.jpg" alt="Loro" class="item__image">
+	fotoA: `<img src="public/img/pakaenlarama.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<h4 class="item__role">
@@ -186,7 +186,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoB: `<img src="public/img/pakaC.jpg" alt="Loro" class="item__image">
+	fotoB: `<img src="public/img/pakapica.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<h4 class="item__role">
@@ -194,7 +194,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoC: `<img src="public/img/pakaD.jpg" alt="Loro" class="item__image">
+	fotoC: `<img src="public/img/ojopaka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<h4 class="item__role">
@@ -210,7 +210,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoE: `<img src="public/img/pakaF.jpg" alt="Loro" class="item__image">
+	fotoE: `<img src="public/img/pakaD.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<h4 class="item__role">
@@ -218,7 +218,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoF: `<img src="public/img/pakaenlarama.jpg" alt="Loro" class="item__image">
+	fotoF: `<img src="public/img/pakaB.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<h4 class="item__role">
@@ -226,7 +226,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoG: `<img src="public/img/pakapica.jpg" alt="Loro" class="item__image">
+	fotoG: `<img src="public/img/pakaC.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">Loro Coroniamarillo</h3>
 				<h4 class="item__role">
@@ -234,14 +234,14 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoH: `<img src="public/img/ojopaka.jpg" alt="Loro" class="item__image">
-			<figcaption class="item__description">
-				<h3 class="item__name">Loro Coroniamarillo</h3>
-				<h4 class="item__role">
-					<span>Amazona ochrocephala</span>
-					<span>Yellow-crowned Parrot</span>
-				</h4>
-			</figcaption>`
+	// fotoH: `<img src="public/img/.jpg" alt="Loro" class="item__image">
+	// 		<figcaption class="item__description">
+	// 			<h3 class="item__name">Loro Coroniamarillo</h3>
+	// 			<h4 class="item__role">
+	// 				<span>Amazona ochrocephala</span>
+	// 				<span>Yellow-crowned Parrot</span>
+	// 			</h4>
+	// 		</figcaption>`
 }];
 
 let galleryCont = {
@@ -290,7 +290,7 @@ const begin = [
 	galleryItems[0].fotoA,
 	galleryItems[1].fotoA,
 	galleryItems[2].fotoA,
-	galleryItems[3].fotoE
+	galleryItems[3].fotoA
 ];
 
 // console.log(begin);
@@ -311,8 +311,8 @@ let sliderBoton = [
 	`<button class="slideD"></button>`,
 	`<button class="slideE"></button>`,
 	`<button class="slideF"></button>`,
-	`<button class="slideG"></button>`,
-	`<button class="slideH"></button>`
+	`<button class="slideG"></button>`
+	// `<button class="slideH"></button>`
 ];
 
 // let bb = sliderBoton.slice(',');
@@ -320,11 +320,11 @@ let sliderBoton = [
 // let v = document.createElement('div');
 // let x = v.append(sliderBoton[1]);
 // innerHTML
-boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
-botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
-botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
-botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8];
-
+boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
+botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
+botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
+botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
+ // + sliderBoton[8]
 // boton.append(b);
 // console.log(bb);
 // let a = `<button class="slide"></button>`;
@@ -376,7 +376,7 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].foto;
 
@@ -392,7 +392,7 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoA;
 
@@ -408,7 +408,7 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// boton.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoB;
 
@@ -424,7 +424,7 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoC;
@@ -441,7 +441,7 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoD;
 
@@ -456,7 +456,7 @@ function QQ(a, c, d) {
 				a.children[4].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoE;
@@ -472,7 +472,7 @@ function QQ(a, c, d) {
 				a.children[4].style.opacity = 1;
 				a.children[6].style.opacity = 0.2;
 				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoF;
@@ -488,28 +488,28 @@ function QQ(a, c, d) {
 				a.children[4].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 0.2;
-				a.children[8].style.opacity = 1;
+				// a.children[8].style.opacity = 1;
 				// a.children[6].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoG;
 
 			});
 
-			a.children[8].addEventListener('click', () => {
+			// a.children[8].addEventListener('click', () => {
 
-				a.children[5].style.opacity = 1;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 0.2;
+			// 	a.children[5].style.opacity = 1;
+			// 	a.children[1].style.opacity = 1;
+			// 	a.children[0].style.opacity = 1;
+			// 	a.children[3].style.opacity = 1;
+			// 	a.children[4].style.opacity = 1;
+			// 	a.children[6].style.opacity = 1;
+			// 	a.children[7].style.opacity = 1;
+				// a.children[8].style.opacity = 0.2;
 				// a.children[6].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoH;
+			// 	a.children[2].style.opacity = 1;
+			// 	d.innerHTML = galleryItems[c].fotoH;
 
-			});
+			// });
 
 			// boton.children[6].addEventListener('click', () => {
 
@@ -613,7 +613,7 @@ function ladyA() {
 	botonB.children[5].style.display = "block";
 	botonB.children[6].style.display = "none";
 	botonB.children[7].style.display = "none";
-	botonB.children[8].style.display = "none";
+	// botonB.children[8].style.display = "none";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	prevB.style.display = "block";
@@ -636,7 +636,7 @@ function ladyA() {
 	botonB.children[5].style.opacity = 1;
 	botonB.children[6].style.opacity = 1;
 	botonB.children[7].style.opacity = 1;
-	botonB.children[8].style.opacity = 1;
+	// botonB.children[8].style.opacity = 1;
 };
 function malososA() {
 	botonC.children[3].style.display = "block";
@@ -644,7 +644,7 @@ function malososA() {
 	botonC.children[5].style.display = "block";
 	botonC.children[6].style.display = "none";
 	botonC.children[7].style.display = "none";
-	botonC.children[8].style.display = "none";
+	// botonC.children[8].style.display = "none";
 	// slideIndex = 0;
  	// slideIndexB = 0;
 	items = Object.values (galleryItems[0]);
@@ -673,12 +673,12 @@ function pakaA() {
 	boton.children[5].style.display = "block";
 	boton.children[6].style.display = "block";
 	boton.children[7].style.display = "block";
-	boton.children[8].style.display = "block";
+	// boton.children[8].style.display = "none";
 	prev.style.display = "block";
 	next.style.display = "block";
 	items = Object.values (galleryItems[3]);
 	// arrows(6);
-	arrows(9, gallery, boton, prev, next,items);
+	arrows(8, gallery, boton, prev, next,items);
 
 	// gallery.style.backgroundColor = "#ffffff00";
 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
@@ -701,7 +701,7 @@ function blackyA() {
 	botonD.children[5].style.display = "none";
 	botonD.children[6].style.display = "none";
 	botonD.children[7].style.display = "none";
-	botonD.children[8].style.display = "none";
+	// botonD.children[8].style.display = "none";
 	prevD.style.display = "block";
 	nextD.style.display = "block";
 	items = Object.values (galleryItems[1]);
