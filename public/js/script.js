@@ -101,27 +101,25 @@ let galleryItems = [{
 	foto: `<img src="public/img/blackyA.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY</h3>
-				<span class="item__role">Cuando perros de distinta raza se mezclan, su descendencia manifiesta una amplia variedad de apariencias, algunos se asemejan más a una raza que a otra, mientras que algunos otros exhiben claramente características de ambas.
+				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoA: `<img src="public/img/blackyB.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY</h3>
-				<span class="item__role">Un perro mestizo o de raza mixta es un perro que no pertenece a ninguna raza reconocida por organizaciones de criadores y que es resultado de una crianza no selectiva.
+				<span class="item__role">
 				</span>
 						</figcaption>`,
 	fotoB: `<img src="public/img/blackyC.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY</h3>
-				<span class="item__role">Si los ejemplares se siguen entrecruzando, en las generaciones posteriores poco a poco se irán homogenizando sus características hasta llegar a un aspecto más o menos similar.
+				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoC: `<img src="public/img/blackyD.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY</h3>
 				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
 				</span>
 			</figcaption>`
 	},
@@ -129,43 +127,37 @@ let galleryItems = [{
 	foto: `<img src="public/img/ladyB.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY</h3>
-				<span class="item__role">En Honduras y El Salvador son muy comunes llamándoles "Aguacateros", en Costa Rica se les conoce como “Zaguates”, en Guatemala como "chuchos", en Ecuador como "runas", en Chile como "quiltros", en Venezuela y Colombia se les llama "criollos", en Panamá se les conoce como “tinaqueros” o "sin raza definida (SRD)".
+				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoA: `<img src="public/img/ladyC.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY</h3>
-				<span class="item__role">La "Raza aleatoria" es un término genético para referirse a un animal, población, o raza que se crio y desarrolló sin la intervención planificada de los seres humanos, y cuyo ancestro y composición son generalmente desconocidos.
+				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoB: `<img src="public/img/ladyD.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY</h3>
-				<span class="item__role">En Perú coloquialmente como "chuscos", "cruzados" o "de raza mixta", en República Dominicana como “viralatas" y en Cuba y Puerto Rico, como "perros satos", los cuales también son muy comunes en las calles, como consecuencia de la falta de leyes para la protección animal en la isla caribeña y en general, en toda América latina.
+				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoC: `<img src="public/img/ladyA.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY</h3>
 				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
 				</span>
 			</figcaption>`,
 	fotoD: `<img src="public/img/ladyE.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY</h3>
 				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
 				</span>
 			</figcaption>`,
 	fotoE: `<img src="public/img/ladyF.jpg" alt="#" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY</h3>
 				<span class="item__role">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
 				</span>
 			</figcaption>`
 	},
