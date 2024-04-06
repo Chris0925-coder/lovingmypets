@@ -361,14 +361,14 @@ let galleryCont = {
 	`,
 	blacky:
 	`
-	<span class="content__primary" id="titulo__A">BLACKY MATEO</span>
+	<span class="content__primary" id="titulo__A">MI PERRITO CRIOLLO</span>
 		<blockquote class="content__secondary"><p>Un perro criollo o mestizo es un perro que no posee características de raza pura. Son de tamaño variable, pueden ser perros grandes o pequeños, con características de varias razas a la vez.</p>
 		<p>Una de las principales características es que, los perros de raza criolla o mestiza, gracias a esa mezcla de razas, son menos propensos a desarrollar enfermedades, se adaptan más fácilmente a condiciones específicas y tienen temperamentos más dóciles, nobles y agradecidos.</p></blockquote>
 
 	`,
 	lady:
 	`
-	<span class="content__primary" id="titulo__A">Lady Margot</span>
+	<span class="content__primary" id="titulo__A">MI PERRITA CRIOLLA</span>
 		<blockquote class="content__secondary"><p>Lady Margot está en nuestra familia desde mayo del 2022, es una perrita criolla muy inteligente, agradecida y juguetona.</p>
 			<p>Un perro criollo o mestizo es un perro que no posee características de raza pura. Son de tamaño variable, pueden ser perros grandes o pequeños, con características de varias razas a la vez.</p> 
 			<p>Una de las principales características es que, los perros de raza criolla o mestiza, gracias a esa mezcla de razas, son menos propensos a desarrollar enfermedades, se adaptan más fácilmente a condiciones específicas y tienen temperamentos más dóciles, nobles y agradecidos.</p></blockquote>`,
