@@ -7,7 +7,6 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
-      <!--ERROR - Object reference not set to an instance of an object.-->
       <url>
         <loc>https://www.lovingmypets.es/acercade.html</loc>
         <lastmod>2024-04-05</lastmod>
@@ -15,7 +14,7 @@
         <priority>0.80</priority>
         <image:image>
           <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
-          <!--ERROR - Object reference not set to an instance of an object.-->
+
           <url>
             <loc>https://www.lovingmypets.es/contacto.html</loc>
             <lastmod>2024-04-05</lastmod>
@@ -23,7 +22,7 @@
             <priority>0.70</priority>
             <image:image>
               <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
-              <!--ERROR - Object reference not set to an instance of an object.-->
+
             </image:image>
             <url>
               <loc>https://www.lovingmypets.es/productos.html</loc>
@@ -32,7 +31,7 @@
               <priority>0.60</priority>
               <image:image>
                 <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
-                <!--ERROR - Object reference not set to an instance of an object.-->
+
               </image:image>
             </url>
           </url>
