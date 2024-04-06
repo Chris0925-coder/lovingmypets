@@ -286,8 +286,8 @@ h1,h2,h3,h4,h5,h6 {
 .gallery__content--tituloB .content__primary,
 .gallery__content--tituloC .content__primary,
 .gallery__content--tituloD .content__primary {
+	display: none;
 	position: relative;
-/*	top: 0;*/
 	font-size: clamp(10px, 4vw, 20px);
 	font-weight: 700;
 	text-transform: uppercase;
@@ -295,19 +295,17 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
-.primary__gallery--title,
+/*.primary__gallery--title,
 .primary__gallery--titleB,
 .primary__gallery--titleC,
 .primary__gallery--titleD {
 	position: relative;
-/*	top: 0;*/
 	font-size: clamp(20px, 5vw, 40px);
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #771100;
 	text-align: center;
-
-}
+}*/
 
 .gallery__content--titulo .content__secondary,
 .gallery__content--tituloB .content__secondary,
@@ -351,7 +349,7 @@ h1,h2,h3,h4,h5,h6 {
 .button__slidersC,
 .button__slidersD {
 	display: flex;
-	position: relative;
+	position: absolute;
 /*	font-weight: 900;*/
 	bottom: 0;
 /*	border: 1px solid darkred;*/
@@ -371,7 +369,7 @@ h1,h2,h3,h4,h5,h6 {
 /*	bottom: 0;*/
 /*	border: none;*/
 	background: none;
-	width: 70px;
+	width: 50px;
 	height: auto;
 /*	padding: 4em;*/
 	border: 3px solid #2b2b2b;
