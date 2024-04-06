@@ -362,8 +362,9 @@ let galleryCont = {
 	blacky:
 	`
 	<span class="content__primary" id="titulo__A">MI PERRITO CRIOLLO</span>
-		<blockquote class="content__secondary"><p>Un perro criollo o mestizo es un perro que no posee características de raza pura. Son de tamaño variable, pueden ser perros grandes o pequeños, con características de varias razas a la vez.</p>
-		<p>Una de las principales características es que, los perros de raza criolla o mestiza, gracias a esa mezcla de razas, son menos propensos a desarrollar enfermedades, se adaptan más fácilmente a condiciones específicas y tienen temperamentos más dóciles, nobles y agradecidos.</p></blockquote>
+		<blockquote class="content__secondary"><p>Blacky es nuestra mascota en el interior (Penonomé). Está con nosotros desde el 15 de abril de 2017. Tener un perro en casa requiere de comprensión, paciencia y mucha dedicación. </p>
+			<p>Una ventaja que tienen los perros criollos es que no hay que pagar una alta suma de dinero para tener a uno de ellos, y, como cualquier mascotas necesitan una buena alimentación, hidratación, aseo personal, pero estas responsabilidades serán pagadas con mucho amor y la diversión que nos dan.</p>
+			<p>Blacky se divierte mucho con Lady cuando salimos de paseo al río.</p></blockquote>
 
 	`,
 	lady:
