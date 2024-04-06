@@ -459,7 +459,7 @@ h1,h2,h3,h4,h5,h6 {
 .prevB,
 .prevC,
 .prevD {
-	display: none;
+	display: block;
 	position: absolute;
 	border: none;
 	background: none;
@@ -467,9 +467,10 @@ h1,h2,h3,h4,h5,h6 {
 	top: 50%;
 	margin: 1em;
 	padding: .9em .3em;
-	color: #303030;
+	color: #30303000;
 	z-index: 5000;
-	background-color: #1c1c1c8c;
+	background-color: #1c1c1c00;
+/*	opacity: 0;*/
 }
 
 .prev:hover,
@@ -478,13 +479,15 @@ h1,h2,h3,h4,h5,h6 {
 .prevD:hover {
 	filter: drop-shadow(4px 6px 5px #ececec8c);
 	cursor: pointer;
+	opacity: 1;
+/*	transition: all .3s ease-in-out;*/
 }
 
 .next,
 .nextB,
 .nextC,
 .nextD {
-	display: none;
+	display: block;
 	position: absolute;
 	border: none;
 	background: none;
@@ -492,9 +495,10 @@ h1,h2,h3,h4,h5,h6 {
 	top: 50%;
 	margin: 1em;
 	padding: .9em .3em;
-	color: #303030;
+	color: #30303000;
 	z-index: 5000;
-	background-color: #1c1c1c8c;
+	background-color: #1c1c1c00;
+/*	opacity: 0;*/
 }
 
 .next:hover,
@@ -503,6 +507,9 @@ h1,h2,h3,h4,h5,h6 {
 .nextD:hover {
 	filter: drop-shadow(4px 6px 5px #ececec8c);
 	cursor: pointer;
+	opacity: 1;
+/*	transition: all .3s ease-in-out;*/
+
 }
 
 /*.prev:hover, .next:hover {
@@ -1026,6 +1033,26 @@ h1,h2,h3,h4,h5,h6 {
 		justify-content: center;
 		max-width: 600px;
 		height: auto;
+	}
+
+	.prev,
+	.prevB,
+	.prevC,
+	.prevD {
+/*		display: block;*/
+		color: #303030;
+		background-color: #1c1c1c8c;
+		padding: .5em 0;
+	}
+
+	.next,
+	.nextB,
+	.nextC,
+	.nextD {
+		color: #303030;
+		background-color: #1c1c1c8c;
+		padding: .5em 0;
+		
 	}
 	/*.gallery__wrapper {
 		grid-auto-columns: 25rem;

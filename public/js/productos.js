@@ -28,7 +28,7 @@ function resize() {
 
     let anchoV1 = window.innerWidth;
     console.log("width: ", anchoV1, "px");   
-    if(anchoV1 <= 968) {
+    if(anchoV1 <= 768) {
             const power = document.getElementById('boxB');
     // const board = document.getElementById('boxC');
     // const pro = document.getElementById('boxD');
