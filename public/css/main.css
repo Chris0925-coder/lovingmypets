@@ -31,6 +31,37 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
+.cajacookies {
+	display: none;
+	background-color:#000;
+	color:#fff;
+	position:fixed;
+	bottom:50px;
+	bottom:0px;
+	width:100%;
+	padding:10px 20px;
+	font-size:18px;
+	opacity:0.9;
+	z-index: 6000;
+}
+
+.botonRGPD {
+	display: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.cajacookies a{color:#fff;}
+.cajacookies a:hover{color:#ccc;}
+.cajacookies p, 
+.cajacookies div{display:inline-block; font-size: 0.6rem;}
+.cajacookies p{width:85%;}
+.cajacookies div{color: #303030;width:auto;padding:10px;border:1px solid #000;background-color:#ccc;text-align:center;position:absolute;top:10px;}
+.cajacookies div:hover{background-color:#c2c2c2;cursor:pointer;}
+
+.botonRGPD:hover {
+	color: #30303090;
+}
 
 .container {
 	width: 100%;
@@ -333,7 +364,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .slide, .slideA, .slideB, 
 .slideC, .slideD, .slideE,
-.slideF, .slideG, .slideH {
+.slideF, .slideG, .slideH, 
+.slideI {
 /*	display: flex;*/
 	position: relative;
 /*	bottom: 0;*/
@@ -348,7 +380,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .slide:hover, .slideA:hover, .slideB:hover,
 .slideC:hover, .slideD:hover, .slideE:hover,
-.slideF:hover, .slideG:hover, .slideH:hover {
+.slideF:hover, .slideG:hover, .slideH:hover,
+.slideI:hover {
 	filter: drop-shadow(1px 1px 10px #2b2b2b);
 /*	border: 1px solid black;*/
 }
@@ -762,8 +795,23 @@ h1,h2,h3,h4,h5,h6 {
  }
 
 .copyright {
+	display: flex;
+	flex-wrap: wrap;
 	font-size: .6rem;
 	text-align: center;
+	background-color: #222222;
+	color: #ffff;
+	gap: 1em;
+	justify-content: center;
+/*	margin: 0 auto;*/
+}
+
+.copyright a {
+	color: #ffff;
+}
+
+.copyright a:hover::after {
+	color: #303030;
 }
 
 .form__main {
@@ -819,23 +867,23 @@ h1,h2,h3,h4,h5,h6 {
 		max-width: 600px;
 		margin: 0 auto;
 		height: auto;
-	}
-	.form__main .form-group {
-		display: flex;
-		position: relative;
-		justify-content: left;
-		max-width: 600px;
-		height: auto;
-	}
-	.comment__button {
-		width: auto;
-	}
+}
+.form__main .form-group {
+	display: flex;
+	position: relative;
+	justify-content: left;
+	max-width: 600px;
+	height: auto;
+}
+.comment__button {
+	width: auto;
+}
 
-	.form-control {
-		display: flex;
-		position: relative;
-		justify-content: center;
-	}
+.form-control {
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
 @media screen and (max-width: 768px) {
 	.hero {
 		width: 100%;
@@ -948,7 +996,8 @@ h1,h2,h3,h4,h5,h6 {
 	}
 	.slide, .slideA, .slideB, 
 	.slideC, .slideD, .slideE,
-	.slideF, .slideG, .slideH {
+	.slideF, .slideG, .slideH, 
+	.slideI {
 		max-width: 5px;
 		border-radius: 50%;
 		padding: 0;

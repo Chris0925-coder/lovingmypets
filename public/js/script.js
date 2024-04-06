@@ -39,6 +39,85 @@ navBoton.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
 });
 
+
+
+function setCookie(cname, cvalue, exdays) {
+        let d = new Date();
+
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    };
+
+function removeCookie(cname){
+        setCookie(cname,"",-1);
+    };
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+};
+
+function detectCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0 && (name.length != c.length))  {
+            return true;
+        }
+    }
+    return false;
+};
+
+// let request = new XMLHttpRequest();
+$(document).ready(function() { 
+// request.open('GET', '/index.html', true, () => {
+	init();
+});
+   
+
+function init(){
+    bloqueRGPD = document.querySelector('.cajacookies');
+    if (localStorage.acceptedCookies != 'true') {
+    bloqueRGPD.style.display = 'block';    
+    }
+
+    if(detectCookie("rgpdOK")){
+        if (getCookie("rgpdOK")==1){eliminarBloqueRGPD();}
+    }else{
+        document.querySelector(".botonRGPD").addEventListener("click", () => {
+        eliminarBloqueRGPD();
+        setCookie("rgpdOK",1,365);
+        })        
+    }
+};
+
+function eliminarBloqueRGPD(){
+    bloqueRGPD.parentNode.removeChild(bloqueRGPD);
+    localStorage.acceptedCookies = 'true';
+};
+
+
+
+
+
 let title = [
 	"PAKA ALEJANDRA",
 	"LOS MALOSOS",
@@ -117,6 +196,42 @@ let galleryItems = [{
 				</span>
 			</figcaption>`,
 	fotoC: `<img src="public/img/blackyD.jpg" alt="perro mestizo" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">BLACKY</h3>
+				<span class="item__role">
+				</span>
+			</figcaption>`,
+	fotoD: `<img src="public/img/blackyE.jpg" alt="perro mestizo" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">BLACKY</h3>
+				<span class="item__role">
+				</span>
+			</figcaption>`,
+	fotoE: `<img src="public/img/blackyF.jpg" alt="perro mestizo" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">BLACKY</h3>
+				<span class="item__role">
+				</span>
+			</figcaption>`,
+	fotoF: `<img src="public/img/blackyG.jpg" alt="perro mestizo" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">BLACKY</h3>
+				<span class="item__role">
+				</span>
+			</figcaption>`,
+	fotoG: `<img src="public/img/blackyH.jpg" alt="perro mestizo" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">BLACKY</h3>
+				<span class="item__role">
+				</span>
+			</figcaption>`,
+	fotoH: `<img src="public/img/blackyI.jpg" alt="perro mestizo" class="item__image">
+			<figcaption class="item__description">
+				<h3 class="item__name">BLACKY</h3>
+				<span class="item__role">
+				</span>
+			</figcaption>`,
+	fotoI: `<img src="public/img/blackyJ.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY</h3>
 				<span class="item__role">
@@ -246,16 +361,17 @@ let galleryCont = {
 	`,
 	blacky:
 	`
-	<span class="content__primary" id="titulo__A">BLACKY</span>
-		<blockquote class="content__secondary"><p>Se denomina perro mestizo al perro sin pedigrí, cuya ascendencia es generalmente desconocida, pero se sabe que tiene características de dos o más tipos de razas, o es descendiente de poblaciones de perros salvajes o callejeros.</p><cite><a href="https://es.wikipedia.org/wiki/Perro_mestizo">Wikipedia</a></cite></blockquote>
+	<span class="content__primary" id="titulo__A">BLACKY MATEO</span>
+		<blockquote class="content__secondary"><p>Un perro criollo o mestizo es un perro que no posee características de raza pura. Son de tamaño variable, pueden ser perros grandes o pequeños, con características de varias razas a la vez.</p>
+		<p>Una de las principales características es que, los perros de raza criolla o mestiza, gracias a esa mezcla de razas, son menos propensos a desarrollar enfermedades, se adaptan más fácilmente a condiciones específicas y tienen temperamentos más dóciles, nobles y agradecidos.</p></blockquote>
 
 	`,
 	lady:
 	`
-	<span class="content__primary" id="titulo__A">LADY</span>
-		<blockquote class="content__secondary"><p>Se denomina perro mestizo al perro sin pedigrí, cuya ascendencia es generalmente desconocida, pero se sabe que tiene características de dos o más tipos de razas, o es descendiente de poblaciones de perros salvajes o callejeros.</p><cite><a href="https://es.wikipedia.org/wiki/Perro_mestizo">Wikipedia</a></cite></blockquote>
-
-	`,
+	<span class="content__primary" id="titulo__A">Lady Margot</span>
+		<blockquote class="content__secondary"><p>Lady Margot está en nuestra familia desde mayo del 2022, es una perrita criolla muy inteligente, agradecida y juguetona.</p>
+			<p>Un perro criollo o mestizo es un perro que no posee características de raza pura. Son de tamaño variable, pueden ser perros grandes o pequeños, con características de varias razas a la vez.</p> 
+			<p>Una de las principales características es que, los perros de raza criolla o mestiza, gracias a esa mezcla de razas, son menos propensos a desarrollar enfermedades, se adaptan más fácilmente a condiciones específicas y tienen temperamentos más dóciles, nobles y agradecidos.</p></blockquote>`,
 	paka:
 	`
 	<span class="content__primary" id="titulo__A">Los amazonas o loros amazónicos</span>
@@ -303,8 +419,10 @@ let sliderBoton = [
 	`<button class="slideD"></button>`,
 	`<button class="slideE"></button>`,
 	`<button class="slideF"></button>`,
-	`<button class="slideG"></button>`
-	// `<button class="slideH"></button>`
+	`<button class="slideG"></button>`,
+	`<button class="slideH"></button>`,
+	`<button class="slideI"></button>`
+	// `<button class="slideJ"></button>`
 ];
 
 // let bb = sliderBoton.slice(',');
@@ -312,10 +430,10 @@ let sliderBoton = [
 // let v = document.createElement('div');
 // let x = v.append(sliderBoton[1]);
 // innerHTML
-boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
-botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
-botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
-botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7];
+boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
+botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
+botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
+botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
  // + sliderBoton[8]
 // boton.append(b);
 // console.log(bb);
@@ -368,8 +486,8 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 1;
-				// boton.children[6].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				d.innerHTML = galleryItems[c].foto;
 
 			});
@@ -384,8 +502,8 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 1;
-				// boton.children[6].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoA;
 
 			});
@@ -400,8 +518,8 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 1;
-				// boton.children[6].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoB;
 
 			});
@@ -416,8 +534,8 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 1;
-				// a.children[6].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoC;
 
@@ -433,8 +551,8 @@ function QQ(a, c, d) {
 				a.children[5].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 1;
-				// a.children[6].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoD;
 
 			});
@@ -448,8 +566,8 @@ function QQ(a, c, d) {
 				a.children[4].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 1;
-				// a.children[6].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoE;
 
@@ -464,8 +582,8 @@ function QQ(a, c, d) {
 				a.children[4].style.opacity = 1;
 				a.children[6].style.opacity = 0.2;
 				a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 1;
-				// a.children[6].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				a.children[2].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoF;
 
@@ -480,41 +598,44 @@ function QQ(a, c, d) {
 				a.children[4].style.opacity = 1;
 				a.children[6].style.opacity = 1;
 				a.children[7].style.opacity = 0.2;
-				// a.children[8].style.opacity = 1;
-				// a.children[6].style.opacity = 1;
 				a.children[2].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				a.children[9].style.opacity = 1;
 				d.innerHTML = galleryItems[c].fotoG;
 
 			});
 
-			// a.children[8].addEventListener('click', () => {
+			a.children[8].addEventListener('click', () => {
 
-			// 	a.children[5].style.opacity = 1;
-			// 	a.children[1].style.opacity = 1;
-			// 	a.children[0].style.opacity = 1;
-			// 	a.children[3].style.opacity = 1;
-			// 	a.children[4].style.opacity = 1;
-			// 	a.children[6].style.opacity = 1;
-			// 	a.children[7].style.opacity = 1;
-				// a.children[8].style.opacity = 0.2;
-				// a.children[6].style.opacity = 1;
-			// 	a.children[2].style.opacity = 1;
-			// 	d.innerHTML = galleryItems[c].fotoH;
+				a.children[5].style.opacity = 1;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[6].style.opacity = 1;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 0.2;
+				a.children[6].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				a.children[9].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoH;
 
-			// });
+			});
 
-			// boton.children[6].addEventListener('click', () => {
+			a.children[9].addEventListener('click', () => {
 
-			// 	boton.children[6].style.opacity = 0.2;
-			// 	boton.children[1].style.opacity = 1;
-			// 	boton.children[0].style.opacity = 1;
-			// 	boton.children[3].style.opacity = 1;
-			// 	boton.children[4].style.opacity = 1;
-			// 	boton.children[5].style.opacity = 1;
-			// 	boton.children[2].style.opacity = 1;
-			// 	gallery.innerHTML = galleryItems[c].fotoB;
-
-			// });
+				a.children[6].style.opacity = 1;
+				a.children[1].style.opacity = 1;
+				a.children[0].style.opacity = 1;
+				a.children[3].style.opacity = 1;
+				a.children[4].style.opacity = 1;
+				a.children[5].style.opacity = 1;
+				a.children[2].style.opacity = 1;
+				a.children[9].style.opacity = 0.2;
+				a.children[7].style.opacity = 1;
+				a.children[8].style.opacity = 1;
+				d.innerHTML = galleryItems[c].fotoI;
+			});
 		// }
 	// })
 };
@@ -605,6 +726,8 @@ function ladyA() {
 	botonB.children[5].style.display = "block";
 	botonB.children[6].style.display = "none";
 	botonB.children[7].style.display = "none";
+	botonB.children[8].style.display = "none";
+	botonB.children[9].style.display = "none";
 	// botonB.children[8].style.display = "none";
 	// slideIndex = 0;
  	// slideIndexB = 0;
@@ -621,13 +744,13 @@ function ladyA() {
 
 	galleryContentB.innerHTML = galleryCont.lady;
 	botonB.children[1].style.opacity = 0.2;
-	botonB.children[0].style.opacity = 1;
-	botonB.children[2].style.opacity = 1;
-	botonB.children[3].style.opacity = 1;
-	botonB.children[4].style.opacity = 1;
-	botonB.children[5].style.opacity = 1;
-	botonB.children[6].style.opacity = 1;
-	botonB.children[7].style.opacity = 1;
+	// botonB.children[0].style.opacity = 1;
+	// botonB.children[2].style.opacity = 1;
+	// botonB.children[3].style.opacity = 1;
+	// botonB.children[4].style.opacity = 1;
+	// botonB.children[5].style.opacity = 1;
+	// botonB.children[6].style.opacity = 1;
+	// botonB.children[7].style.opacity = 1;
 	// botonB.children[8].style.opacity = 1;
 };
 function malososA() {
@@ -636,6 +759,8 @@ function malososA() {
 	botonC.children[5].style.display = "block";
 	botonC.children[6].style.display = "none";
 	botonC.children[7].style.display = "none";
+	botonC.children[8].style.display = "none";
+	botonC.children[9].style.display = "none";
 	// botonC.children[8].style.display = "none";
 	// slideIndex = 0;
  	// slideIndexB = 0;
@@ -653,10 +778,10 @@ function malososA() {
 
 	galleryContentC.innerHTML = galleryCont.malosos;
 	botonC.children[1].style.opacity = 0.2;
-	botonC.children[0].style.opacity = 1;
-	botonC.children[2].style.opacity = 1;
-	botonC.children[3].style.opacity = 1;
-	botonC.children[4].style.opacity = 1;
+	// botonC.children[0].style.opacity = 1;
+	// botonC.children[2].style.opacity = 1;
+	// botonC.children[3].style.opacity = 1;
+	// botonC.children[4].style.opacity = 1;
 	// boton.children[5].style.opacity = 1;
 };
 function pakaA() {
@@ -665,6 +790,8 @@ function pakaA() {
 	boton.children[5].style.display = "block";
 	boton.children[6].style.display = "block";
 	boton.children[7].style.display = "block";
+	boton.children[8].style.display = "none";
+	boton.children[9].style.display = "none";
 	// boton.children[8].style.display = "none";
 	prev.style.display = "block";
 	next.style.display = "block";
@@ -681,24 +808,25 @@ function pakaA() {
 
 	galleryContent.innerHTML = galleryCont.paka;
 	boton.children[1].style.opacity = 0.2;
-	boton.children[0].style.opacity = 1;
-	boton.children[2].style.opacity = 1;
-	boton.children[3].style.opacity = 1;
-	boton.children[4].style.opacity = 1;
-	boton.children[5].style.opacity = 1;
+	// boton.children[0].style.opacity = 1;
+	// boton.children[2].style.opacity = 1;
+	// boton.children[3].style.opacity = 1;
+	// boton.children[4].style.opacity = 1;
+	// boton.children[5].style.opacity = 1;
 };
 function blackyA() {
 	botonD.children[3].style.display = "block";
-	botonD.children[4].style.display = "none";
-	botonD.children[5].style.display = "none";
-	botonD.children[6].style.display = "none";
-	botonD.children[7].style.display = "none";
-	// botonD.children[8].style.display = "none";
+	botonD.children[4].style.display = "block";
+	botonD.children[5].style.display = "block";
+	botonD.children[6].style.display = "block";
+	botonD.children[7].style.display = "block";
+	botonD.children[8].style.display = "block";
+	botonD.children[9].style.display = "block";
 	prevD.style.display = "block";
 	nextD.style.display = "block";
 	items = Object.values (galleryItems[1]);
 	// arrows(4);
-	arrows(4, galleryD, botonD,prevD,nextD,items);
+	arrows(10, galleryD, botonD,prevD,nextD,items);
 
 	// gallery.style.backgroundColor = "#654321";
 	galleryD.style.background = 'linear-gradient(336deg, #654321 0%, rgba(0, 0, 0, 0.0)100%)';
@@ -708,9 +836,9 @@ function blackyA() {
 
 	galleryContentD.innerHTML = galleryCont.blacky;
 	botonD.children[1].style.opacity = 0.2;
-	botonD.children[0].style.opacity = 1;
-	botonD.children[2].style.opacity = 1;
-	botonD.children[3].style.opacity = 1;
+	// botonD.children[0].style.opacity = 1;
+	// botonD.children[2].style.opacity = 1;
+	// botonD.children[3].style.opacity = 1;
 };
 blackyA();
 pakaA();
