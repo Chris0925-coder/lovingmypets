@@ -532,7 +532,7 @@ h1,h2,h3,h4,h5,h6 {
 /*	padding: 10px;*/
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 	transform: translateY(0);
-	padding: 0 15%;
+	padding-inline: 10px;
 	text-align: left;
 	gap: .5em;
 }
