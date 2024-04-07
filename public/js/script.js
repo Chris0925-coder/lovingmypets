@@ -782,7 +782,7 @@ widthOutput = window.innerWidth;
 	
 	function resize(b,c) {
 		// widthOut = yyy[0].body.firstElementChild.childNodes[3].clientWidth;
-		console.log("width: ", widthOutput, "px");
+		// console.log("width: ", widthOutput, "px");
 		if (widthOutput > 768) {
 			showArrows(gallery, prev, next);
 			showArrows(galleryB, prevB, nextB);

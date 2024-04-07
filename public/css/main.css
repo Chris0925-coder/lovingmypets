@@ -871,18 +871,20 @@ h1,h2,h3,h4,h5,h6 {
 	justify-content: center;
 }
 .form__main {
-		display: flex;
-		position: relative;
-		justify-content: center;
-		max-width: 600px;
-		margin: 0 auto;
-		height: auto;
+	display: flex;
+	position: relative;
+	justify-content: center;
+/*		max-width: 600px;*/
+	width: auto;
+	margin: 0 auto;
+	height: auto;
 }
 .form__main .form-group {
 	display: flex;
 	position: relative;
 	justify-content: left;
-	max-width: 600px;
+/*	max-width: 600px;*/
+	width: auto;
 	height: auto;
 }
 .comment__button {
