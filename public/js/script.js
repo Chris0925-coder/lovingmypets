@@ -177,13 +177,13 @@ let galleryItems = [{
 			</figcaption>`		
 	},
 	{ 	
-	foto: `<img src="public/img/blackyA.jpg" alt="perro mestizo" class="item__image">
+	foto: `<img src="public/img/blackyB.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoA: `<img src="public/img/blackyB.jpg" alt="perro mestizo" class="item__image">
+	fotoA: `<img src="public/img/blackyA.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
