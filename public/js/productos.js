@@ -30,8 +30,8 @@ function resize() {
     console.log("width: ", anchoV1, "px");   
     if(anchoV1 <= 768) {
             const power = document.getElementById('boxB');
-    // const board = document.getElementById('boxC');
-    // const pro = document.getElementById('boxD');
+            const board = document.getElementById('boxC');
+            const pro = document.getElementById('boxD');
     // const ddr = document.getElementById('boxE');
     // const ssd = document.getElementById('boxF');
     // console.log(towers.children);
@@ -47,17 +47,17 @@ function resize() {
         power.children[2]
     ];
 
-    // const slideC = [
-    //     board.children[0],
-    //     board.children[1],
-    //     board.children[2]
-    // ];
+    const slideC = [
+        board.children[0],
+        board.children[1],
+        board.children[2]
+    ];
 
-    // const slideD = [
-    //     pro.children[0],
-    //     pro.children[1],
-    //     pro.children[2]
-    // ];
+    const slideD = [
+        pro.children[0],
+        pro.children[1],
+        pro.children[2]
+    ];
 
     // const slideE = [
     //     ddr.children[0],
@@ -188,10 +188,16 @@ function resize() {
     // console.log(b);
         sildeDisplay(slideA,index);
         sildeDisplay(slideB,index);
+        sildeDisplay(slideC,index);
+        sildeDisplay(slideD,index);
         previus(0,slideA);
         other(0,slideA);
         previus(1,slideB);
         other(1,slideB);
+        previus(2,slideC);
+        other(2,slideC);
+        previus(3,slideD);
+        other(3,slideD);
         // b[0].style.display = "block";
         // b[1].style.display = "block";
         // b[2].style.display = "block";
