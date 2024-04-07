@@ -783,13 +783,13 @@ widthOutput = window.innerWidth;
 	function resize(b,c) {
 		// widthOut = yyy[0].body.firstElementChild.childNodes[3].clientWidth;
 		// console.log("width: ", widthOutput, "px");
-		if (widthOutput > 768) {
+		if (widthOutput > 900) {
 			showArrows(gallery, prev, next);
 			showArrows(galleryB, prevB, nextB);
 			showArrows(galleryC, prevC, nextC);
 			showArrows(galleryD, prevD, nextD);
 		} 
-		else if (widthOutput <= 768) {
+		else if (widthOutput <= 900) {
 			b.style.color = "#303030";
 			c.style.color = "#303030";
 			b.style.backgroundColor = "#1c1c1c8c";
