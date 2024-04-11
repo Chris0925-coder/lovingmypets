@@ -355,8 +355,9 @@ let galleryCont = {
 	malosos:
 	`
 	<span class="content__primary" id="titulo__A">Brotogeris jugularis</span>
-		<blockquote class="content__secondary"><p>El periquito bronceado o catita churica (Brotogeris jugularis) es una especie de ave psitaciforme de la familia de los psitácidos extendida por el Neotrópico, desde el sur de México hasta Colombia y Venezuela.</p> 
-			<p>Tanto el macho como la hembra adultos tienen un plumaje que va del amarillo verdoso al verde oliva, un toque azul en la corona, una mancha naranja en la garganta, y un toque azul en la parte baja del dorso.</p><cite><a href="https://es.wikipedia.org/wiki/Brotogeris_jugularis" target="_blank">Wikipedia</a></cite></blockquote>
+		<blockquote class="content__secondary"><p>Los Malosos <br>
+		A esta parejita le llamamos "Los Malosos" porque a pesar de que siempre están con nosotros, no son del todo tiernos como parecen. Estan en nuestra familia desde el 2020. Son muy alegres pero no les gusta que los acaricien, prefieren hacerse cariñitos entre ellos y comer todo el día.</p>
+		<p>El periquito bronceado, periquito de Tovi, catita churica (Brotogeris jugularis) es una especie de ave de la familia de los loros. Es reconocida por su magnífico plumaje, con gran variedad de tonalidades desde el verde brillante a los matices de grises y amarillos. Esta ave es muy valorada por su carácter social y cariñoso, pudiendo llegar a formar vínculos de afecto con su dueño si se crían correctamente desde la etapa temprana.</p></blockquote>
 
 	`,
 	blacky:
