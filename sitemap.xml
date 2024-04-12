@@ -2,38 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.lovingmypets.es/</loc>
-    <lastmod>2023-08-27</lastmod>
+    <lastmod>2024-04-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
+      <!--ERROR - Object reference not set to an instance of an object.-->
       <url>
         <loc>https://www.lovingmypets.es/acercade.html</loc>
-        <lastmod>2024-04-05</lastmod>
+        <lastmod>2024-04-12</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.80</priority>
+        <priority>0.60</priority>
         <image:image>
           <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
-
+          <!--ERROR - Object reference not set to an instance of an object.-->
           <url>
             <loc>https://www.lovingmypets.es/contacto.html</loc>
-            <lastmod>2024-04-05</lastmod>
+            <lastmod>2024-04-12</lastmod>
             <changefreq>yearly</changefreq>
-            <priority>0.70</priority>
+            <priority>0.80</priority>
             <image:image>
               <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
-
+              <!--ERROR - Object reference not set to an instance of an object.-->
+              <url>
+                <loc>https://www.lovingmypets.es/productos.html</loc>
+                <lastmod>2024-04-12</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.80</priority>
+                <image:image>
+                  <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
+                  <!--ERROR - Object reference not set to an instance of an object.-->
+                  <url>
+                    <loc>https://www.lovingmypets.es</loc>
+                    <lastmod>2024-04-12</lastmod>
+                    <changefreq>yearly</changefreq>
+                    <priority>1.0</priority>
+                    <image:image>
+                      <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
+                      <!--ERROR - Object reference not set to an instance of an object.-->
+                      <url>
+                        <loc>https://www.lovingmypets.es/index.html</loc>
+                        <lastmod>2024-04-12</lastmod>
+                        <changefreq>yearly</changefreq>
+                        <priority>1.0</priority>
+                        <image:image>
+                          <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
+                          <!--ERROR - Object reference not set to an instance of an object.-->
+                        </image:image>
+                        <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+                      </url>
+                    </image:image>
+                  </url>
+                </image:image>
+              </url>
             </image:image>
-            <url>
-              <loc>https://www.lovingmypets.es/productos.html</loc>
-              <lastmod>2024-04-05</lastmod>
-              <changefreq>yearly</changefreq>
-              <priority>0.60</priority>
-              <image:image>
-                <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
-
-              </image:image>
-            </url>
           </url>
         </image:image>
       </url>
