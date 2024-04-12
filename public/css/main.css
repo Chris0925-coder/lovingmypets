@@ -116,13 +116,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav__logo {
 /*	padding: .9em;*/
+	aspect-ratio: 3/2;
 	width: 200px;
 	height: 200px;
 /*	border-radius: 30em 10em 30em 10em;*/
 }
 
 .nav__logo img {
-	aspect-ratio: 3/2;
+/*	aspect-ratio: 3/2;*/
 	background-size: contain;
 	mix-blend-mode: darken;
 	width: 100%;
