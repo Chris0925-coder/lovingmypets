@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="https://www.lovingmypets.es/favicons/favicon.png"/><square150x150logo src="https://www.lovingmypets.es/favicons/favicon.png"/><square310x310logo src="https://www.lovingmypets.es/favicons/favicon.png"/><TileColor>#009900</TileColor>
+            <square70x70logo src="https://www.lovingmypets.es/favicon.png"/><square150x150logo src="https://www.lovingmypets.es/favicon.png"/><square310x310logo src="https://www.lovingmypets.es/favicon.png"/><TileColor>#009900</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
