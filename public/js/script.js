@@ -941,9 +941,9 @@ malososA();
 
 const btn = document.querySelector(".comment__button");
 const commentId = document.getElementById('comments');
-console.log(commentId.value);
+// console.log(commentId.value);
 btn.addEventListener('click', () => {
-	event.preventDefault()
+	// event.preventDefault()
 	if (commentId.value != "") {
 		alert('Gracias por tu comentario.');
 	} 
