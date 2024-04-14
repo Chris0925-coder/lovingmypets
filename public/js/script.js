@@ -938,6 +938,16 @@ blackyA();
 pakaA();
 ladyA();
 malososA();
+
+const btn = document.querySelector(".comment__button");
+const commentId = document.getElementById('comments');
+console.log(commentId.value);
+btn.addEventListener('click', () => {
+	event.preventDefault()
+	if (commentId.value != "") {
+		alert('Gracias por tu comentario.');
+	} 
+});
 // lady.addEventListener('click', () => {
 // 	boton.children[3].style.display = "block";
 // 	boton.children[4].style.display = "block";
