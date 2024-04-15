@@ -274,7 +274,7 @@ h1,h2,h3,h4,h5,h6 {
 	gap: 2em;
 	cursor: default;
 /*	border: 1px solid black;*/
-	justify-content: center;
+/*	justify-content: center;*/
 	overflow-y: scroll;
 	scrollbar-width: none;
 	scrollbar-gutter: auto;

@@ -14,10 +14,10 @@ const content = document.getElementById("backgroundIMG");
 // console.log(content);
 
 const aboutIMG = [
-	"public/img/bebe.jpg",
-	"public/img/wasnotajoke.jpg",
-	"public/img/ladyA.jpg",
-	"public/img/pakaE.jpg"
+	"public/img/slideabout.jpg",
+	"public/img/slideaboutC.jpeg",
+	"public/img/slideaboutB.jpg",
+	"public/img/slideaboutA.jpg"
 ];
 // console.log(aboutIMG);
 let slideIndex = 0;
