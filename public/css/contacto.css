@@ -226,6 +226,7 @@ input[type="email"], textarea {
 	gap: 1.5em;
 	margin: 1.5em;
 	padding: .5em;
+	justify-content: space-between;
 }
 
 .bi-tiktok {
@@ -254,13 +255,49 @@ input[type="email"], textarea {
  	color: #1b1b1b;
  }
 
- .bi-instagram:hover, .bi-tiktok:hover, .bi-twitter-x:hover {
- 	display: block;
- 	position: relative;
+ .bi-instagram:hover, 
+ .bi-tiktok:hover, 
+ .bi-twitter-x:hover {
+/* 	display: flex;*/
+/* 	position: relative;*/
  	padding: .4em;
  	scale: 1.2;
  	transition: all .5s ease-in-out;
  }
+
+ .email__content {
+ 	display: flex;
+ 	position: relative;
+ 	align-items: end;
+ }
+
+.email__content a{
+	display: flex;
+	position: relative;
+	font-size: .7rem;
+	text-decoration: none;
+	color: #303030;
+/*	letter-spacing: .1em;*/
+	align-items: center;
+	gap: .1em;
+}
+
+.email__content a:hover{
+	color: #f9f9f98c;
+	scale: 1.1;
+	transition: all .6s ease-in-out;
+}
+
+.email__content a:not(:hover){
+	transition: all .6s ease-in-out;
+}
+
+#email-icon {
+/*	color: #fff;*/
+	width: 15px;
+	height: 15px;
+}
+
 
 .copyright {
 	font-size: .6rem;

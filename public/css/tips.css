@@ -260,6 +260,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .A {
+/*	flex: 1;*/
 	max-width: 200px;
 	height: 300px;
 /*	grid-area: 1 / 1 / 2;*/
@@ -267,6 +268,7 @@ h1,h2,h3,h4,h5,h6 {
 } 
 
 .B {
+/*	flex: 1;*/
 /*	grid-area: 1 / 2 / 3;*/
 	max-width: 200px;
 	height: 300px;
@@ -274,19 +276,49 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .C {
+/*	flex: 1;*/
 	max-width: 200px;
 	height: 300px;
 /*	grid-area: 2 / 1 / 3;*/
 	margin: auto;
 }
 
+/*.A:hover,.B:hover,.C:hover {
+	flex: 3;
+}*/
+
+.item {
+	flex:1;
+	position: relative;
+	display: flex;
+}
+
+
 .item img {
+/*	flex: 1;*/
 	display: block;
 	width: 100%;
 	height: 100%;
-	object-fit: fill;
+/*	object-fit: fill;*/
+	border-radius: 5px;
 }
 
+.item:hover img {
+	flex:3;
+	scale: 1.2;
+	transition: all .8s ease-in-out;
+}
+
+.item:not(:hover) img {
+	transition: all .4s ease-in-out;
+}
+
+/*
+.item img:hover {
+	flex: 3;
+	cursor: pointer;
+}
+*/
 /*FOOTER*/
 .foot {
 	background-color: rgb(90 200 90 / 0.7);
@@ -299,6 +331,7 @@ h1,h2,h3,h4,h5,h6 {
 	gap: 1.5em;
 	margin: 1.5em;
 	padding: .5em;
+	justify-content: space-between;
 }
 
 .bi-tiktok {
@@ -330,12 +363,45 @@ h1,h2,h3,h4,h5,h6 {
  .bi-instagram:hover, 
  .bi-tiktok:hover, 
  .bi-twitter-x:hover {
- 	display: block;
- 	position: relative;
+/* 	display: flex;*/
+/* 	position: relative;*/
  	padding: .4em;
  	scale: 1.2;
  	transition: all .5s ease-in-out;
  }
+
+ .email__content {
+ 	display: flex;
+ 	position: relative;
+ 	align-items: end;
+ }
+
+.email__content a{
+	display: flex;
+	position: relative;
+	font-size: .7rem;
+	text-decoration: none;
+	color: #303030;
+/*	letter-spacing: .1em;*/
+	align-items: center;
+	gap: .1em;
+}
+
+.email__content a:hover{
+	color: #f9f9f98c;
+	scale: 1.1;
+	transition: all .6s ease-in-out;
+}
+
+.email__content a:not(:hover){
+	transition: all .6s ease-in-out;
+}
+
+#email-icon {
+/*	color: #fff;*/
+	width: 15px;
+	height: 15px;
+}
 
 .copyright {
 	display: flex;
