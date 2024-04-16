@@ -219,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {
 #backgroundIMG {
 	display: block;
 	transition: all .5s ease-in-out;
-/*	background-image: url();*/
+	background-image: url("../img/aboutcollage.jpg");
 }
 
 .first__content {

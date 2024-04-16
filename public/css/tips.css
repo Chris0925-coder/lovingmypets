@@ -236,8 +236,19 @@ h1,h2,h3,h4,h5,h6 {
 .tips__text div {
 /*	line-height: 1em;*/
 	max-width: 400px;
+	height: auto;
 	text-align: left;
 
+}
+
+.tips__text .content__text {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+/*	border: 1px solid black;*/
+	width: auto;
+	min-height: 350px;
 }
 
 .content__items {
