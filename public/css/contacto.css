@@ -31,6 +31,31 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
+textarea {
+	padding: 0;
+  min-height: 3.75em;
+	field-sizing: content;
+}
+
+/*input[type="text"], 
+input[type="password"], */
+input[type="email"], textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #c9c9c9;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
 
 .container {
 	width: 100%;
@@ -242,28 +267,75 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
+/*.card {
+	display: grid;
+	position: relative;
+	place-content: center;
+	width: auto;
+	height: auto;
+}*/
+
 .card-body {
 	display: flex;
+	position: relative;
 	justify-content: center;
 	background-image: linear-gradient(180deg, #8F97798c 0%, #ffffff8c 100%), url('../img/wasnotajoke.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 1em;
+	border: 1px solid black;
+
 }
+
+.card-body form {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+/*    position: relative;*/
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: calc(100% + 3em);
+/*    margin: -1.5em 0 2em -1.5em;*/
+    background-color: #ffffff8c;
+/*    justify-content: center;*/
+		padding: 1em;
+		border-radius: 10px;
+}
+
 
 .card-header h5 {
-	background-color: #3030308c;
+	font-size: 1.2rem;
+	background-color: #30303006;
 	margin-top: .3em;
+	font-weight: 900;
 }
 
-.form-group input,.form-group textarea {
-/*	display: flex;*/
+.form-group {
+	-moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -moz-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  padding: 1.5em 0 0 1.5em;
+  width: calc(100% - 1.5em);
+}
+
+/*.form-group input,
+.form-group textarea {
 	position: relative;
 	flex-direction: column;
 	border-radius: 5px;
 	opacity: .9;
-}
+}*/
+
+
 /* .bi-youtube {
 	color: #c4302b;
 }*/
@@ -288,18 +360,19 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .contact__pol {
-	display: block;
+	display: grid;
 	position: relative;
 	max-width: 700px;
 	height: 200px;
+	place-content: center;
 /*	background-color: #303030;*/
 	margin: 0 auto;
 }
 
 .contact__pol iframe {
 	border: 2px solid #808080;
-	border-radius: 20px;
-	width: 100%;
+	border-radius: 10px;
+	max-width: 600px;
 	height: 100%;
 }
 

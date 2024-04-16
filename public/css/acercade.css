@@ -220,6 +220,8 @@ h1,h2,h3,h4,h5,h6 {
 	display: block;
 	transition: all .5s ease-in-out;
 	background-image: url("../img/aboutcollage.jpg");
+	background-position: center;
+	background-size: 100% 100%;
 }
 
 .first__content {
