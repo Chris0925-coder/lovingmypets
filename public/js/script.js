@@ -126,7 +126,7 @@ let title = [
 ];
 
 let galleryItems = [{
-	foto: `<img src="public/img/malososB.jpg" alt="periquitos verdes" class="item__image">
+	foto: `<img src="public/img/resize/malososB.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LOS MALOSOS</h3>
 				<h4 class="item__role">
@@ -134,7 +134,7 @@ let galleryItems = [{
 					<span>Orange-chinned Parakeet</span>
 				</h4>
 			</figcaption>`,
-	fotoA: `<img src="public/img/malosoC.jpg" alt="periquitos verdes" class="item__image">
+	fotoA: `<img src="public/img/resize/malosoC.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LOS MALOSOS</h3>
 				<h4 class="item__role">
@@ -143,7 +143,7 @@ let galleryItems = [{
 				</h4>
 
 			</figcaption>`,
-	fotoB: `<img src="public/img/malosoE.jpg" alt="periquitos verdes" class="item__image">
+	fotoB: `<img src="public/img/resize/malosoE.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LOS MALOSOS</h3>
 				<h4 class="item__role">
@@ -151,7 +151,7 @@ let galleryItems = [{
 					<span>Orange-chinned Parakeet</span>
 				</h4>
 			</figcaption>`,
-	fotoC: `<img src="public/img/malososD.jpg" alt="periquitos verdes" class="item__image">
+	fotoC: `<img src="public/img/resize/malososD.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LOS MALOSOS</h3>
 				<h4 class="item__role">
@@ -159,7 +159,7 @@ let galleryItems = [{
 					<span>Orange-chinned Parakeet</span>
 				</h4>
 			</figcaption>`,
-	fotoD: `<img src="public/img/sweethome.jpg" alt="periquitos verdes" class="item__image">
+	fotoD: `<img src="public/img/resize/sweethome.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LOS MALOSOS</h3>
 				<h4 class="item__role">
@@ -167,7 +167,7 @@ let galleryItems = [{
 					<span>Orange-chinned Parakeet</span>
 				</h4>
 			</figcaption>`,
-	fotoE: `<img src="public/img/bebe.jpg" alt="periquitos verdes" class="item__image">
+	fotoE: `<img src="public/img/resize/bebe.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LOS MALOSOS</h3>
 				<h4 class="item__role">
@@ -177,61 +177,61 @@ let galleryItems = [{
 			</figcaption>`		
 	},
 	{ 	
-	foto: `<img src="public/img/blackyB.jpg" alt="perro mestizo" class="item__image">
+	foto: `<img src="public/img/resize/blackyB.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoA: `<img src="public/img/blackyA.jpg" alt="perro mestizo" class="item__image">
+	fotoA: `<img src="public/img/resize/blackyA.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 						</figcaption>`,
-	fotoB: `<img src="public/img/blackyC.jpg" alt="perro mestizo" class="item__image">
+	fotoB: `<img src="public/img/resize/blackyC.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoC: `<img src="public/img/blackyD.jpg" alt="perro mestizo" class="item__image">
+	fotoC: `<img src="public/img/resize/blackyD.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoD: `<img src="public/img/blackyE.jpg" alt="perro mestizo" class="item__image">
+	fotoD: `<img src="public/img/resize/blackyE.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoE: `<img src="public/img/blackyF.jpg" alt="perro mestizo" class="item__image">
+	fotoE: `<img src="public/img/resize/blackyF.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoF: `<img src="public/img/blackyG.jpg" alt="perro mestizo" class="item__image">
+	fotoF: `<img src="public/img/resize/blackyG.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoG: `<img src="public/img/blackyH.jpg" alt="perro mestizo" class="item__image">
+	fotoG: `<img src="public/img/resize/blackyH.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoH: `<img src="public/img/blackyI.jpg" alt="perro mestizo" class="item__image">
+	fotoH: `<img src="public/img/resize/blackyI.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoI: `<img src="public/img/blackyJ.jpg" alt="perro mestizo" class="item__image">
+	fotoI: `<img src="public/img/resize/blackyJ.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">BLACKY MATEO</h3>
 				<span class="item__role">
@@ -239,37 +239,37 @@ let galleryItems = [{
 			</figcaption>`
 	},
 	{ 	
-	foto: `<img src="public/img/ladyB.jpg" alt="perro mestizo" class="item__image">
+	foto: `<img src="public/img/resize/ladyB.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY MARGOT</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoA: `<img src="public/img/ladyC.jpg" alt="perro mestizo" class="item__image">
+	fotoA: `<img src="public/img/resize/ladyC.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY MARGOT</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoB: `<img src="public/img/ladyD.jpg" alt="perro mestizo" class="item__image">
+	fotoB: `<img src="public/img/resize/ladyD.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY MARGOT</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoC: `<img src="public/img/ladyA.jpg" alt="perro mestizo" class="item__image">
+	fotoC: `<img src="public/img/resize/ladyA.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY MARGOT</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoD: `<img src="public/img/ladyE.jpg" alt="perro mestizo" class="item__image">
+	fotoD: `<img src="public/img/resize/ladyE.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY MARGOT</h3>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
-	fotoE: `<img src="public/img/ladyF.jpg" alt="#" class="item__image">
+	fotoE: `<img src="public/img/resize/ladyF.jpg" alt="#" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">LADY MARGOT</h3>
 				<span class="item__role">
@@ -277,7 +277,7 @@ let galleryItems = [{
 			</figcaption>`
 	},
 	{ 	
-	foto: `<img src="public/img/paka.jpg" alt="Loro" class="item__image">
+	foto: `<img src="public/img/resize/paka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -285,7 +285,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoA: `<img src="public/img/pakaenlarama.jpg" alt="Loro" class="item__image">
+	fotoA: `<img src="public/img/resize/pakaenlarama.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -293,7 +293,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoB: `<img src="public/img/pakapica.jpg" alt="Loro" class="item__image">
+	fotoB: `<img src="public/img/resize/pakapica.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -301,7 +301,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoC: `<img src="public/img/ojopaka.jpg" alt="Loro" class="item__image">
+	fotoC: `<img src="public/img/resize/ojopaka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -309,7 +309,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoD: `<img src="public/img/pakaE.jpg" alt="Loro" class="item__image">
+	fotoD: `<img src="public/img/resize/pakaE.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -317,7 +317,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoE: `<img src="public/img/pakaD.jpg" alt="Loro" class="item__image">
+	fotoE: `<img src="public/img/resize/pakaD.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -325,7 +325,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoF: `<img src="public/img/pakaB.jpg" alt="Loro" class="item__image">
+	fotoF: `<img src="public/img/resize/pakaB.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -333,7 +333,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h4>
 			</figcaption>`,
-	fotoG: `<img src="public/img/pakaC.jpg" alt="Loro" class="item__image">
+	fotoG: `<img src="public/img/resize/pakaC.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
 				<h3 class="item__name">PAKA ALEJANDRA</h3>
 				<h4 class="item__role">
@@ -383,16 +383,6 @@ let galleryCont = {
 	`
 };
 
-// <span class="content__primary" id="titulo__A">The Panama amazon</span>
-
-
-// console.log(galLeng);
-// let items = Object.values (galleryItems[0]);
-// console.log(items);
-
-
-
-
 
 // console.log(galleryItems);
 const begin = [
@@ -426,11 +416,7 @@ let sliderBoton = [
 	// `<button class="slideJ"></button>`
 ];
 
-// let bb = sliderBoton.slice(',');
-// [0]
-// let v = document.createElement('div');
-// let x = v.append(sliderBoton[1]);
-// innerHTML
+
 boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
 botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
 botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
@@ -767,18 +753,9 @@ function showArrows(a,b,c){
 		
 };
 
-// const widthOutput = document.querySelector("#width");
-// $(document).ready(function(){
-	// widthOutput.textContent = window.innerWidth;
 	
 widthOutput = window.innerWidth;
-// console.log("width: ", widthOutput, "px");
-		// iii = window.addEventListener("resize", widthOutput);
-// const yyy = $(document).ready(function(){widthOutput});
-	// console.log(yyy[0].body.firstElementChild.childNodes[3].clientWidth);
-	// widthOut = yyy[0].body.firstElementChild.childNodes[3].clientWidth;
 
-// window.addEventListener("resize", () => {
 	
 	function resize(b,c) {
 		// widthOut = yyy[0].body.firstElementChild.childNodes[3].clientWidth;
@@ -797,21 +774,10 @@ widthOutput = window.innerWidth;
 		};
 	
 	}
-// srcElement.document.childNodes[0].nextSibling.clientWidth
 	resize(prev,next);
 	resize(prevB,nextB);
 	resize(prevC,nextC);
 	resize(prevD,nextD);
-
-// });
-
-// })
-		// let widthV2 = anchoV1[0].childNodes[1].clientWidth;
-	    // console.log("width: ", anchoV1[0].childNodes[1].clientWidth, "px");   
-	
-		// });
-	// };
-// });
 
 
 function ladyA() {
@@ -948,59 +914,6 @@ btn.addEventListener('click', () => {
 		alert('Gracias por tu comentario.');
 	} 
 });
-// lady.addEventListener('click', () => {
-// 	boton.children[3].style.display = "block";
-// 	boton.children[4].style.display = "block";
-// 	boton.children[5].style.display = "block";
-// 	prev.style.display = "block";
-// 	next.style.display = "block";
-// 	items = Object.values (galleryItems[2]);
-// 	arrows(6);
-// 	gallery.style.background = 'linear-gradient(336deg, #404040 0%, rgba(0, 0, 0, 0.0)100%)';
-// 	gallery.innerHTML = begin[2];
-// 	firstTitle.innerHTML = title[2];
-// 	rowGal.style.flexDirection = "row";
-
-// 	galleryContent.innerHTML = galleryCont.lady;
-// 	boton.children[1].style.opacity = 0.2;
-// 	boton.children[0].style.opacity = 1;
-// 	boton.children[2].style.opacity = 1;
-// 	boton.children[3].style.opacity = 1;
-// 	boton.children[4].style.opacity = 1;
-// 	boton.children[5].style.opacity = 1;
-// });
-
-// paka.addEventListener('click', () => {
-// 	boton.children[3].style.display = "block";
-// 	boton.children[4].style.display = "block";
-// 	boton.children[5].style.display = "block";
-// 	prev.style.display = "block";
-// 	next.style.display = "block";
-// 	items = Object.values (galleryItems[3]);
-// 	arrows(6);
-// 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
-// 	gallery.innerHTML = begin[3];
-// 	rowGal.style.flexDirection = "row";
-
-// 	firstTitle.innerHTML = title[0];
-
-// 	galleryContent.innerHTML = galleryCont.paka;
-// 	boton.children[1].style.opacity = 0.2;
-// 	boton.children[0].style.opacity = 1;
-// 	boton.children[2].style.opacity = 1;
-// 	boton.children[3].style.opacity = 1;
-// 	boton.children[4].style.opacity = 1;
-// 	boton.children[5].style.opacity = 1;
-// });
-// if (f) {
-// gallery.style.backgroundColor = "none";
-// } else if (k) {
-// 	gallery.innerHTML = begin[2];
-// } else {
-	// gallery.innerHTML = begin[3];
-	// firstTitle.innerHTML = title[0];
-	// galleryContent.innerHTML = galleryCont.paka;
-// };
 
 let date = document.querySelector('.date');
 
