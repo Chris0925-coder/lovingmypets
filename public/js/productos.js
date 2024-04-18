@@ -15,6 +15,11 @@ const prev = document.getElementsByClassName('carousel-control-prev');
 const next = document.getElementsByClassName('carousel-control-next');
         
 
+const towers = document.getElementById('boxA');
+const power = document.getElementById('boxB');
+const board = document.getElementById('boxC');
+const pro = document.getElementById('boxD');
+const toys = document.getElementById('boxE');
 
 
 // window.addEventListener('resize', function() {
@@ -28,13 +33,8 @@ const next = document.getElementsByClassName('carousel-control-next');
 
     let anchoV1 = window.innerWidth;
     console.log("width: ", anchoV1, "px");   
-    if(anchoV1 <= 768) {
-            const towers = document.getElementById('boxA');
-            const power = document.getElementById('boxB');
-            const board = document.getElementById('boxC');
-            const pro = document.getElementById('boxD');
-            const toys = document.getElementById('boxE');
-    // const ddr = document.getElementById('boxE');
+    // if(anchoV1 <= 768) {
+                // const ddr = document.getElementById('boxE');
     // const ssd = document.getElementById('boxF');
     // console.log(towers.children);
     const slideA = [
@@ -181,13 +181,15 @@ const next = document.getElementsByClassName('carousel-control-next');
             
 
 
-    //     }
+        // }
     // });
-
+const contP = document.getElementsByClassName('gal-built');
+console.log(contP);
     // next[0].style.display = "none";
     // prev[0].style.display = "none";
     // const b = document.getElementsByClassName("b");
     // console.log(b);
+    if(anchoV1 <= 768) {
         sildeDisplay(slideA,index);
         sildeDisplay(slideB,index);
         sildeDisplay(slideC,index);
@@ -207,10 +209,13 @@ const next = document.getElementsByClassName('carousel-control-next');
         // b[1].style.display = "block";
         // b[2].style.display = "block";
         // b[3].style.display = "block";
-    }  
+    } 
+    // else if (anchoV1 >= 769) {
+    //     contP.style.position = "relative";
+    // } 
     // else {
     //     location.replace(location.href);
-    // }
+// }
     // else if (anchoV1 > 969) {
     //     let gal = document.getElementsByClassName("gal-built");
     //     console.log(gal);
