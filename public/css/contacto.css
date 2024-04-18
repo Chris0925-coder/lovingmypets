@@ -112,12 +112,18 @@ input[type="email"], textarea {
 }
 
 .nav__logo {
+	background-image: url('../../favicons/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 /*	padding: .9em;*/
+	aspect-ratio: 3/2;
 	width: 200px;
 	height: 200px;
+	mix-blend-mode: darken;
 /*	border-radius: 30em 10em 30em 10em;*/
 }
-
+/*
 .nav__logo img {
 	aspect-ratio: 3/2;
 	background-size: contain;
@@ -125,7 +131,7 @@ input[type="email"], textarea {
 	width: 100%;
 	height: 100%;
 }
-
+*/
 /*.nav__title {
 	font-size: .6rem;
 	font-weight: 300;
