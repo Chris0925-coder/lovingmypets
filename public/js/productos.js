@@ -63,8 +63,8 @@ const toys = document.getElementById('boxE');
 
     const slideE = [
         toys.children[0],
-        // ddr.children[1],
-        // ddr.children[2]
+        toys.children[1],
+        toys.children[2]
     ];
 
     // const slideF = [
