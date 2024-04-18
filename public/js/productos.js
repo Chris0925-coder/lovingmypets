@@ -23,15 +23,17 @@ const next = document.getElementsByClassName('carousel-control-next');
     // if(anchoV1 <= 968) {
         // CODE DESARROLLOHELPDESK.SITE
 // let resize = window.addEventListener('resize', 
-function resize() {
-    const towers = document.getElementById('boxA');
+// function resize() {
+    
 
     let anchoV1 = window.innerWidth;
     console.log("width: ", anchoV1, "px");   
     if(anchoV1 <= 768) {
+            const towers = document.getElementById('boxA');
             const power = document.getElementById('boxB');
             const board = document.getElementById('boxC');
             const pro = document.getElementById('boxD');
+            const toys = document.getElementById('boxE');
     // const ddr = document.getElementById('boxE');
     // const ssd = document.getElementById('boxF');
     // console.log(towers.children);
@@ -59,11 +61,11 @@ function resize() {
         pro.children[2]
     ];
 
-    // const slideE = [
-    //     ddr.children[0],
-    //     ddr.children[1],
-    //     ddr.children[2]
-    // ];
+    const slideE = [
+        toys.children[0],
+        // ddr.children[1],
+        // ddr.children[2]
+    ];
 
     // const slideF = [
     //     ssd.children[0],
@@ -190,14 +192,17 @@ function resize() {
         sildeDisplay(slideB,index);
         sildeDisplay(slideC,index);
         sildeDisplay(slideD,index);
-        previus(0,slideA);
-        other(0,slideA);
-        previus(1,slideB);
-        other(1,slideB);
-        previus(2,slideC);
-        other(2,slideC);
-        previus(3,slideD);
-        other(3,slideD);
+        sildeDisplay(slideE,index);
+        previus(0,slideE);
+        other(0,slideE);
+        previus(1,slideA);
+        other(1,slideA);
+        previus(2,slideB);
+        other(2,slideB);
+        previus(3,slideC);
+        other(3,slideC);
+        previus(4,slideD);
+        other(4,slideD);
         // b[0].style.display = "block";
         // b[1].style.display = "block";
         // b[2].style.display = "block";
@@ -216,9 +221,9 @@ function resize() {
     //     gal[4].style.position = "relative";
     //     gal[5].style.position = "relative";
     // }
-};
+// };
 
-resize();
+// resize();
 
 let date = document.querySelector('.date');
 
