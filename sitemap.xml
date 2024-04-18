@@ -5,15 +5,7 @@
   <lastmod>2024-04-12T19:27:57+01:00</lastmod>
   <priority>1.0</priority>
   <image:image>
-      <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
-  </image:image>
-</url>
-<url>
-  <loc>https://www.lovingmypets.es/productos.html</loc>
-  <lastmod>2024-04-12T19:27:57+01:00</lastmod>
-  <priority>0.70</priority>
-  <image:image>
-      <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
+      <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
   </image:image>
 </url>
 <url>
@@ -21,7 +13,31 @@
   <lastmod>2024-04-12T19:27:57+01:00</lastmod>
   <priority>0.80</priority>
   <image:image>
-      <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
+      <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.lovingmypets.es/tips.html</loc>
+  <lastmod>2024-04-12T19:27:57+01:00</lastmod>
+  <priority>0.70</priority>
+  <image:image>
+      <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.lovingmypets.es/contacto.html</loc>
+  <lastmod>2024-04-12T19:27:57+01:00</lastmod>
+  <priority>0.70</priority>
+  <image:image>
+      <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.lovingmypets.es/productos.html</loc>
+  <lastmod>2024-04-12T19:27:57+01:00</lastmod>
+  <priority>0.70</priority>
+  <image:image>
+      <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
   </image:image>
 </url>
 <url>
@@ -29,15 +45,10 @@
   <lastmod>2024-04-12T19:27:57+01:00</lastmod>
   <priority>1.0</priority>
   <image:image>
-      <image:loc>https://www.lovingmypets.es/favicon.png</image:loc>
+      <image:loc>https://www.lovingmypets.es/favicons/favicon.png</image:loc>
   </image:image>
 </url>
 <url>
-  <loc>https://www.lovingmypets.es/contacto.html</loc>
-  <lastmod>2024-04-12T19:27:57+01:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<!-- <url>
   <loc>https://www.lovingmypets.es/cookies.html</loc>
   <lastmod>2024-04-12T19:27:57+01:00</lastmod>
   <priority>0.50</priority>
@@ -46,5 +57,10 @@
   <loc>https://www.lovingmypets.es/pol.html</loc>
   <lastmod>2024-04-12T19:27:57+01:00</lastmod>
   <priority>0.50</priority>
-</url> -->
+</url>
+<url>
+  <loc>https://www.lovingmypets.es/terms.html</loc>
+  <lastmod>2024-04-12T19:27:57+01:00</lastmod>
+  <priority>0.50</priority>
+</url>
 </urlset>
