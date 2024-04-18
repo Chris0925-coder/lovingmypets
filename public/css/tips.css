@@ -65,8 +65,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .container {
 /*	width: 100%;*/
-	max-width: 2800px;
-	margin: 0 40px;
+	width: auto;
+	margin: 0 20px;
 	overflow: hidden;
 	padding: var(--padding-container);
 }
@@ -230,12 +230,12 @@ h1,h2,h3,h4,h5,h6 {
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
-	gap: 3em;
+	gap: 1em;
 }
 
-.tips__text div {
+.tips__text > div {
 /*	line-height: 1em;*/
-	max-width: 400px;
+	max-width: 500px;
 	height: auto;
 	text-align: left;
 
@@ -251,17 +251,20 @@ h1,h2,h3,h4,h5,h6 {
 	min-height: 350px;
 }
 
-.content__items {
+.tips__text .content__items {
 	display: grid;
 	position: relative;
 	grid-template-columns: auto auto auto;
 /*	grid-template-rows: auto auto;*/
-	gap: 1em;
+	gap: .15em;
+/*	border: 1px solid black;*/
 }
-
+.content__items {
+	min-width: 600px;
+}
 .A {
 /*	flex: 1;*/
-	max-width: 200px;
+	max-width: 300px;
 	height: 300px;
 /*	grid-area: 1 / 1 / 2;*/
 	margin: auto;
@@ -270,14 +273,14 @@ h1,h2,h3,h4,h5,h6 {
 .B {
 /*	flex: 1;*/
 /*	grid-area: 1 / 2 / 3;*/
-	max-width: 200px;
+	max-width: 300px;
 	height: 300px;
 	margin: auto;
 }
 
 .C {
 /*	flex: 1;*/
-	max-width: 200px;
+	max-width: 300px;
 	height: 300px;
 /*	grid-area: 2 / 1 / 3;*/
 	margin: auto;
@@ -287,11 +290,11 @@ h1,h2,h3,h4,h5,h6 {
 	flex: 3;
 }*/
 
-.item {
+/*.item {
 	flex:1;
 	position: relative;
 	display: flex;
-}
+}*/
 
 
 .item img {
@@ -598,8 +601,38 @@ h1,h2,h3,h4,h5,h6 {
 		margin: 0 auto;
 	}
 
+	.A,.B,.C{
+		width: auto;
+	}
+
 	.content__items {
+		position: relative;
+/*		width: 45rem;*/
+/*		height: 25rem;*/
+		overflow-x: auto;
+		overflow-y: hidden;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: .7rem;
 /*		margin-top: 2em;*/
-		margin: 2em auto;
+/*		margin: 2em auto;*/
+	}
+
+	 .item {
+/*		flex:0 0 100%;*/
+/*		height: 100%;*/
+		width: 55rem;
+		height: 25rem;
+/*		border: 1px solid black;*/
+/*		object-fit: cover;*/
+	}
+
+	.item img{
+		flex:0 0 100%;
+		height: 100%;
+		position: sticky;
+		left: 0;
+		scroll-snap-align: center;
+		width: 100%;
+		object-fit: fill;
 	}
 }

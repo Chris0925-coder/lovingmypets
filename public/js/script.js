@@ -800,7 +800,7 @@ function ladyA() {
 	galleryB.style.background = 'linear-gradient(336deg, #404040 0%, rgba(0, 0, 0, 0.0)100%)';
 	galleryB.innerHTML = begin[2];
 	// firstTitleB.innerHTML = title[2];
-	rowGalB.style.flexDirection = "row-reverse";
+	rowGalB.style.flexDirection = "row";
 
 	galleryContentB.innerHTML = galleryCont.lady;
 	botonB.children[1].style.opacity = 0.2;
@@ -834,7 +834,7 @@ function malososA() {
 	galleryC.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
 	galleryC.innerHTML = begin[0];
 	// firstTitleC.innerHTML = title[1];
-	rowGalC.style.flexDirection = "row";
+	rowGalC.style.flexDirection = "row-reverse";
 
 	galleryContentC.innerHTML = galleryCont.malosos;
 	botonC.children[1].style.opacity = 0.2;
