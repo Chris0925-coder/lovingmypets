@@ -128,112 +128,112 @@ let title = [
 let galleryItems = [{
 	foto: `<img src="public/img/resize/malososB.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LOS MALOSOS</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">LOS MALOSOS</h2>
+				<h3 class="item__role">
 					<span>Brotogeris jugularis</span>
 					<span>Orange-chinned Parakeet</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoA: `<img src="public/img/resize/malosoC.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LOS MALOSOS</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">LOS MALOSOS</h2>
+				<h3 class="item__role">
 					<span>Brotogeris jugularis</span>
 					<span>Orange-chinned Parakeet</span>
-				</h4>
+				</h3>
 
 			</figcaption>`,
 	fotoB: `<img src="public/img/resize/malosoE.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LOS MALOSOS</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">LOS MALOSOS</h2>
+				<h3 class="item__role">
 					<span>Brotogeris jugularis</span>
 					<span>Orange-chinned Parakeet</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoC: `<img src="public/img/resize/malososD.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LOS MALOSOS</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">LOS MALOSOS</h2>
+				<h3 class="item__role">
 					<span>Brotogeris jugularis</span>
 					<span>Orange-chinned Parakeet</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoD: `<img src="public/img/resize/sweethome.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LOS MALOSOS</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">LOS MALOSOS</h2>
+				<h3 class="item__role">
 					<span>Brotogeris jugularis</span>
 					<span>Orange-chinned Parakeet</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoE: `<img src="public/img/resize/bebe.jpg" alt="periquitos verdes" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LOS MALOSOS</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">LOS MALOSOS</h2>
+				<h3 class="item__role">
 					<span>Brotogeris jugularis</span>
 					<span>Orange-chinned Parakeet</span>
-				</h4>
+				</h3>
 			</figcaption>`		
 	},
 	{ 	
 	foto: `<img src="public/img/resize/blackyB.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoA: `<img src="public/img/resize/blackyA.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 						</figcaption>`,
 	fotoB: `<img src="public/img/resize/blackyC.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoC: `<img src="public/img/resize/blackyD.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoD: `<img src="public/img/resize/blackyE.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoE: `<img src="public/img/resize/blackyF.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoF: `<img src="public/img/resize/blackyG.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoG: `<img src="public/img/resize/blackyH.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoH: `<img src="public/img/resize/blackyI.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoI: `<img src="public/img/resize/blackyJ.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">BLACKY MATEO</h3>
+				<h2 class="item__name">BLACKY MATEO</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`
@@ -241,37 +241,37 @@ let galleryItems = [{
 	{ 	
 	foto: `<img src="public/img/resize/ladyB.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LADY MARGOT</h3>
+				<h2 class="item__name">LADY MARGOT</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoA: `<img src="public/img/resize/ladyC.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LADY MARGOT</h3>
+				<h2 class="item__name">LADY MARGOT</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoB: `<img src="public/img/resize/ladyD.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LADY MARGOT</h3>
+				<h2 class="item__name">LADY MARGOT</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoC: `<img src="public/img/resize/ladyA.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LADY MARGOT</h3>
+				<h2 class="item__name">LADY MARGOT</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoD: `<img src="public/img/resize/ladyE.jpg" alt="perro mestizo" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LADY MARGOT</h3>
+				<h2 class="item__name">LADY MARGOT</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`,
 	fotoE: `<img src="public/img/resize/ladyF.jpg" alt="#" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">LADY MARGOT</h3>
+				<h2 class="item__name">LADY MARGOT</h2>
 				<span class="item__role">
 				</span>
 			</figcaption>`
@@ -279,67 +279,67 @@ let galleryItems = [{
 	{ 	
 	foto: `<img src="public/img/resize/paka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoA: `<img src="public/img/resize/pakaenlarama.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoB: `<img src="public/img/resize/pakapica.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoC: `<img src="public/img/resize/ojopaka.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoD: `<img src="public/img/resize/pakaE.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoE: `<img src="public/img/resize/pakaD.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoF: `<img src="public/img/resize/pakaB.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	fotoG: `<img src="public/img/resize/pakaC.jpg" alt="Loro" class="item__image">
 			<figcaption class="item__description">
-				<h3 class="item__name">PAKA ALEJANDRA</h3>
-				<h4 class="item__role">
+				<h2 class="item__name">PAKA ALEJANDRA</h2>
+				<h3 class="item__role">
 					<span>Amazona ochrocephala</span>
 					<span>Yellow-crowned Parrot</span>
-				</h4>
+				</h3>
 			</figcaption>`,
 	// fotoH: `<img src="public/img/.jpg" alt="Loro" class="item__image">
 	// 		<figcaption class="item__description">
