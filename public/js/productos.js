@@ -184,7 +184,7 @@ const toys = document.getElementById('boxE');
         // }
     // });
 const contP = document.getElementsByClassName('gal-built');
-console.log(contP);
+// console.log(contP);
     // next[0].style.display = "none";
     // prev[0].style.display = "none";
     // const b = document.getElementsByClassName("b");
