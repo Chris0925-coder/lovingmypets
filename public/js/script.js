@@ -915,6 +915,18 @@ btn.addEventListener('click', () => {
 	} 
 });
 
+
+
+// FB.api(
+//   '/122134103930225454',
+//   'GET',
+//   {},
+//   function(response) {
+//   }
+// );
+
+
+
 let date = document.querySelector('.date');
 
 date.append(new Date ().getFullYear ());
