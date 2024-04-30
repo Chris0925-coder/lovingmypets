@@ -812,14 +812,14 @@ h1,h2,h3,h4,h5,h6 {
   	padding: .1em;
  }
 
-.bi-twitter-x {
+.bi-facebook {
  	font-size: 1.4rem;
- 	color: #1b1b1b;
+/* 	color: #1b1b1b;*/
  }
 
  .bi-instagram:hover, 
  .bi-tiktok:hover, 
- .bi-twitter-x:hover {
+ .bi-facebook:hover {
 /* 	display: flex;*/
 /* 	position: relative;*/
  	padding: .4em;
