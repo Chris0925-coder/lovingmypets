@@ -4,4 +4,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+User-agent: *
+Allow: /
+
 Sitemap: https://www.lovingmypets.es/sitemap.xml

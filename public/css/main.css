@@ -171,6 +171,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav__links {
 	color: #1b1b1b;
 	text-decoration: none;
+/*	text-transform: uppercase;*/
 }
 
 .nav__menu {
