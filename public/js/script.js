@@ -905,15 +905,13 @@ pakaA();
 ladyA();
 malososA();
 
-const btn = document.querySelector(".comment__button");
-const commentId = document.getElementById('comments');
-// console.log(commentId.value);
-btn.addEventListener('click', () => {
-	// event.preventDefault()
-	if (commentId.value != "") {
-		alert('Gracias por tu comentario.');
-	} 
-});
+// const btn = document.querySelector(".comment__button");
+// const commentId = document.getElementById('comments');
+// btn.addEventListener('click', () => {
+// 	if (commentId.value != "") {
+// 		alert('Gracias por tu comentario.');
+// 	} 
+// });
 
 
 
