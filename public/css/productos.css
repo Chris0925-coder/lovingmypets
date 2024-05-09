@@ -420,6 +420,10 @@ h1,h2,h3,h4,h5,h6 {
 		object-fit: fill;
 	}
 
+	.hero__title {
+		font-size: 2rem;
+	}
+
 	.gallery__contain--img {
 		width: 100%;
 		margin: 0;
