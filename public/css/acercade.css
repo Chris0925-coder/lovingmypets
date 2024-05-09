@@ -379,13 +379,11 @@ h1,h2,h3,h4,h5,h6 {
 	width:50px;
 	background-image: url('../img/inst.svg');
 }*/
-.ads {
+/*.ads {
 	display: grid;
 	overflow: hidden;
 	place-content: center;
-/*	border: 1px solid black;*/
-/*	margin: 0 auto;*/
-}
+}*/
 
 
 @media screen and (max-width: 768px) {
