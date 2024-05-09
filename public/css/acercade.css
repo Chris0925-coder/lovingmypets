@@ -234,7 +234,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .first__content {
 	width: auto;
-	height: 50dvh;
+/*	height: 50dvh;*/
 /*	min-height: 600px;*/
 /*	max-height: 40lvh;*/
 	position: relative;
