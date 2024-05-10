@@ -458,173 +458,211 @@ botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoto
 // 	gallery.innerHTML = galleryItems[3].fotoA;
 
 // });
-
+// boton.forEach((element) => console.log(element));
 
 function QQ(a, c, d) {
-// 	a.addEventListener('click', () => {
+	a.children[0].addEventListener('click', () => {
 		// if(true) {
-			a.children[0].addEventListener('click', () => {
-
-				a.children[0].style.opacity = 0.2;
-				a.children[1].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[5].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				d.innerHTML = galleryItems[c].foto;
-
-			});
-
-			a.children[1].addEventListener('click', () => {
-
-				a.children[1].style.opacity = 0.2;
-				a.children[0].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[5].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoA;
-
-			});
-
-			a.children[2].addEventListener('click', () => {
-
-				a.children[2].style.opacity = 0.2;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[5].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoB;
-
-			});
-
-
-			a.children[3].addEventListener('click', () => {
-
-				a.children[3].style.opacity = 0.2;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[5].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoC;
-
-			});
-
-			a.children[4].addEventListener('click', () => {
-
-				a.children[4].style.opacity = 0.2;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				a.children[5].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoD;
-
-			});
-
-			a.children[5].addEventListener('click', () => {
-
-				a.children[5].style.opacity = 0.2;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoE;
-
-			});
-
-			a.children[6].addEventListener('click', () => {
-
-				a.children[5].style.opacity = 1;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[6].style.opacity = 0.2;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoF;
-
-			});
-
-			a.children[7].addEventListener('click', () => {
-
-				a.children[5].style.opacity = 1;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 0.2;
-				a.children[2].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoG;
-
-			});
-
-			a.children[8].addEventListener('click', () => {
-
-				a.children[5].style.opacity = 1;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[6].style.opacity = 1;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 0.2;
-				a.children[6].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				a.children[9].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoH;
-
-			});
-
-			a.children[9].addEventListener('click', () => {
-
-				a.children[6].style.opacity = 1;
-				a.children[1].style.opacity = 1;
-				a.children[0].style.opacity = 1;
-				a.children[3].style.opacity = 1;
-				a.children[4].style.opacity = 1;
-				a.children[5].style.opacity = 1;
-				a.children[2].style.opacity = 1;
-				a.children[9].style.opacity = 0.2;
-				a.children[7].style.opacity = 1;
-				a.children[8].style.opacity = 1;
-				d.innerHTML = galleryItems[c].fotoI;
-			});
+			
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[0].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].foto;
+		}
 		// }
-	// })
+		// a.children[0].style.opacity = 0.2;
+		// a.children[1].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[5].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].foto;
+
+	});
+
+	a.children[1].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[1].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoA;
+		}
+		// a.children[1].style.opacity = 0.2;
+		// a.children[0].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[5].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoA;
+
+	});
+
+	a.children[2].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[2].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoB;
+		}
+		// a.children[2].style.opacity = 0.2;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[5].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoB;
+
+	});
+
+
+	a.children[3].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[3].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoC;
+		}
+		// a.children[3].style.opacity = 0.2;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[5].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoC;
+
+	});
+
+	a.children[4].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[4].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoD;
+		}
+		// a.children[4].style.opacity = 0.2;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// a.children[5].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoD;
+
+	});
+
+	a.children[5].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[5].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoE;
+		}
+		// a.children[5].style.opacity = 0.2;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoE;
+
+	});
+
+	a.children[6].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[6].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoF;
+		}
+		// a.children[6].style.opacity = 0.2;
+		// a.children[5].style.opacity = 1;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;				a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoF;
+
+	});
+
+	a.children[7].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[7].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoG;
+		}
+		// a.children[7].style.opacity = 0.2;
+		// a.children[5].style.opacity = 1;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoG;
+
+	});
+
+	a.children[8].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[8].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoH;
+		}
+		// a.children[8].style.opacity = 0.2;
+		// a.children[5].style.opacity = 1;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[6].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// a.children[9].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoH;
+
+	});
+
+	a.children[9].addEventListener('click', () => {
+		for (i=0;i<a.children.length;i++) {
+			a.children[i].style.opacity = "1";
+			a.children[9].style.opacity = "0.2";
+			d.innerHTML = galleryItems[c].fotoI;
+		}
+		// a.children[9].style.opacity = 0.2;
+		// a.children[6].style.opacity = 1;
+		// a.children[1].style.opacity = 1;
+		// a.children[0].style.opacity = 1;
+		// a.children[3].style.opacity = 1;
+		// a.children[4].style.opacity = 1;
+		// a.children[5].style.opacity = 1;
+		// a.children[2].style.opacity = 1;
+		// a.children[7].style.opacity = 1;
+		// a.children[8].style.opacity = 1;
+		// d.innerHTML = galleryItems[c].fotoI;
+	});
 };
 
 QQ(boton, 3, gallery);
@@ -781,9 +819,9 @@ widthOutput = window.innerWidth;
 
 
 function ladyA() {
-	botonB.children[3].style.display = "block";
-	botonB.children[4].style.display = "block";
-	botonB.children[5].style.display = "block";
+	// botonB.children[3].style.display = "block";
+	// botonB.children[4].style.display = "block";
+	// botonB.children[5].style.display = "block";
 	botonB.children[6].style.display = "none";
 	botonB.children[7].style.display = "none";
 	botonB.children[8].style.display = "none";
@@ -814,9 +852,9 @@ function ladyA() {
 	// botonB.children[8].style.opacity = 1;
 };
 function malososA() {
-	botonC.children[3].style.display = "block";
-	botonC.children[4].style.display = "block";
-	botonC.children[5].style.display = "block";
+	// botonC.children[3].style.display = "block";
+	// botonC.children[4].style.display = "block";
+	// botonC.children[5].style.display = "block";
 	botonC.children[6].style.display = "none";
 	botonC.children[7].style.display = "none";
 	botonC.children[8].style.display = "none";
@@ -845,11 +883,11 @@ function malososA() {
 	// boton.children[5].style.opacity = 1;
 };
 function pakaA() {
-	boton.children[3].style.display = "block";
-	boton.children[4].style.display = "block";
-	boton.children[5].style.display = "block";
-	boton.children[6].style.display = "block";
-	boton.children[7].style.display = "block";
+	// boton.children[3].style.display = "block";
+	// boton.children[4].style.display = "block";
+	// boton.children[5].style.display = "block";
+	// boton.children[6].style.display = "block";
+	// boton.children[7].style.display = "block";
 	boton.children[8].style.display = "none";
 	boton.children[9].style.display = "none";
 	// boton.children[8].style.display = "none";
@@ -875,13 +913,13 @@ function pakaA() {
 	// boton.children[5].style.opacity = 1;
 };
 function blackyA() {
-	botonD.children[3].style.display = "block";
-	botonD.children[4].style.display = "block";
-	botonD.children[5].style.display = "block";
-	botonD.children[6].style.display = "block";
-	botonD.children[7].style.display = "block";
-	botonD.children[8].style.display = "block";
-	botonD.children[9].style.display = "block";
+	// botonD.children[3].style.display = "block";
+	// botonD.children[4].style.display = "block";
+	// botonD.children[5].style.display = "block";
+	// botonD.children[6].style.display = "block";
+	// botonD.children[7].style.display = "block";
+	// botonD.children[8].style.display = "block";
+	// botonD.children[9].style.display = "block";
 	// prevD.style.display = "block";
 	// nextD.style.display = "block";
 	items = Object.values (galleryItems[1]);
