@@ -469,18 +469,6 @@ function QQ(a, c, d) {
 			a.children[0].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].foto;
 		}
-		// }
-		// a.children[0].style.opacity = 0.2;
-		// a.children[1].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[5].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].foto;
 
 	});
 
@@ -490,17 +478,6 @@ function QQ(a, c, d) {
 			a.children[1].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoA;
 		}
-		// a.children[1].style.opacity = 0.2;
-		// a.children[0].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[5].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoA;
 
 	});
 
@@ -510,17 +487,6 @@ function QQ(a, c, d) {
 			a.children[2].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoB;
 		}
-		// a.children[2].style.opacity = 0.2;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[5].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoB;
 
 	});
 
@@ -531,17 +497,6 @@ function QQ(a, c, d) {
 			a.children[3].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoC;
 		}
-		// a.children[3].style.opacity = 0.2;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[5].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoC;
 
 	});
 
@@ -551,17 +506,6 @@ function QQ(a, c, d) {
 			a.children[4].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoD;
 		}
-		// a.children[4].style.opacity = 0.2;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// a.children[5].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoD;
 
 	});
 
@@ -571,17 +515,6 @@ function QQ(a, c, d) {
 			a.children[5].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoE;
 		}
-		// a.children[5].style.opacity = 0.2;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoE;
 
 	});
 
@@ -591,16 +524,6 @@ function QQ(a, c, d) {
 			a.children[6].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoF;
 		}
-		// a.children[6].style.opacity = 0.2;
-		// a.children[5].style.opacity = 1;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;				a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoF;
 
 	});
 
@@ -610,17 +533,6 @@ function QQ(a, c, d) {
 			a.children[7].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoG;
 		}
-		// a.children[7].style.opacity = 0.2;
-		// a.children[5].style.opacity = 1;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoG;
 
 	});
 
@@ -630,18 +542,6 @@ function QQ(a, c, d) {
 			a.children[8].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoH;
 		}
-		// a.children[8].style.opacity = 0.2;
-		// a.children[5].style.opacity = 1;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[6].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// a.children[9].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoH;
 
 	});
 
@@ -651,17 +551,7 @@ function QQ(a, c, d) {
 			a.children[9].style.opacity = "0.2";
 			d.innerHTML = galleryItems[c].fotoI;
 		}
-		// a.children[9].style.opacity = 0.2;
-		// a.children[6].style.opacity = 1;
-		// a.children[1].style.opacity = 1;
-		// a.children[0].style.opacity = 1;
-		// a.children[3].style.opacity = 1;
-		// a.children[4].style.opacity = 1;
-		// a.children[5].style.opacity = 1;
-		// a.children[2].style.opacity = 1;
-		// a.children[7].style.opacity = 1;
-		// a.children[8].style.opacity = 1;
-		// d.innerHTML = galleryItems[c].fotoI;
+		
 	});
 };
 
