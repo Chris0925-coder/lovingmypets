@@ -842,11 +842,11 @@ h1,h2,h3,h4,h5,h6 {
 	color: #303030;
 }
 
-.form__main {
+/*.form__main {
 	display: flex;
 	position: relative;
 	flex-direction: column;
-}
+}*/
 /* .bi-youtube {
 	color: #c4302b;
 }*/

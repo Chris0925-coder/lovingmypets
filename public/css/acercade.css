@@ -392,11 +392,31 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
-.form__main {
+.copyright {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: .6rem;
+	text-align: center;
+	background-color: #222222;
+	color: #ffff;
+	gap: 1em;
+	justify-content: center;
+/*	margin: 0 auto;*/
+}
+
+.copyright a {
+	color: #ffff;
+}
+
+.copyright a:hover::after {
+	color: #303030;
+}
+
+/*.form__main {
 	display: flex;
 	position: relative;
 	flex-direction: column;
-}
+}*/
 /* .bi-youtube {
 	color: #c4302b;
 }*/
