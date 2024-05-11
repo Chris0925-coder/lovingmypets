@@ -398,11 +398,11 @@ input[type="email"], textarea {
 	width:50px;
 	background-image: url('../img/inst.svg');
 }*/
-/*.ads {
+.ads {
 	display: grid;
 	overflow: hidden;
 	place-content: center;
-}*/
+}
 
 
 .contact__pol {

@@ -497,11 +497,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 */
 
-/*.ads {
+.ads {
 	display: grid;
 	overflow: hidden;
 	place-content: center;
-}*/
+}
 
 @media screen and (max-width: 768px) {
 	.hero {

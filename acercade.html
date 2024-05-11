@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 	<!-- GOOGLE ADSENSE -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5964094254983998"
-     crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5964094254983998"
+     crossorigin="anonymous"></script> -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Acerca de nuestras mascotas | LovingMyPets">
-	<meta name="google-adsense-account" content="ca-pub-5964094254983998">
+	<!-- <meta name="google-adsense-account" content="ca-pub-5964094254983998"> -->
 	<title>Acerca de | LovingMyPets</title>
-	<link rel="stylesheet" type="text/css" href="public/css/acercade.css">
-	<script type="text/javascript" src="public/js/acercade.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="public/css/main.css">
+	<script type="text/javascript" src="public/js/script.js" defer></script>
 </head>
 <body>
 	<header class="hero">
@@ -20,7 +21,7 @@
 				<!-- <h2 class="nav__title">LovingMyPets</h2> -->
 			</div>
 			<div class="nav__collapse">
-				<button class="nav__menu"><img src="public/img/menu.svg" class="nav__img" alt="icon-menu"></button>
+				<button class="nav__menu" title="boton menu"><img src="public/img/menu.svg" class="nav__img" alt="icon-menu"></button>
 			<!-- </div> -->
 
 				<ul class="nav__link nav__link--menu">
@@ -28,7 +29,7 @@
 						<a href="index.html" class="nav__links">Inicio</a>
 					</li>
 					<li class="nav__items active">
-						<a href="#" class="nav__links">Acerca de</a>
+						<a href="acercade.html" class="nav__links">Acerca de</a>
 					</li>
 					<li class="nav__items">
 						<a href="tips.html" class="nav__links">LovingMyPets Tips</a>
@@ -48,33 +49,244 @@
 		</nav>
 
 		<section class="hero__container container">
-			<h1 class="hero__title">LovingMyPets <p>Espacio de  mis mascotas</p></h1>
+			<h1 class="hero__title">LovingMyPets <p>Espacio de mis mascotas</p></h1>
 			<p class="hero__paragraph">Lo mejor de nuestras mascotas. Síguenos en nuestras redes sociales (<a href="https://www.instagram.com/loving.my_pets?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">loving.my_pets</a>) y conoce más sobre estas.</p>
 			<!-- <a href="https://www.instagram.com/loving.my_pets/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="cta">Instagram</a> -->
 		</section>
 	</header>
 	<main>
-		<section class="content" id="backgroundIMG">
-			<div  class="first__content">
-				<h2>LovingMyPets</h2>
-				<article class="first__content--paragraph">
-					<p>Nuestras mascotas son parte de nuestra familia, nos brindan su compañía y nos regalan momentos llenos de alegría cada día. LovingMyPets es un espacio creado para compartir fotos y videos de nuestras mascotas, así como consejos para su cuidado y mucho más.</p>
-				</article>
+		<!-- <p>Window width: <span id="width"></span></p> -->
+		<section class="primary__gallery" id="gal">
+			<!-- <h2 class="primary__gallery--title"></h2> -->
+			<div class="primary__gallery--content">
+
+				<div class="primary__gallery--wrapper">		
+					<button class="prev"><i class="bi bi-caret-left-fill"></i></button>
+					<button class="next"><i class="bi bi-caret-right-fill"></i></button>
+					<figure class="gallery__item">
+						<!-- <img src="public/img/pakaB.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption> -->
+						<!-- <button class="prev">prev</button>
+						<button class="next">next</button> -->
+					</figure>
+
+					<!-- <figure class="gallery__item">
+						<img src="public/img/blackyA.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</span>
+						</figcaption>
+					</figure>
+
+					<figure class="gallery__item">
+						<img src="public/img/malososA.jpg" alt="#" class="item__image">
+						<figcaption class="item__description">
+							<h3 class="item__name">LOREM</h3>
+							<span class="item__role">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+
+							</span>
+						</figcaption>
+					</figure> -->
+					<div class="button__sliders">
+						<!-- <button class="slide"></button>
+						<button class="slideA"></button>
+						<button class="slideB"></button> -->
+					</div>
+				</div>
+				<h3 class="gallery__content--titulo">
+			      <!-- <span class="content__primary" id="titulo__A">Lorem ipsum</span>
+			      <span class="content__secondary"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			      consequat.</p></span> -->
+			    </h3>
 			</div>
 		</section>
-		<br>
-		<!-- <div class="ads"> -->
-			<!-- AnuncioIB -->
-			<ins class="adsbygoogle"
-			     style="display:block"
-			     data-ad-client="ca-pub-5964094254983998"
-			     data-ad-slot="5958219941"
-			     data-ad-format="auto"
-			     data-full-width-responsive="true"></ins>
-			<script>
-			     (adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-			<!-- <script type="text/javascript">
+
+		<section class="primary__galleryC">
+			<!-- <h2 class="primary__gallery--titleC"></h2> -->
+			<div class="primary__gallery--contentC">
+
+				<div class="primary__gallery--wrapper">		
+					<button class="prevC"><i class="bi bi-caret-left-fill"></i></button>
+					<button class="nextC"><i class="bi bi-caret-right-fill"></i></button>
+					<figure class="gallery__itemC">
+					</figure>
+					<div class="button__slidersC">
+					</div>
+				</div>
+				<h3 class="gallery__content--tituloC">
+			    </h3>
+			</div>
+		</section>
+
+
+		<section class="primary__galleryB">
+			<!-- <h2 class="primary__gallery--titleB"></h2> -->
+			<div class="primary__gallery--contentB">
+
+				<div class="primary__gallery--wrapper">		
+					<button class="prevB"><i class="bi bi-caret-left-fill"></i></button>
+					<button class="nextB"><i class="bi bi-caret-right-fill"></i></button>
+					<figure class="gallery__itemB">
+					</figure>
+					<div class="button__slidersB">
+					</div>
+				</div>
+				<h3 class="gallery__content--tituloB">
+			    </h3>
+			</div>
+		</section>
+
+		<section class="primary__galleryD">
+			<!-- <h2 class="primary__gallery--titleD"></h2> -->
+			<div class="primary__gallery--contentD">
+
+				<div class="primary__gallery--wrapper">		
+					<button class="prevD"><i class="bi bi-caret-left-fill"></i></button>
+					<button class="nextD"><i class="bi bi-caret-right-fill"></i></button>
+					<figure class="gallery__itemD">
+					</figure>
+					<div class="button__slidersD">
+					</div>
+				</div>
+				<h3 class="gallery__content--tituloD">
+			    </h3>
+			</div>
+		</section>
+
+
+		<!-- <section class="container">
+			<div class="gallery__contain">
+				<a href="#gal" id="gal">
+				<div class="gallery__contain--img" id="paka">
+					<h3>PAKA ALEJANDRA</h3>
+					<article class="gallery__wrapper">
+					<figure class="gallery">
+						<img src="public/img/paka.jpg" alt="loro">
+					</figure>
+					<figure class="gallery">
+						<img src="public/img/pakaB.jpg" alt="loro">
+					</figure>
+					<figure class="gallery">	
+						<img src="public/img/pakaC.jpg" alt="loro">
+					</figure>
+					</article>
+				</div>
+
+				<div class="gallery__contain--img" id="inicio">
+					<h3>LOS MALOSOS</h3>
+					<article class="gallery__wrapper">
+					<figure class="gallery">
+						<img src="public/img/malosoC.jpg" alt="pericos"> -->
+						<!-- <figcaption class="item__description--gal">
+							<span class="item__name--gal">Perico Barbinaranja</span>
+							<span class="item__role--gal">
+								<p>Brotogeris jugularis.</p>
+								<p>Orange-chinned Parakeet.</p>
+							</span>
+
+						</figcaption> -->	
+					<!-- </figure>
+					<figure class="gallery">
+						<img src="public/img/malososB.jpg" alt="pericos">
+					</figure>
+					<figure class="gallery">	
+						<img src="public/img/malosoE.jpg" alt="pericos">
+					</figure> -->
+					<!-- <figure class="gallery">
+						<img src="public/img/malosoC.jpg" alt="pericos">
+				 	</figure>
+					<figure class="gallery">
+						<img src="public/img/malososB.jpg" alt="pericos">
+					</figure>
+					<figure class="gallery">	
+						<img src="public/img/malosoE.jpg" alt="pericos">
+					</figure> -->
+
+					<!-- </article>
+					<div class="item__description--gal">
+						<h4 class="item__name--gal">Perico Barbinaranja</h4>
+						<span class="item__role--gal">
+							<p>Brotogeris jugularis.</p>
+							<p>Orange-chinned Parakeet.</p>
+						</span>
+					</div> -->
+					<!-- <figcaption class="item__description--gal">
+							<span class="item__name--gal">Perico Barbinaranja</span>
+							<span class="item__role--gal">
+								<p>Brotogeris jugularis.</p>
+								<p>Orange-chinned Parakeet.</p>
+							</span>
+
+						</figcaption> -->
+				<!-- </div>
+				<div class="gallery__contain--img" id="lady">
+					<h3>LADY MARGOT</h3>
+					<article class="gallery__wrapper">
+					<figure class="gallery">
+						<img src="public/img/ladyB.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">
+						<img src="public/img/ladyC.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">	
+						<img src="public/img/ladyD.jpg" alt="perro">
+					</figure> -->
+					<!-- <figure class="gallery">
+						<img src="public/img/ladyB.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">
+						<img src="public/img/ladyC.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">	
+						<img src="public/img/ladyD.jpg" alt="perro">
+					</figure> -->
+					<!-- </article>
+				</div>
+				<div class="gallery__contain--img" id="blacky">
+					<h3>BLACKY MATEO</h3>
+					<article class="gallery__wrapper">
+					<figure class="gallery">
+						<img src="public/img/blackyA.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">
+						<img src="public/img/blackyB.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">	
+						<img src="public/img/blackyC.jpg" alt="perro">
+					</figure> -->
+					<!-- <figure class="gallery">
+						<img src="public/img/blackyA.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">
+						<img src="public/img/blackyB.jpg" alt="perro">
+					</figure>
+					<figure class="gallery">	
+						<img src="public/img/blackyC.jpg" alt="perro">
+					</figure> -->
+					<!-- </article>
+				</div>
+				</a>
+			</div>
+		</section> -->
+
+		
+		<hr>
+
+		<div class="ads">
+			<script type="text/javascript">
 				atOptions = {
 					'key' : '74dd4b5952a1aef1815dc95d49d82929',
 					'format' : 'iframe',
@@ -83,11 +295,52 @@
 					'params' : {}
 				};
 				document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/74dd4b5952a1aef1815dc95d49d82929/invoke.js"></scr' + 'ipt>');
-			</script> -->		
+			</script>
+		</div>
+		<!-- <br> -->
+		<!-- <div class="ads"> -->
+			<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5964094254983998" -->
+     <!-- crossorigin="anonymous"></script> -->
+			<!-- <ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-5964094254983998"
+			     data-ad-slot="8392811597"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script> -->
 		<!-- </div> -->
-		<br>
+		<!-- https://www.instagram.com/loving.my_pets?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== -->
+		<!-- <section>
+			<div class="container">
+				<div class="card">
+					<div class="card-header bg-dark text-white text-center">
+	    				<h4>COMENTARIOS</h4>
+	    			</div>
+    				<br>
+    			<div class="card-body">
+				<form action="https://formsubmit.co/lovingmypets.9@gmail.com" method="post" class="form__main">
+					<div class="form-group">
+					<input class="form-control" type="email" name="mail" placeholder="E-Mail" id="mail"></div>
+					<br>
+					<div class="form-group"><textarea class="form-control" type="text" name="comments" placeholder="Comentarios" id="comments" cols="30" rows="10" required></textarea></div>
+					<br>
+					<div class="form-group">
+					<button class="comment__button" title="Enviar" type="submit">Enviar</button></div>
+					<input type="hidden" name="_next" value="https://www.lovingmypets.es/">
+                    <input type="hidden" name="_captcha" value="false">
+				</form>
+				</div>
+				</div>
+			</div>
+		</section> -->
+		
 	</main>
 	<footer>
+		<div class="cajacookies">
+      		<p>Hacemos uso de cookies propias y de terceros para proporcionar una mejor experiencia de usuario. Al seguir navegando entendemos que acepta nuestra <a rel="nofollow" href="cookies.html">Política de Cookies</a>.</p><div class="botonRGPD">Aceptar</div>
+      	</div>
 		<div class="foot">
 			<article class="foot__socialicon">
 				<div>
@@ -106,8 +359,9 @@
 			</article>
 		</div>
 		<div class="copyright">
-            <!-- <span><a href="cookies.html">Política de Cookies</a></span> -->
-            <span>copyright &copy; <span class="date"></span></span>
+            <div><a rel="nofollow" href="cookies.html" target="_blank">Política de cookies</a></div>
+		    <div> copyright © <span class="date"></span> </div>
+		    <div><a rel="nofollow" href="terms.html" target="_blank">Términos y condiciones</a></div>
         </div>
 	</footer>
 
