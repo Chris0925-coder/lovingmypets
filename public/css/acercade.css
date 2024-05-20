@@ -448,21 +448,32 @@ h1,h2,h3,h4,h5,h6 {
 	border: none;
 	margin: 0 1em;
 	padding: .4em;
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color: #0080008c;
-}
-
-.btnMore:hover {
-	background-color: #0080006c;
+/*	border: 1px solid black;*/
 }
 
 .btnMore a {
 	color: green;
 	text-decoration: none;
-	font-size: .9rem;
+	font-size: .7rem;
 	font-weight: 900;
 }
 
+.btnMore:hover {	
+	background-color: #0080006c;	
+	transition: all .3s ease-in-out;
+	transform: translatex(10px);
+}
+
+.btnMore:hover a {
+	color: #008000aa;
+	margin: .5em;
+}
+
+.btnMore:not(:hover) {
+	transition: all .3s ease-in-out;
+}
 
 @media screen and (max-width: 768px) {
 
