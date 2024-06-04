@@ -114,8 +114,11 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 	grid-auto-flow: column;
 	grid-auto-columns: max-content;
-	gap: 2em;
+	gap: 1.5em;
+	font-weight:700;
 	align-items: center;
+	letter-spacing: .05rem;
+	color: #2b2b2b;
 }
 
 .nav__items {

@@ -149,8 +149,11 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 	grid-auto-flow: column;
 	grid-auto-columns: max-content;
-	gap: 2em;
+	gap: 1.5em;
+	font-weight:700;
 	align-items: center;
+	letter-spacing: .05rem;
+	color: #2b2b2b;
 }
 
 .nav__items {
@@ -449,12 +452,14 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0 1em;
 	padding: .4em;
 	border-radius: 5px;
-	background-color: #0080008c;
+	background-image: linear-gradient(95deg, #4F97008c 0%, #00af008c 100%);
+/*	background-color: #0080008c;*/
 /*	border: 1px solid black;*/
 }
 
 .btnMore a {
-	color: green;
+	color: #008000;
+/*	background-image: linear-gradient(180deg, #4F97008c 0%, #0080008c 100%);*/
 	text-decoration: none;
 	font-size: .7rem;
 	font-weight: 900;
