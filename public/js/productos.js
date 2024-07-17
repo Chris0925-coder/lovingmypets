@@ -120,7 +120,7 @@ const second = document.getElementById('boxG');
     let slideIndexB = 1;
         // let slideIndexB = 2;
 
-    function previus(a,b) {
+    function previus(a,b,c) {
          // slideIndex = 0;
         prev[a].addEventListener('click', () => {
             for (i = 0; i < b.length; i++) {
@@ -128,7 +128,7 @@ const second = document.getElementById('boxG');
                 // sliderButtoms[0].children[i].style.opacity = "0.3";
             }
             slideIndex--;
-            if (slideIndex <= 0) {slideIndex = 3};
+            if (slideIndex <= 0) {slideIndex = c};
             // sliderButtoms[0].children[slideIndex-1].style.opacity = "1";
             b[slideIndex-1].style.display = "flex";
             // clearInterval(timeA);       
@@ -197,6 +197,7 @@ const contP = document.getElementsByClassName('gal-built');
     // prev[0].style.display = "none";
     // const b = document.getElementsByClassName("b");
     // console.log(b);
+// ()=>{
     if(anchoV1 <= 768) {
         sildeDisplay(slideA,index);
         sildeDisplay(slideB,index);
@@ -205,19 +206,19 @@ const contP = document.getElementsByClassName('gal-built');
         sildeDisplay(slideE,index);
         sildeDisplay(slideF,index);
         sildeDisplay(slideG,index);
-        previus(0,slideF);
+        previus(0,slideF,2);
         other(0,slideF);
-        previus(1,slideG);
+        previus(1,slideG,2);
         other(1,slideG);
-        previus(2,slideE);
+        previus(2,slideE,3);
         other(2,slideE);
-        previus(3,slideA);
+        previus(3,slideA,3);
         other(3,slideA);
-        previus(4,slideB);
+        previus(4,slideB,3);
         other(4,slideB);
-        previus(5,slideC);
+        previus(5,slideC,3);
         other(5,slideC);
-        previus(6,slideD);
+        previus(6,slideD,3);
         other(6,slideD);
         // b[0].style.display = "block";
         // b[1].style.display = "block";
@@ -243,6 +244,8 @@ const contP = document.getElementsByClassName('gal-built');
 // };
 
 // resize();
+// }();
+
 
 let date = document.querySelector('.date');
 
