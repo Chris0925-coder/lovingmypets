@@ -20,6 +20,8 @@ const power = document.getElementById('boxB');
 const board = document.getElementById('boxC');
 const pro = document.getElementById('boxD');
 const toys = document.getElementById('boxE');
+const first = document.getElementById('boxF');
+const second = document.getElementById('boxG');
 
 
 // window.addEventListener('resize', function() {
@@ -67,11 +69,17 @@ const toys = document.getElementById('boxE');
         toys.children[2]
     ];
 
-    // const slideF = [
-    //     ssd.children[0],
-    //     ssd.children[1],
-    //     ssd.children[2]
-    // ];
+    const slideF = [
+        first.children[0],
+        first.children[1]
+        // first.children[2]
+    ];
+
+    const slideG = [
+        second.children[0],
+        second.children[1]
+        // second.children[2]
+    ];
 
     let index = 0;
 
@@ -195,16 +203,22 @@ const contP = document.getElementsByClassName('gal-built');
         sildeDisplay(slideC,index);
         sildeDisplay(slideD,index);
         sildeDisplay(slideE,index);
-        previus(0,slideE);
-        other(0,slideE);
-        previus(1,slideA);
-        other(1,slideA);
-        previus(2,slideB);
-        other(2,slideB);
-        previus(3,slideC);
-        other(3,slideC);
-        previus(4,slideD);
-        other(4,slideD);
+        sildeDisplay(slideF,index);
+        sildeDisplay(slideG,index);
+        previus(0,slideF);
+        other(0,slideF);
+        previus(1,slideG);
+        other(1,slideG);
+        previus(2,slideE);
+        other(2,slideE);
+        previus(3,slideA);
+        other(3,slideA);
+        previus(4,slideB);
+        other(4,slideB);
+        previus(5,slideC);
+        other(5,slideC);
+        previus(6,slideD);
+        other(6,slideD);
         // b[0].style.display = "block";
         // b[1].style.display = "block";
         // b[2].style.display = "block";
