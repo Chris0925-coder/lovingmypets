@@ -24,6 +24,7 @@ const first = document.getElementById('boxF');
 const second = document.getElementById('boxG');
 
 
+// comment code
 // window.addEventListener('resize', function() {
     // let anchoV1 = window.innerWidth;
     // console.log("width: ", anchoV1, "px");   
@@ -34,7 +35,7 @@ const second = document.getElementById('boxG');
     
 
     let anchoV1 = window.innerWidth;
-    console.log("width: ", anchoV1, "px");   
+    // console.log("width: ", anchoV1, "px");   
     // if(anchoV1 <= 768) {
                 // const ddr = document.getElementById('boxE');
     // const ssd = document.getElementById('boxF');
