@@ -10,8 +10,6 @@ navBoton.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
 });
 
-
-
 function setCookie(cname, cvalue, exdays) {
         let d = new Date();
 
@@ -21,9 +19,6 @@ function setCookie(cname, cvalue, exdays) {
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     };
 
-function removeCookie(cname){
-        setCookie(cname,"",-1);
-    };
 
 function getCookie(cname) {
     let name = cname + "=";
@@ -40,6 +35,11 @@ function getCookie(cname) {
     }
     return "";
 };
+
+function removeCookie(cname){
+    getCookie(cname,"",-1);
+};
+
 
 function detectCookie(cname) {
     let name = cname + "=";
@@ -58,10 +58,10 @@ function detectCookie(cname) {
 };
 
 // let request = new XMLHttpRequest();
-// $(document).ready(function() { 
+$(document).ready(function() {
 // request.open('GET', '/index.html', true, () => {
 	init();
-// });
+});
    
 
 function init(){
@@ -73,10 +73,20 @@ function init(){
     if(detectCookie("rgpdOK")){
         if (getCookie("rgpdOK")==1){eliminarBloqueRGPD();}
     }else{
+        document.querySelector(".botonRGPD__cancel").addEventListener("click", () => {
+            removeCookie();
+            bloqueRGPD.parentNode.removeChild(bloqueRGPD);
+            localStorage.acceptedCookies = 'false';
+        });
+
         document.querySelector(".botonRGPD").addEventListener("click", () => {
-        eliminarBloqueRGPD();
-        setCookie("rgpdOK",1,365);
-        })        
+            eliminarBloqueRGPD();
+            setCookie("rgpdOK",1,365);
+        });
+
+        // document.querySelector(".botonRGPD__settings").addEventListener("click", () => {
+        //     getCookie();
+        // });        
     }
 };
 
