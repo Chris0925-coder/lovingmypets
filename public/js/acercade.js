@@ -83,10 +83,6 @@ function init(){
             eliminarBloqueRGPD();
             setCookie("rgpdOK",1,365);
         });
-
-        // document.querySelector(".botonRGPD__settings").addEventListener("click", () => {
-        //     getCookie();
-        // });        
     }
 };
 
