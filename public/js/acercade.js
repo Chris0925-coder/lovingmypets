@@ -62,7 +62,7 @@ $(document).ready(function() {
 // request.open('GET', '/index.html', true, () => {
 	init();
 });
-   
+
 
 function init(){
     bloqueRGPD = document.querySelector('.cajacookies');
