@@ -92,12 +92,12 @@ function eliminarBloqueRGPD(){
 };
 
 
-const comments = document.querySelector('.comments');
-let co = comments.querySelector('.item:nth-child(2)');
-let newDiv = document.createElement("div");
+// const comments = document.querySelector('.comments');
+// let co = comments.querySelector('item:nth-child(2)');
+// let newDiv = document.createElement("div");
 
-newDiv.innerHTML = `<input type="text" name="response" placeholder="Respuesta">`;
-comments.insertBefore(newDiv, co);
+// newDiv.innerHTML = `<input type="text" name="response" placeholder="Respuesta">`;
+// comments.insertBefore(newDiv, co);
 
 
 // const content = document.getElementById("backgroundIMG");
