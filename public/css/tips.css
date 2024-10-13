@@ -245,9 +245,10 @@ h1,h2,h3,h4,h5,h6 {
 	align-items: center;
 	font-size: 1.2rem;
 	gap: 1em;
+	margin-bottom: 2em;
 }
 
-.tips__text > div {
+.tips__text > article {
 /*	line-height: 1em;*/
 	max-width: 500px;
 	height: auto;
