@@ -257,7 +257,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #advice {
+	display: flex;
+	flex-direction: column;
 	max-width: 950px;
+	text-align: justify-all;
+	justify-content: center;
+	font-size: 1.2rem;
 }
 
 .tips__text .content__text {
