@@ -278,13 +278,9 @@ h1,h2,h3,h4,h5,h6 {
 #advice {
 	display: flex;
 	flex-direction: column;
-	max-width: 950px;
-	text-align: justify-all;
+	max-width: 1080px;
+	text-align: justify;
 	justify-content: center;
-	font-size: 1.2rem;
-}
-
-.tips__text p {
 	font-size: 1.2rem;
 }
 
@@ -655,7 +651,7 @@ h1,h2,h3,h4,h5,h6 {
 		overflow-x: auto;
 		overflow-y: hidden;
 		scroll-snap-type: x mandatory;
-		scrollbar-width: .7rem;
+		scrollbar-width: thin;
 		padding: 0 10em;
 /*		margin-top: 2em;*/
 /*		margin: 2em auto;*/
