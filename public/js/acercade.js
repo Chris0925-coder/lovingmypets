@@ -58,9 +58,13 @@ function detectCookie(cname) {
 };
 
 // let request = new XMLHttpRequest();
-$(document).ready(function() {
+// $(document).ready(function() {
 // request.open('GET', '/index.html', true, () => {
-	init();
+	// init();
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    init();
 });
 
 
