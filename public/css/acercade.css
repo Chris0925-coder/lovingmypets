@@ -471,6 +471,20 @@ p {
 	justify-content: space-around;
 }
 
+/*[name="insta-blocks"] iframe{
+	margin: 1em;
+}
+*/
+.inst__cont [name="insta-blocks"] div {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	justify-content: space-around;
+	white-space: pre;
+	gap: 1em;
+}
+
 .btnMore {
 	border: none;
 	margin: 0 1em;
