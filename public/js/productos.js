@@ -40,47 +40,47 @@ const second = document.getElementById('boxG');
                 // const ddr = document.getElementById('boxE');
     // const ssd = document.getElementById('boxF');
     // console.log(towers.children);
-    const slideA = [
-        towers.children[0],
-        towers.children[1],
-        towers.children[2]
-    ];
+    // const slideA = [
+    //     towers.children[0],
+    //     towers.children[1],
+    //     towers.children[2]
+    // ];
 
-    const slideB = [
-        power.children[0],
-        power.children[1],
-        power.children[2]
-    ];
+    // const slideB = [
+    //     power.children[0],
+    //     power.children[1],
+    //     power.children[2]
+    // ];
 
-    const slideC = [
-        board.children[0],
-        board.children[1],
-        board.children[2]
-    ];
+    // const slideC = [
+    //     board.children[0],
+    //     board.children[1],
+    //     board.children[2]
+    // ];
 
-    const slideD = [
-        pro.children[0],
-        pro.children[1],
-        pro.children[2]
-    ];
+    // const slideD = [
+    //     pro.children[0],
+    //     pro.children[1],
+    //     pro.children[2]
+    // ];
 
-    const slideE = [
-        toys.children[0],
-        toys.children[1],
-        toys.children[2]
-    ];
+    // const slideE = [
+    //     toys.children[0],
+    //     toys.children[1],
+    //     toys.children[2]
+    // ];
 
-    const slideF = [
-        first.children[0],
-        first.children[1]
-        // first.children[2]
-    ];
+    // const slideF = [
+    //     first.children[0],
+    //     first.children[1]
+    // ];
 
-    const slideG = [
-        second.children[0],
-        second.children[1]
-        // second.children[2]
-    ];
+    // const slideG = [
+    //     second.children[0],
+    //     second.children[1]    
+    // ];
+
+    // console.log(first.children.length)
 
     let index = 0;
 
@@ -200,27 +200,31 @@ const contP = document.getElementsByClassName('gal-built');
     // console.log(b);
 // ()=>{
     if(anchoV1 <= 768) {
-        sildeDisplay(slideA,index);
-        sildeDisplay(slideB,index);
-        sildeDisplay(slideC,index);
-        sildeDisplay(slideD,index);
-        sildeDisplay(slideE,index);
-        sildeDisplay(slideF,index);
-        sildeDisplay(slideG,index);
-        previus(0,slideF,2);
-        other(0,slideF);
-        previus(1,slideG,2);
-        other(1,slideG);
-        previus(2,slideE,3);
-        other(2,slideE);
-        previus(3,slideA,3);
-        other(3,slideA);
-        previus(4,slideB,3);
-        other(4,slideB);
-        previus(5,slideC,3);
-        other(5,slideC);
-        previus(6,slideD,3);
-        other(6,slideD);
+        sildeDisplay(towers.children,index);
+        sildeDisplay(power.children,index);
+        sildeDisplay(board.children,index);
+        sildeDisplay(board.children,index);
+        sildeDisplay(pro.children,index);
+        sildeDisplay(first.children,index);
+        sildeDisplay(second.children,index);
+        previus(0,first.children,first.children.length);
+        other(0,first.children);
+
+
+        previus(1,second.children,second.children.length);
+        other(1,second.children);
+        previus(2,toys.children,toys.children.length);
+        other(2,toys.children);
+        previus(3,towers.children,towers.children.length);
+        other(3,towers.children);
+        previus(4,power.children,power.children.length);
+        other(4,power.children);
+        previus(5,board.children,board.children.length);
+        other(5,board.children);
+        previus(6,pro.children,pro.children.length);
+        other(6,pro.children);
+
+
         // b[0].style.display = "block";
         // b[1].style.display = "block";
         // b[2].style.display = "block";
