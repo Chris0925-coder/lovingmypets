@@ -10,11 +10,10 @@ navBoton.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
 });
 
-
 const prev = document.getElementsByClassName('carousel-control-prev');
 const next = document.getElementsByClassName('carousel-control-next');
         
-
+// document.querySelector("#boxF > figure:nth-child(1) > a > img")
 const towers = document.getElementById('boxA');
 const power = document.getElementById('boxB');
 const board = document.getElementById('boxC');
@@ -22,6 +21,77 @@ const pro = document.getElementById('boxD');
 const toys = document.getElementById('boxE');
 const first = document.getElementById('boxF');
 const second = document.getElementById('boxG');
+// childNodes[1].childNodes[1].currentSrc
+const fig = document.querySelectorAll('.gal-built')
+const thumbnail = document.getElementsByClassName('thumbnail');
+// children[0].children[0].childNodes[1].currentSrc
+// console.log(fig);
+// bolasloro.jpg
+let newThumbnail = document.createElement('picture');
+// document.querySelector("#boxF > figure:nth-child(1) > a > img")
+function imgArrays(a,b) {
+    const thumb = thumbnail[b].querySelector('.item:first-child');
+    // console.log(second.children.length);
+    for(let i=0;i<a.children.length;i++) {
+        let images = a.children[i].children[0].childNodes[1].currentSrc.split("/").pop();
+        // let images = first.children[i].childNodes[1].childNodes[1].currentSrc.split("/").pop();
+
+        // console.log(images);
+
+        // let imagesArray = images.split("/").pop();
+        // let iiii = ;
+        // console.log(imagesArray);
+
+        thumbnail[b].innerHTML += `<img src="public/img/products/${images}">`;
+
+        // console.log(thumbnail[b].childNodes[b])
+        // console.log(thumbnail.length)
+
+        for(let j=0;j<thumbnail[b].childNodes.length;++j) {
+            // let index = 0;
+            thumbnail[b].childNodes[j].addEventListener('click', ()=> {
+                // console.log(j);
+                // thumbnail[b].childNodes[j].style.border = "1px solid black";
+                // if ()
+
+                
+                // console.log(a.children)
+                // b++;
+                // if(b>a.length){b = 1};
+                for (let i = 0; i < a.children.length; i++) {
+                    a.children[i].style.display = "none";
+                    a.children[j].style.display = 'flex';
+                }
+
+                                // first.children[j].style.display = "none";
+                // sildeDisplay(towers.children,index);
+                // sildeDisplay(power.children,index);
+                // sildeDisplay(board.children,index);
+                // sildeDisplay(board.children,index);
+                // sildeDisplay(pro.children,index);
+                // sildeDisplay(first.children[2],index);
+                // sildeDisplay(second.children,index);
+            })
+        // thumbnail[b].insertBefore(newThumbnail,thumb);
+        }
+    }
+};
+imgArrays(first,0);
+imgArrays(second,1);
+imgArrays(toys,2);
+imgArrays(towers,3);
+imgArrays(power,4);
+imgArrays(board,5);
+imgArrays(pro,6);
+// imgArrays(first,0);
+// imgArrays(second,1);
+// imgArrays(first,0);
+// imgArrays(second,1);
+// iii = fig[0].children[0].childNodes[1].currentSrc;
+
+// console.log(iii.split("/").pop())
+
+
 
 
 // comment code
