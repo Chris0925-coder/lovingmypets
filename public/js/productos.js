@@ -22,7 +22,7 @@ const toys = document.getElementById('boxE');
 const first = document.getElementById('boxF');
 const second = document.getElementById('boxG');
 // childNodes[1].childNodes[1].currentSrc
-const fig = document.querySelectorAll('.gal-built')
+const fig = document.querySelectorAll('.gal-built');
 const thumbnail = document.getElementsByClassName('thumbnail');
 // children[0].children[0].childNodes[1].currentSrc
 // console.log(fig);
