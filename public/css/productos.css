@@ -443,9 +443,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .thumbnail > img:hover {
-/*	backdrop-filter: blur(5%);*/
+/*	backdrop-filter: blur(10px);*/
 	scale: 1.1;
-	box-shadow: 10px 10px 5px lightblue inset;
+	box-shadow: 4px 6px 6px #303030c9;
 }
 
 
