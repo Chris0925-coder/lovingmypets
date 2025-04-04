@@ -31,7 +31,7 @@ const thumbnail = document.getElementsByClassName('thumbnail');
 let newThumbnail = document.createElement('picture');
 // document.querySelector("#boxF > figure:nth-child(1) > a > img")
 function imgArrays(a,b) {
-    const thumb = thumbnail[b].querySelector('.item:first-child');
+    // const thumb = thumbnail[b].querySelector('.item:first-child');
     // console.log(second.children.length);
     for(let i=0;i<a.children.length;i++) {
         let images = a.children[i].children[0].childNodes[1].currentSrc.split("/").pop();
@@ -77,13 +77,7 @@ function imgArrays(a,b) {
         }
     }
 };
-imgArrays(first,0);
-// imgArrays(second,1);
-imgArrays(toys,1);
-// imgArrays(towers,3);
-// imgArrays(power,4);
-imgArrays(board,2);
-imgArrays(pro,3);
+
 // imgArrays(first,0);
 // imgArrays(second,1);
 // imgArrays(first,0);
@@ -312,7 +306,15 @@ const contP = document.getElementsByClassName('gal-built');
 
 // resize();
 // }();
-
+setTimeout(()=> {
+    imgArrays(first,0);
+    // imgArrays(second,1);
+    imgArrays(toys,1);
+    // imgArrays(towers,3);
+    // imgArrays(power,4);
+    imgArrays(board,2);
+    imgArrays(pro,3);
+},5000);
 
 let date = document.querySelector('.date');
 
