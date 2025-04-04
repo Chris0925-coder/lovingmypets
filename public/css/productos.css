@@ -338,6 +338,7 @@ h1,h2,h3,h4,h5,h6 {
 	place-items: center;
 /*	border:1px solid black;*/
 	padding: .5em;
+	margin: 4em 0;
 }
 
 .gallery-wrapper--buildpage {
@@ -397,17 +398,19 @@ h1,h2,h3,h4,h5,h6 {
 .carousel-control-prev {
 	display: none;
 	position: absolute;
-	top: 50%;
-	left: 10%;
+	top: 75%;
+	left: 5%;
 	cursor: pointer;
+	border: none;
 }
 
 .carousel-control-next {
 	display: none;
 	position: absolute;
-	top: 50%;
-	right: 10%;
+	top: 75%;
+	right: 5%;
 	cursor: pointer;
+	border: none;
 }
 
 .thumbnail {

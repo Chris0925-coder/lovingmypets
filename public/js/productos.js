@@ -14,13 +14,14 @@ const prev = document.getElementsByClassName('carousel-control-prev');
 const next = document.getElementsByClassName('carousel-control-next');
         
 // document.querySelector("#boxF > figure:nth-child(1) > a > img")
-const towers = document.getElementById('boxA');
-const power = document.getElementById('boxB');
-const board = document.getElementById('boxC');
-const pro = document.getElementById('boxD');
+// const towers = document.getElementById('boxA');
+// const power = document.getElementById('boxB');
+
 const toys = document.getElementById('boxE');
 const first = document.getElementById('boxF');
-const second = document.getElementById('boxG');
+const board = document.getElementById('boxC');
+const pro = document.getElementById('boxD');
+// const second = document.getElementById('boxG');
 // childNodes[1].childNodes[1].currentSrc
 const fig = document.querySelectorAll('.gal-built');
 const thumbnail = document.getElementsByClassName('thumbnail');
@@ -42,7 +43,7 @@ function imgArrays(a,b) {
         // let iiii = ;
         // console.log(imagesArray);
 
-        thumbnail[b].innerHTML += `<img src="public/img/products/${images}">`;
+        thumbnail[b].innerHTML += `<img src="public/img/products/thumbnails/${images}">`;
 
         // console.log(thumbnail[b].childNodes[b])
         // console.log(thumbnail.length)
@@ -77,12 +78,12 @@ function imgArrays(a,b) {
     }
 };
 imgArrays(first,0);
-imgArrays(second,1);
-imgArrays(toys,2);
-imgArrays(towers,3);
-imgArrays(power,4);
-imgArrays(board,5);
-imgArrays(pro,6);
+// imgArrays(second,1);
+imgArrays(toys,1);
+// imgArrays(towers,3);
+// imgArrays(power,4);
+imgArrays(board,2);
+imgArrays(pro,3);
 // imgArrays(first,0);
 // imgArrays(second,1);
 // imgArrays(first,0);
@@ -270,30 +271,21 @@ const contP = document.getElementsByClassName('gal-built');
     // console.log(b);
 // ()=>{
     if(anchoV1 <= 768) {
-        sildeDisplay(towers.children,index);
-        sildeDisplay(power.children,index);
-        sildeDisplay(board.children,index);
+
+        sildeDisplay(first.children,index);
+        sildeDisplay(toys.children,index);
         sildeDisplay(board.children,index);
         sildeDisplay(pro.children,index);
-        sildeDisplay(first.children,index);
-        sildeDisplay(second.children,index);
+
         previus(0,first.children,first.children.length);
         other(0,first.children);
-
-
-        previus(1,second.children,second.children.length);
-        other(1,second.children);
-        previus(2,toys.children,toys.children.length);
-        other(2,toys.children);
-        previus(3,towers.children,towers.children.length);
-        other(3,towers.children);
-        previus(4,power.children,power.children.length);
-        other(4,power.children);
-        previus(5,board.children,board.children.length);
-        other(5,board.children);
-        previus(6,pro.children,pro.children.length);
-        other(6,pro.children);
-
+        previus(1,toys.children,toys.children.length);
+        other(1,toys.children);
+        previus(2,board.children,board.children.length);
+        other(2,board.children);
+        previus(3,pro.children,pro.children.length);
+        other(3,pro.children);        
+    
 
         // b[0].style.display = "block";
         // b[1].style.display = "block";
