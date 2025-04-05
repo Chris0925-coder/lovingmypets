@@ -285,6 +285,17 @@ const contP = document.getElementsByClassName('gal-built');
         // b[1].style.display = "block";
         // b[2].style.display = "block";
         // b[3].style.display = "block";
+
+        setTimeout(()=> {
+            imgArrays(first,0);
+            // imgArrays(second,1);
+            imgArrays(toys,1);
+            // imgArrays(towers,3);
+            // imgArrays(power,4);
+            imgArrays(board,2);
+            imgArrays(pro,3);
+        },5000);
+
     } 
     // else if (anchoV1 >= 769) {
     //     contP.style.position = "relative";
@@ -306,15 +317,6 @@ const contP = document.getElementsByClassName('gal-built');
 
 // resize();
 // }();
-setTimeout(()=> {
-    imgArrays(first,0);
-    // imgArrays(second,1);
-    imgArrays(toys,1);
-    // imgArrays(towers,3);
-    // imgArrays(power,4);
-    imgArrays(board,2);
-    imgArrays(pro,3);
-},5000);
 
 let date = document.querySelector('.date');
 
