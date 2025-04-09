@@ -347,7 +347,7 @@ h1,h2,h3,h4,h5,h6 {
 	flex-direction: row;
 	width: 100%;
 	min-height: 400px;
-
+	align-items: baseline;
 	margin: 0 auto;
 /*	border: 1px solid black;*/
 }
@@ -356,11 +356,11 @@ h1,h2,h3,h4,h5,h6 {
 	display: flex;
 	position: relative;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	gap: 1em;
 	place-items: center;
 	width: 100%;
-	min-height:auto;
+	min-height:400px;
 /*	border: 1px solid green;*/
 	object-position: center;
 }
@@ -380,14 +380,29 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .gal-built figcaption p {
-/*	width: 90%;*/
+
+/*	display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+*//*	width: 90%;*/
 	cursor: default;
 	line-height: 1.5;
 	letter-spacing: .2ch;
-	max-width: 40ch;
+	max-width: 50ch;
+	text-align: left;
 	margin: 0 auto;
+	padding: 10px;
+/*	line-clamp: 5;*/
+/*	transition: line-clamp 3s ease-in;*/
+/*	transform: all 3s ease-in;*/
 }
 
+/*.gal-built figcaption:hover p {
+	-webkit-line-clamp: none;
+	transition: line-clamp 3s ease-in;
+}
+*/
 .title__buildpage {
 	position: relative;
 	
@@ -433,13 +448,10 @@ h1,h2,h3,h4,h5,h6 {
 /*	justify-content: space-around;*/
 }
 
-
-
-
-/*.b {
+.b {
 	display: flex;
 }
-*/
+
 /*CODE DESARROLLOHELPDESK.SITE*/
 
 @media screen and (max-width: 768px) {

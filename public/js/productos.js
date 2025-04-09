@@ -97,9 +97,7 @@ function imgArrays(a,b) {
         // CODE DESARROLLOHELPDESK.SITE
 // let resize = window.addEventListener('resize', 
 // function resize() {
-    
 
-    let anchoV1 = window.innerWidth;
     // console.log("width: ", anchoV1, "px");   
     // if(anchoV1 <= 768) {
                 // const ddr = document.getElementById('boxE');
@@ -264,8 +262,13 @@ const contP = document.getElementsByClassName('gal-built');
     // const b = document.getElementsByClassName("b");
     // console.log(b);
 // ()=>{
-    if(anchoV1 <= 768) {
+// console.log(anchoV);
+var anchoV = window.innerWidth;
+// console.log(anchoV);
 
+// console.log(anchoV);
+    if(anchoV <= 768) {
+        // console.log(anchoV);
         sildeDisplay(first.children,index);
         sildeDisplay(toys.children,index);
         sildeDisplay(board.children,index);
@@ -294,9 +297,13 @@ const contP = document.getElementsByClassName('gal-built');
             // imgArrays(power,4);
             imgArrays(board,2);
             imgArrays(pro,3);
-        },5000);
+        }, 3500);
+    };
+    // return anchoV1;
+    // console.log(anchoV1++);
+// });
 
-    } 
+    
     // else if (anchoV1 >= 769) {
     //     contP.style.position = "relative";
     // } 
@@ -317,6 +324,7 @@ const contP = document.getElementsByClassName('gal-built');
 
 // resize();
 // }();
+
 
 let date = document.querySelector('.date');
 
