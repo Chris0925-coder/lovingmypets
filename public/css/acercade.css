@@ -16,7 +16,7 @@
 
 html, body {
 	 font-family: "Open Sans", sans-serif;
-	max-width: 1200px;
+	max-width: 1600px;
 	margin: 0 auto;
 	font-style: normal;
 /*	min-height: 100lvh;*/
@@ -474,6 +474,7 @@ p {
 		margin: 0 auto;
 	}
 }
+
 .inst__cont {
 	display: flex;
 	flex-wrap: wrap;
