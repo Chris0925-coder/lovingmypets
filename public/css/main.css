@@ -867,11 +867,11 @@ h1,h2,h3,h4,h5,h6 {
 	width:50px;
 	background-image: url('../img/inst.svg');
 }*/
-.ads {
+/*.ads {
 	display: grid;
 	overflow: hidden;
 	place-content: center;
-}
+}*/
 
 .ads-vertical {
 	position: relative;
