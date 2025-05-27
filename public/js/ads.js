@@ -14,7 +14,7 @@ function showAds() {
 	iframe.style.border = "none";
 	iframe.width = atOptions.width;
     iframe.height = atOptions.height;
-	iframe.src=`https//www.highperformanceformat.com/${atOptions.key}/invoke.js?format=${atOptions.format}`>
+	iframe.src=`https://www.highperformanceformat.com/${atOptions.key}/invoke.js`>
 	// console.log(atOptions)
 	ad.appendChild(iframe);
 };
