@@ -16,7 +16,8 @@
 
 html, body {
 	 font-family: "Open Sans", sans-serif;
-	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 	font-style: normal;
 /*	min-height: 100lvh;*/
 }
