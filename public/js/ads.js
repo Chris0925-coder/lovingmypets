@@ -8,13 +8,13 @@ atOptions = {
 	'params' : {}
 };
 
-function showAds() {
+async function showAds() {
 	iframe = document.createElement("iframe");
 
 	iframe.style.border = "none";
 	iframe.width = atOptions.width;
     iframe.height = atOptions.height;
-	iframe.src=`https://www.highperformanceformat.com/${atOptions.key}/invoke.js`>
+	iframe.src = await `https://www.highperformanceformat.com/${atOptions.key}/invoke.js`>
 	// console.log(atOptions)
 	ad.appendChild(iframe);
 };
