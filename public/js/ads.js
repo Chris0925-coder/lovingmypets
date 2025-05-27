@@ -14,9 +14,13 @@ async function showAds() {
 	iframe.style.border = "none";
 	iframe.width = atOptions.width;
     iframe.height = atOptions.height;
-	iframe.src = await `https://www.highperformanceformat.com/${atOptions.key}/invoke.js`>
+	iframe.src = await `https://www.highperformanceformat.com/${atOptions.key}/invoke.js?${atOptions.format}`;
 	// console.log(atOptions)
-	ad.appendChild(iframe);
+	return ad.appendChild(iframe);
 };
 
 showAds();
+
+// fetch('//www.highperformanceformat.com/d67fee685f10a0b2e6a420cb556212c1/invoke.js')
+// .then(response => response.json())
+// .then(data => console.log(data));
