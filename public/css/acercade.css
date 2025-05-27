@@ -462,11 +462,13 @@ p {
 	width:50px;
 	background-image: url('../img/inst.svg');
 }*/
-/*.ads {
+.ads {
 	display: grid;
-	overflow: hidden;
+	position: relative;
+	width: 100%;
+	overflow-x: scroll;
 	place-content: center;
-}*/
+}
 .inst__cont {
 	display: flex;
 	flex-wrap: wrap;
