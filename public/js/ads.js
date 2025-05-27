@@ -1,5 +1,8 @@
 const ad = document.getElementById('ads');
+const adB = document.getElementById('adsB');
+// const ads = ad.querySelector('.item:first-child');
 // console.log(ad);
+
 atOptions = {
 	'key' : '74dd4b5952a1aef1815dc95d49d82929',
 	'format' : 'iframe',
@@ -8,18 +11,44 @@ atOptions = {
 	'params' : {}
 };
 
-async function showAds() {
-	iframe = document.createElement("iframe");
+// atOptions = {
+// 	'key' : 'd67fee685f10a0b2e6a420cb556212c1',
+// 	'format' : 'iframe',
+// 	'height' : 90,
+// 	'width' : 728,
+// 	'params' : {}
+// };
 
-	iframe.style.border = "none";
-	iframe.width = atOptions.width;
-    iframe.height = atOptions.height;
-	iframe.src = await `https://www.highperformanceformat.com/${atOptions.key}/invoke.js?${atOptions.format}`;
+
+	
+
+function showAds(a, b) {
+
+	script = document.createElement("script");
+
+		// iframe = document.createElement("iframe");
+	
 	// console.log(atOptions)
-	return ad.appendChild(iframe);
+	// iframe.style.border = "none";
+	// iframe.key = atOptions.key;
+	// iframe.width = atOptions.width;
+    // iframe.height = atOptions.height;
+    script.type = 'text/javascript';
+	script.src = `https://www.highperformanceformat.com/${a}/invoke.js`;
+	// console.log(ads);
+	// ad.appendChild(iframe);
+	b.appendChild(script);
+
+	// ad.insertBefore(script, ads);
 };
 
-showAds();
+
+
+
+showAds(atOptions.key, ad);
+
+// showAds('d67fee685f10a0b2e6a420cb556212c1', adB);
+
 
 // fetch('//www.highperformanceformat.com/d67fee685f10a0b2e6a420cb556212c1/invoke.js')
 // .then(response => response.json())

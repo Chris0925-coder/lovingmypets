@@ -320,6 +320,13 @@ h1,h2,h3,h4,h5,h6 {
 	place-content: center;
 }
 
+.ads-vertical {
+	position: absolute;
+	right: 0;
+	overflow-y: scroll;
+	/*border: 1px solid black;*/
+}
+
 
 /*CODE DESARROLLOHELPDESK.SITE*/
 
