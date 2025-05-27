@@ -467,7 +467,12 @@ p {
 	position: relative;
 	width: 100%;
 	overflow-x: scroll;
-	place-content: center;
+	/*place-content: center;*/
+	scrollbar-width: none;
+	margin: 0 auto;
+	div {
+		margin: 0 auto;
+	}
 }
 .inst__cont {
 	display: flex;
