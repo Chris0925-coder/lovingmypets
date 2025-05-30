@@ -212,3 +212,56 @@ function eliminarBloqueRGPD(){
 let date = document.querySelector('.date');
 
 date.append(new Date ().getFullYear ());
+
+
+const dog = document.querySelector('#dog');
+const joke = document.querySelector('#joke');
+
+
+const url = 'https://dog.ceo/api/breeds/image/random';
+
+const urlB = 'https://v2.jokeapi.dev/joke/Any?lang=es'
+
+async function fetchData(url, b) {
+    try {
+        const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+        const data = await response.json();
+        console.log(data);
+        b.innerHTML = `<picture><img src="${data.message}"></picture>`;
+    } catch (error) {
+        console.error('Fetch error:', error);
+    }
+}
+
+async function fetchDataB(url, b) {
+    try {
+        const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+        const data = await response.json();
+        console.log(data);
+
+        if(data.joke === undefined) {data.joke = '';}
+        if(data.setup === undefined) {data.setup = '';}
+        if(data.delivery === undefined) {data.delivery = '';}
+            b.innerHTML = `
+                <article>
+                    <h3>Chistes</h3>
+                    <p>Categoria: ${data.category}</p>
+                    <p>${data.joke}</p>
+                    <p>${data.setup}</p>
+                    <p>${data.delivery}</p>
+                </article>`;
+            } catch (error) {
+        console.error('Fetch error:', error);
+    }
+}
+
+fetchData(url,dog);
+
+fetchDataB(urlB,joke);
+

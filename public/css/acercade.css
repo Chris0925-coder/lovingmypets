@@ -531,6 +531,40 @@ p {
 	transition: all .3s ease-in-out;
 }
 
+#dog {
+	display: flex;
+	/*border: 1px solid;*/
+	position: relative;
+	justify-content: center;
+}
+
+
+#dog picture{
+	width: 300px;
+	height: 150px;
+	
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: top;
+border-radius: 20px;
+
+	}
+}
+
+#joke {
+	margin-top: 40px;
+	article {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		/*justify-content: center;*/
+		max-width: 400px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 
 	.hero__title {
