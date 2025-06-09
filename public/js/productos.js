@@ -1,6 +1,7 @@
 const navBoton = document.querySelector(".nav__menu");
 const navLink = document.querySelector(".nav__link");
 const navBotonClose = document.querySelector('.nav__close');
+const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 
 navBotonClose.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
@@ -77,6 +78,23 @@ function imgArrays(a,b) {
         }
     }
 };
+
+let d = localStorage.getItem("acceptedCookies");
+function count(a) {
+
+    if(a) {
+        let analyticsData = {
+            id: 2,
+            count: 1,
+        };
+
+        window.addEventListener("load", function() {
+          navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
+        });
+
+    }
+}
+count(d);
 
 // imgArrays(first,0);
 // imgArrays(second,1);

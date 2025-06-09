@@ -397,11 +397,13 @@ h1,h2,h3,h4,h5,h6 {
   overflow: hidden;
 *//*	width: 90%;*/
 	cursor: default;
-	line-height: 1.5;
-	letter-spacing: .2ch;
+	margin: 0 auto;
+	margin-block: 1lh;
+	/*line-height: 1.5;*/
+	/*letter-spacing: .2ch;*/
 	max-width: 50ch;
 	text-align: left;
-	margin: 0 auto;
+	
 	padding: 10px;
 /*	line-clamp: 5;*/
 /*	transition: line-clamp 3s ease-in;*/

@@ -1,6 +1,10 @@
 const navBoton = document.querySelector(".nav__menu");
 const navLink = document.querySelector(".nav__link");
 const navBotonClose = document.querySelector('.nav__close');
+const bloqueRGPD = document.querySelector('.cajacookies');
+const botonRGPD = document.querySelector(".botonRGPD");
+const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+const cancel = document.querySelector(".botonRGPD--cancel");
 
 navBotonClose.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
@@ -66,26 +70,44 @@ document.addEventListener('DOMContentLoaded',function() {
 // });
 
 
+let d = localStorage.getItem("acceptedCookies");
+function count(a) {
+
+    if(a) {
+        let analyticsData = {
+            id: 2,
+            count: 1,
+        };
+
+        window.addEventListener("load", function() {
+          navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
+        });
+
+    }
+}
+count(d);
+
 function init(){
-    bloqueRGPD = document.querySelector('.cajacookies');
-    if (localStorage.acceptedCookies != 'true') {
-    bloqueRGPD.style.display = 'block';    
+    if (localStorage.acceptedCookies != "true") {
+        // console.log(localStorage.acceptedCookies != "true")
+        bloqueRGPD.style.display = 'block';    
     }
 
-    if(detectCookie("rgpdOK")){
-        if (getCookie("rgpdOK")==1){eliminarBloqueRGPD();}
-    }else{
-        document.querySelector(".botonRGPD__cancel").addEventListener("click", () => {
-            removeCookie();
-            bloqueRGPD.parentNode.removeChild(bloqueRGPD);
-            localStorage.acceptedCookies = 'false';
-        });
+    cancel.addEventListener("click", () => {
+        removeCookie();
+        bloqueRGPD.parentNode.removeChild(bloqueRGPD);
+        localStorage.acceptedCookies = 'false';
+        history.back();
+    });
 
-        document.querySelector(".botonRGPD").addEventListener("click", () => {
-            eliminarBloqueRGPD();
-            setCookie("rgpdOK",1,365);
-        });
-    }
+    botonRGPD.addEventListener("click", () => {
+        // console.log(botonRGPD);
+        navigator.sendBeacon(urlA, JSON.stringify({
+                id: 2,
+                count: 1,
+            }));
+        eliminarBloqueRGPD();
+    });
 };
 
 function eliminarBloqueRGPD(){
