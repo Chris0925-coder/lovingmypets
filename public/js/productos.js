@@ -79,6 +79,8 @@ function imgArrays(a,b) {
     }
 };
 
+const dominio = window.location.origin;
+
 let d = localStorage.getItem("acceptedCookies");
 function count(a) {
 
@@ -86,6 +88,7 @@ function count(a) {
         let analyticsData = {
             id: 2,
             count: 1,
+            domain: dominio,
         };
 
         window.addEventListener("load", function() {
