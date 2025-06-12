@@ -85,7 +85,7 @@ function count() {
 
 }
 
-if(d) count(d);
+if(d) count();
 
 function init(){
     if (localStorage.acceptedCookies != "true") {
