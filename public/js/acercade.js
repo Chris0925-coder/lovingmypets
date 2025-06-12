@@ -85,7 +85,7 @@ function count() {
 
 }
 
-if(d) count();
+count();
 
 function init(){
     if (localStorage.acceptedCookies != "true") {
@@ -105,11 +105,11 @@ function init(){
 
         botonRGPD.addEventListener("click", () => {
             // console.log(botonRGPD);
-            navigator.sendBeacon(urlA, JSON.stringify({
-                    id: 2,
-                    count: 1,
-                    domain: dominio,
-                }));
+            // navigator.sendBeacon(urlA, JSON.stringify({
+            //         id: 2,
+            //         count: 1,
+            //         domain: dominio,
+            //     }));
             eliminarBloqueRGPD();
         });
     }
