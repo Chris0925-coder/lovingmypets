@@ -3,7 +3,8 @@ const navLink = document.querySelector(".nav__link");
 const navBotonClose = document.querySelector('.nav__close');
 const bloqueRGPD = document.querySelector('.cajacookies');
 const botonRGPD = document.querySelector(".botonRGPD");
-const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+// const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+const urlA = `https://visits-christian-guardias-projects.vercel.app/`;
 const cancel = document.querySelector(".botonRGPD--cancel");
 
 navBotonClose.addEventListener('click', () => {
