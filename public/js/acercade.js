@@ -65,26 +65,29 @@ function detectCookie(cname) {
 // let request = new XMLHttpRequest();
 // $(document).ready(function() {
 // request.open('GET', '/index.html', true, () => {
-// document.addEventListener('DOMContentLoaded',function() {
-init();
+document.addEventListener('DOMContentLoaded',function() {
+    init();
+});
 // });
-// });
 
-// const dominio = window.location.origin;
-// let d = localStorage.getItem("acceptedCookies");
-// function count() {
+const dominio = window.location.origin;
+const d = localStorage.getItem("acceptedCookies");
+function count() {
 
-//     let analyticsData = {
-//         id: 2,
-//         count: 1,
-//         domain: dominio,
-//     };
+    let analyticsData = {
+        id: 2,
+        count: 1,
+        domain: dominio,
+    };
 
-//     window.addEventListener("load", function() {
-//       navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
-//     });
+        navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
 
-// }
+
+}
+
+window.addEventListener("load", () => {
+    if(d) count();
+});
 
 
 function init(){
@@ -105,11 +108,11 @@ function init(){
 
         botonRGPD.addEventListener("click", () => {
             // console.log(botonRGPD);
-            // navigator.sendBeacon(urlA, JSON.stringify({
-            //         id: 2,
-            //         count: 1,
-            //         domain: dominio,
-            //     }));
+            navigator.sendBeacon(urlA, JSON.stringify({
+                    id: 2,
+                    count: 1,
+                    domain: dominio,
+                }));
             eliminarBloqueRGPD();
         });
     }
