@@ -70,23 +70,22 @@ init();
 // });
 // });
 
-const dominio = window.location.origin;
-let d = localStorage.getItem("acceptedCookies");
-function count() {
+// const dominio = window.location.origin;
+// let d = localStorage.getItem("acceptedCookies");
+// function count() {
 
-    let analyticsData = {
-        id: 2,
-        count: 1,
-        domain: dominio,
-    };
+//     let analyticsData = {
+//         id: 2,
+//         count: 1,
+//         domain: dominio,
+//     };
 
-    window.addEventListener("load", function() {
-      navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
-    });
+//     window.addEventListener("load", function() {
+//       navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
+//     });
 
-}
+// }
 
-count();
 
 function init(){
     if (localStorage.acceptedCookies != "true") {
