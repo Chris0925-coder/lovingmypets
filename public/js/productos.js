@@ -79,25 +79,25 @@ function imgArrays(a,b) {
     }
 };
 
-const dominio = window.location.origin;
+// const dominio = window.location.origin;
 
-let d = localStorage.getItem("acceptedCookies");
-function count(a) {
+// let d = localStorage.getItem("acceptedCookies");
+// function count(a) {
 
-    if(a) {
-        let analyticsData = {
-            id: 2,
-            count: 1,
-            domain: dominio,
-        };
+//     if(a) {
+//         let analyticsData = {
+//             id: 2,
+//             count: 1,
+//             domain: dominio,
+//         };
 
-        window.addEventListener("load", function() {
-          navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
-        });
+//         window.addEventListener("load", function() {
+//           navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
+//         });
 
-    }
-}
-count(d);
+//     }
+// }
+
 
 // imgArrays(first,0);
 // imgArrays(second,1);
