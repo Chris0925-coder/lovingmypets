@@ -65,7 +65,7 @@ function detectCookie(cname) {
 // let request = new XMLHttpRequest();
 // $(document).ready(function() {
 // request.open('GET', '/index.html', true, () => {
-document.addEventListener('DOMContentLoaded',function() {
+document.addEventListener('DOMContentLoaded',function(e) {
     init();
 });
 // });
@@ -84,10 +84,7 @@ function count() {
 
 
 }
-
-window.addEventListener("load", () => {
-    if(d) count();
-});
+if(d) count();
 
 
 function init(){
@@ -107,7 +104,6 @@ function init(){
         });
 
         botonRGPD.addEventListener("click", () => {
-            // console.log(botonRGPD);
             navigator.sendBeacon(urlA, JSON.stringify({
                     id: 2,
                     count: 1,
