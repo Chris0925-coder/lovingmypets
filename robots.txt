@@ -5,8 +5,6 @@ User-agent: Bingbot
 Allow: /
 
 User-agent: *
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /scripts/
+Disallow: /js/
 
 Sitemap: https://www.lovingmypets.es/sitemap.xml
