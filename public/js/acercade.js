@@ -6,6 +6,7 @@ const botonRGPD = document.querySelector(".botonRGPD");
 // const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const urlA = `https://visits-christian-guardias-projects.vercel.app/count`;
 const cancel = document.querySelector(".botonRGPD--cancel");
+const main = document.querySelector("body");
 
 navBotonClose.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded',function(e) {
 // });
 
 const dominio = window.location.origin;
-const d = localStorage.getItem("acceptedCookies");
+// const d = localStorage.getItem("acceptedCookies");
 let dd = new Date().toLocaleDateString("es-PA", {
   weekday: "long",
   day: "numeric",
@@ -81,6 +82,25 @@ let dd = new Date().toLocaleDateString("es-PA", {
   hour12: true
 });
 
+function cli() {
+    main.addEventListener('click', function (event) {
+        if(event.target.tagName === "A" || event.target.tagName === "BUTTON") {
+            // return cb(1);
+
+            let analyticsData = {
+                id: 2,
+                count: 0,
+                domain: dominio,
+                date: `desde: 06/2025 | última vista: ${dd}`,
+                clicks: 1,
+            };
+            navigator.sendBeacon(url, JSON.stringify(analyticsData));
+        }
+    })
+}
+
+cli();
+
 function count() {
 
     let analyticsData = {
@@ -88,14 +108,13 @@ function count() {
         count: 1,
         domain: dominio,
         date: `desde: 06/2025 | última vista: ${dd}`,
+        clicks: 0,
     };
-
-        navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
-
-
+    navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
 }
-if(d) count();
 
+// if(d) 
+count();
 
 function init(){
     if (localStorage.acceptedCookies != "true") {
@@ -116,7 +135,7 @@ function init(){
         botonRGPD.addEventListener("click", () => {
             eliminarBloqueRGPD();
             setCookie("rgpdOK",1,365);
-            count();
+            // count();
         });
     }
 };
