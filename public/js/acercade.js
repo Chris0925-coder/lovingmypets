@@ -84,7 +84,7 @@ let dd = new Date().toLocaleDateString("es-PA", {
 
 function cli() {
     main.addEventListener('click', function (event) {
-        if(event.target.tagName === "A" || event.target.tagName === "BUTTON") {
+        if(event.target.tagName === "A") {
             // return cb(1);
 
             let analyticsData = {
