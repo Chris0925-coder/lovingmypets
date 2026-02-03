@@ -94,7 +94,7 @@ function cli() {
                 date: `desde: 06/2025 | última vista: ${dd}`,
                 clicks: 1,
             };
-            navigator.sendBeacon(url, JSON.stringify(analyticsData));
+            navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
         }
     })
 }
