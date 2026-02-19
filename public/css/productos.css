@@ -321,10 +321,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ads-vertical {
-	position: absolute;
-	right: 0;
-	overflow-y: scroll;
-	/*border: 1px solid black;*/
+	position: relative;
+    /* right: 0; */
+    overflow-y: hidden;
+    margin: 10px auto;
+    /* justify-content: center; */
+    /*border: 1px solid black;*/
+    width: fit-content;
 }
 
 
