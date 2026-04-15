@@ -7,4 +7,4 @@ Allow: /
 User-agent: *
 Disallow: /js/
 
-Sitemap: https://lovingmypets.pages.dev//sitemap.xml
+Sitemap: https://www.lovingmypets.pro/sitemap.xml
