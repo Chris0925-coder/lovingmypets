@@ -4,6 +4,7 @@ const navBotonClose = document.querySelector('.nav__close');
 const bloqueRGPD = document.querySelector('.cajacookies');
 const botonRGPD = document.querySelector(".botonRGPD");
 let date = document.querySelector('.date');
+const ahora = new Date ();
 // const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const urlA = `https://visits-christian-guardias-projects.vercel.app/count`;
 const cancel = document.querySelector(".botonRGPD--cancel");
@@ -72,6 +73,13 @@ document.addEventListener('DOMContentLoaded',function(e) {
 });
 // });
 
+// const opciones = {
+//     timeZone: "America/Panama",
+//     dateStyle: 'full',
+//     timeStyle: 'long',
+//     hour12: false,
+// }
+
 const opciones = {
     timeZone: "America/Panama",
     weekday: "short",
@@ -85,7 +93,7 @@ const opciones = {
 
 const dominio = window.location.origin;
 // const d = localStorage.getItem("acceptedCookies");
-let dd = new Intl.DateTimeFormat("es-PA", opciones).format(date);
+let dd = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
 
 function cli() {
     main.addEventListener('click', function (event) {
@@ -268,7 +276,7 @@ function eliminarBloqueRGPD(){
 
 
 
-date.append(new Date ().getFullYear ());
+date.append(ahora.getFullYear ());
 
 
 // const dog = document.querySelector('#dog');
