@@ -26,7 +26,10 @@ async function getHome() {
 }
 
 function content(title, filename, paragraph,link) {
-    
+  let l = link.split('/');
+  console.log(l);
+  if(l[0] != "https:") link = `https://${link}`;
+  console.log(link);
   newDiv.innerHTML += `
         <article>
           <h2>${title}</h2>
