@@ -31,12 +31,10 @@ function content(title, filename, paragraph,link) {
         <article>
           <h2>${title}</h2>
           <figure>
-            <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}' width='200' height='250'>
-            <a href="${link}" title="${title}" target="_blank">
+            <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
               <figcaption>
-                <p>${paragraph}</p>
+                <p><a href="${link}" title="${title}" target="_blank">${paragraph}</a></p>
               </figcaption>
-            </a>
           </figure>
         </article>   
   `;
