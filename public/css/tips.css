@@ -242,7 +242,7 @@ h1,h2,h3,h4,h5,h6 {
 /*MAIN*/
 #blog {
 	max-width: 1800px;
-	background-color: #e0ffff;
+	background-color: #fafafa;
 	padding: 25px 0;
 	div article {
 		display: flex;
@@ -251,7 +251,7 @@ h1,h2,h3,h4,h5,h6 {
     width: fit-content;
     margin: 0 auto 40px auto; 
     text-align: center;
-    background-color: #fafafaea;
+    background-color: #e0ffffea;
     figure {
     	width: 300px;
     	height: 200px;
