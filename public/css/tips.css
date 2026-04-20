@@ -240,6 +240,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*MAIN*/
+#blog {
+	max-width: 1800px;
+	div article {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
 .tips__text {
 	display: flex;
 	width: auto;

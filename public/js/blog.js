@@ -55,5 +55,7 @@ function content(title, filename, paragraph,link) {
         </article>   
   `;
 
-  blog.insertBefore(newDiv, blog);
+  blog.insertBefore(newDiv, item);
 }
+
+ getHome();
