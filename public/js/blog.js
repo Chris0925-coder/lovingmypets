@@ -22,7 +22,7 @@ async function getHome() {
 
   result.forEach((rows) => {
     content(rows.title,rows.images,rows.paragraph,rows.link);
-  }
+  })
 }
 
 function content(title, filename, paragraph,link) {
