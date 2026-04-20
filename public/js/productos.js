@@ -1,7 +1,7 @@
 const navBoton = document.querySelector(".nav__menu");
 const navLink = document.querySelector(".nav__link");
 const navBotonClose = document.querySelector('.nav__close');
-const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+// const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 
 navBotonClose.addEventListener('click', () => {
 	navLink.classList.toggle("nav__link--menu");
