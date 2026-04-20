@@ -4,6 +4,8 @@ let newDiv = document.createElement('div');
 const urlAddArticle =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/home";
 
+  console.log("Hola");
+
 async function getHome() {
   let result = await fetch(urlAddArticle, {
     method: "GET",
@@ -19,6 +21,9 @@ async function getHome() {
         blog.style.color = "#990000";
         blog.innerText = error.message;
       });
+
+  console.log(result);
+  console.log(result.ok);
 
   if(result.ok) {
     result.forEach((rows) => {
