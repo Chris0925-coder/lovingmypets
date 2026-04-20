@@ -4,8 +4,6 @@ let newDiv = document.createElement('div');
 const urlAddArticle =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/home";
 
-  console.log("Hola");
-
 async function getHome() {
   let result = await fetch(urlAddArticle, {
     method: "GET",
@@ -22,26 +20,9 @@ async function getHome() {
         blog.innerText = error.message;
       });
 
-  console.log(result);
-  console.log(result.ok);
-
-  if(result.ok) {
-    result.forEach((rows) => {
-        content(rows.title,rows.images,rows.paragraph,rows.link);
-    })
+  result.forEach((rows) => {
+    content(rows.title,rows.images,rows.paragraph,rows.link);
   }
-
-  // result.forEach((rows) => {
-
-  //   newDiv.innerHTML += `
-  //           <article>
-  //             <h3>${rows.title}</h3>
-  //             <figure>
-  //               <img src"${rows.images}">
-  //             </figure>
-  //           </article>
-  //         `;
-  // });
 }
 
 function content(title, filename, paragraph,link) {
