@@ -1,7 +1,7 @@
 const head = document.getElementsByTagName('title');
 const newBlog = document.getElementById('new-blog');
 const item2 = newBlog.querySelector('.item:nth-child(2)');
-let newDiv = document.createElement('main');
+let newDivBlog = document.createElement('main');
 
 function newPageContent(title, filename, paragraph,link,id) {
 	let l = link.split('/');
@@ -21,5 +21,5 @@ function newPageContent(title, filename, paragraph,link,id) {
 	    </section>   
 	`;
 
-  newBlog.insertBefore(newDiv, item2);
+  newBlog.insertBefore(newDivBlog, item2);
 }
