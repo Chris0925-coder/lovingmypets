@@ -45,7 +45,6 @@ function content(title, filename, paragraph,link,id, date,update) {
           <span>${date}</span>
         </article>   
   `;
-
   blog.insertBefore(newDiv, item);
 }
 
