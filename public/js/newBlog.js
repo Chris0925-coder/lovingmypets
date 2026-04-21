@@ -54,3 +54,5 @@ function newPageContent(title, filename, paragraph,link,id) {
 
   newBlog.insertBefore(newDivBlog, item2);
 }
+
+getItem();
