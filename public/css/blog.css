@@ -298,9 +298,11 @@ a {
 
       figcaption {
 
-      	h2{
+      	h4 {
       		text-align: left;
       		text-decoration: underline;
+      		padding: 0;
+
       	}
 
       	p {
