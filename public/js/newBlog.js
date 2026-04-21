@@ -1,6 +1,6 @@
 const head = document.getElementsByTagName('title');
 const newBlog = document.getElementById('new-blog');
-const item = newBlog.querySelector('.item:nth-child(2)');
+const item2 = newBlog.querySelector('.item:nth-child(2)');
 let newDiv = document.createElement('main');
 
 function newPageContent(title, filename, paragraph,link,id) {
@@ -21,5 +21,5 @@ function newPageContent(title, filename, paragraph,link,id) {
 	    </section>   
 	`;
 
-  newBlog.insertBefore(newDiv, item);
+  newBlog.insertBefore(newDiv, item2);
 }
