@@ -47,9 +47,8 @@ function content(title, filename, paragraph,link,id) {
 
 getHome();
 
-newDiv.addEventListener('click', (e) async => {
-  if(e.target.tagName === "A") {
-    let result = await fetch(`${urlAddArticle}/${e.target.value}`, {
+async function getItem(value) {
+  let result = await fetch(`${urlAddArticle}/${value}`, {
       method: "GET",
       // headers: {
       //   Authorization: `Bearer ${token}`,
@@ -65,6 +64,12 @@ newDiv.addEventListener('click', (e) async => {
         });
 
     newPageContent(rows.title,rows.images,rows.paragraph,rows.link,rows.id);
+}
+
+
+newDiv.addEventListener('click', (e) => {
+  if(e.target.tagName === "A") {
+    getItem(e.target.value)
   }
 })
 
