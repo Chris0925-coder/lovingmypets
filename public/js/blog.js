@@ -92,7 +92,8 @@ function newPageContent(title, filename, paragraph,link,id) {
     // console.log(l);
     if(l[0] != "https:") link = `https://${link}`;
 
-  head.title.innerHTML = title;
+  // head.title.innerHTML = title;
+    console.log(head);
   newDivBlog.innerHTML = `
       <section>
         <h1>${title}</h1>
