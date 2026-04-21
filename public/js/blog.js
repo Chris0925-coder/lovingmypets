@@ -68,11 +68,11 @@ async function getItem(value) {
 
 
 newDiv.addEventListener('click', (e) => {
-  console.log(e)
+  // console.log(e)
 
   if(e.target.tagName === "A") {
-    console.log(e.target.value)
-    getItem(e.target.value)
+    // console.log(e.target.value)
+    getItem(e.target.attributes[3].value)
   }
 })
 
