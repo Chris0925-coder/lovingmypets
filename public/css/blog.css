@@ -300,8 +300,9 @@ a {
 
       	h4 {
       		text-align: left;
-      		text-decoration: underline;
-      		padding: 0;
+          text-decoration: underline;
+          max-width: 80%;
+          margin: 0 auto;
 
       	}
 
@@ -337,7 +338,7 @@ a {
 }
 
 #blog img {
-	width: 100%;
+	width: 400px;
 	height: 150px;
 	/*max-height: 600px;*/
 	object-fit: contain;
@@ -808,7 +809,7 @@ a {
 
 
 	#blog img {
-		width: 160px;
+		width: 120px;
 		height: auto;
 	}
 }
