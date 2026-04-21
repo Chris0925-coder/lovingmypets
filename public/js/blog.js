@@ -2,9 +2,8 @@ const blog = document.getElementById('blog');
 const item = blog.querySelector('.item:nth-child(2)');
 let newDiv = document.createElement('div');
 const urlAddArticle =
-  "https://visits-christian-guardias-projects.vercel.app/lovingmypets/home";
-  const urlGetItem =
-  "https://visits-christian-guardias-projects.vercel.app/lovingmypets";
+  "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
+  
 
 async function getHome() {
   let result = await fetch(urlAddArticle, {

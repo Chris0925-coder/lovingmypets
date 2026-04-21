@@ -2,6 +2,8 @@ const head = document.getElementsByTagName('title');
 const newBlog = document.getElementById('new-blog');
 const item2 = newBlog.querySelector('.item:nth-child(2)');
 let newDivBlog = document.createElement('main');
+const urlGetItem =
+  "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
 
 let article = 0;
 
