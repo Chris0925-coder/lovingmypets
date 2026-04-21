@@ -22,11 +22,11 @@ async function getHome() {
       });
 
   result.forEach((rows) => {
-    content(rows.title,rows.images,rows.paragraph,rows.link,rows.id);
+    content(rows.title, rows.images, rows.paragraph, rows.link,rows.id, rows.date, rows.update);
   })
 }
 
-function content(title, filename, paragraph,link,id) {
+function content(title, filename, paragraph,link,id, date,update) {
   let l = link.split('/');
   // console.log(l);
   if(l[0] != "https:") link = `https://${link}`;
@@ -36,10 +36,11 @@ function content(title, filename, paragraph,link,id) {
           <figure>
             <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
               <figcaption>
-                <h4>${title}</h4>
+                <h4><a href="new.html" title="${title}" target="_blank" value="${id}">${title}</a></h4>
                 <p><a href="new.html" title="${title}" target="_blank" value="${id}">${paragraph}</a></p>
               </figcaption>
           </figure>
+          <span>${date}</span><span>${update}</span>
         </article>   
   `;
 

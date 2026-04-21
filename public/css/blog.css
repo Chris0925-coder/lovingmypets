@@ -226,7 +226,7 @@ a {
 }
 
 .nav__close {
-	display: var(--show, none);
+	display: var(none);
 }
 /*Hero Container*/
 

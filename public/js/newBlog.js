@@ -5,9 +5,11 @@ let newDivBlog = document.createElement('main');
 const urlGetItem =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
 
-let article = 7;
+let article = 1;
 
 article = getCookie("article");
+
+if(!article) article = 7;
 
 async function getItem() {
   let result = await fetch(`${urlGetItem}/${article}`, {
@@ -28,12 +30,12 @@ async function getItem() {
     // console.log(result.rows[0]);
 // rows[0]rows[0][0]rows[0]
     // result.forEach((rows) => {
-      newPageContent(result.rows[0][1],result.rows[0][2],result.rows[0][3],result.rows[0][4],result.rows[0][0]);
+      newPageContent(result.rows[0][1],result.rows[0][2],result.rows[0][3],result.rows[0][4],result.rows[0][0],result.rows[0][5],rows[0][6]);
     // })
     
 }
 
-function newPageContent(title, filename, paragraph,link,id) {
+function newPageContent(title, filename, paragraph,link,id,date,update) {
   let l = link.split('/');
     // console.log(l);
     if(l[0] != "https:") link = `https://${link}`;
@@ -49,6 +51,7 @@ function newPageContent(title, filename, paragraph,link,id) {
               <p><a href="${link}" title="${title}" target="_blank">${paragraph}</a></p>
             </figcaption>
         </figure>
+        <span>${date}</span><span>${update}</span>
       </section>   
   `;
 
