@@ -287,9 +287,20 @@ a {
     padding: 40px;
     figure {
     	width: 300px;
-      height: 200px;
+      height: auto;
       /*border: 1px solid;*/
       margin: 0 auto;
+
+      figcaption p {
+      	/*width: auto;*/
+		    max-width: 75ch;
+		    margin: 0 auto;
+		    margin-block: 1lh;
+		    text-align: justify;
+		    /*text-wrap: balance;*/
+		    hyphenate-limit-chars: 7;
+		    hyphens: auto;
+      }
     }
   }
 }
