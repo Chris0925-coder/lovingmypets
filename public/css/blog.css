@@ -226,7 +226,7 @@ a {
 }
 
 .nav__close {
-	display: var(none);
+	display: none;
 }
 /*Hero Container*/
 
@@ -286,6 +286,7 @@ a {
     /* border: 1px solid; */
     overflow: hidden; 
     padding: 40px;
+
     figure {
     	display: flex;
     	width: auto;
@@ -334,6 +335,10 @@ a {
 	        align-items: center;
 	      }
     	}
+    }
+
+    span {
+    	text-align: right;
     }
   }
 }
