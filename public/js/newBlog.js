@@ -5,13 +5,11 @@ let newDivBlog = document.createElement('main');
 const urlGetItem =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
 
-let article = 0;
+let article = 7;
 
 article = getCookie("article");
 
-console.log(article);
-
-async function getItem(value) {
+async function getItem() {
   let result = await fetch(`${urlGetItem}/${article}`, {
       method: "GET",
       // headers: {

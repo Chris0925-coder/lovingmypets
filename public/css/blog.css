@@ -288,12 +288,13 @@ a {
     padding: 40px;
     figure {
     	display: flex;
-    	width: 100%;
+    	width: auto;
       height: 200px;
       /*border: 1px solid;*/
       margin: 0 auto;
       overflow: hidden;
       align-items: center;
+      gap: .7em;
 
       figcaption p {
       	/*width: auto;*/
@@ -779,5 +780,23 @@ a {
 		/*object-fit: fill;*/
 		border-radius: 10px;
 		/*border: 1px solid red;*/
+	}
+
+	#blog {
+		div article {
+			padding: 40px 0;
+			figure {
+				padding: 10px;
+				figcaption p {
+					max-width: 80%;
+				}
+			}
+		}
+	}
+
+
+	#blog img {
+		width: 160px;
+		height: auto;
 	}
 }
