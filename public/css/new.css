@@ -52,6 +52,7 @@ p {
     /*overflow: hidden;*/
     /*align-items: center;*/
     color: var(--gray);
+    padding: 30px;
 }
 
 h1, h2 {
@@ -60,12 +61,20 @@ h1, h2 {
 }
 
 figure {
+	width: 90%;
+	height: 400px;
 	img {
 		display: block;
-		width: 90%;
-		height: auto;
+		width: 100%;
+		height: 100%;
 		margin: 0 auto;
+		object-fit: contain;
 	}
+}
+
+#new-blog span{
+	text-align: right;
+	margin-right: 10px;
 }
 
 .hidden {
