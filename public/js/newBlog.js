@@ -51,7 +51,7 @@ function newPageContent(title, filename, paragraph,link,id,date,update) {
               <p><a href="${link}" title="${title}" target="_blank">${paragraph}</a></p>
             </figcaption>
         </figure>
-        <span>${date}</span><span>${update}</span>
+        <span>${date}</span>
       </section>   
   `;
 

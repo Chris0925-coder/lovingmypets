@@ -42,7 +42,7 @@ function content(title, filename, paragraph,link,id, date,update) {
                 <p><a href="new.html" title="${title}" target="_blank" value="${id}">${paragraph}</a></p>
               </figcaption>
           </figure>
-          <span>${date}</span><span>${update}</span>
+          <span>${date}</span>
         </article>   
   `;
 
