@@ -33,10 +33,10 @@ function content(title, filename, paragraph,link,id) {
   // console.log(link);
   newDiv.innerHTML += `
         <article>
-          <h2>${title}</h2>
           <figure>
             <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
               <figcaption>
+                <h2>${title}</h2>
                 <p><a href="new.html" title="${title}" target="_blank" value="${id}">${paragraph}</a></p>
               </figcaption>
           </figure>

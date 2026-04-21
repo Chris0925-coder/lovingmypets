@@ -296,32 +296,40 @@ a {
       align-items: center;
       gap: .7em;
 
-      figcaption p {
-      	/*width: auto;*/
-		    /*max-width: 75ch;
-		    margin: 0 auto;
-		    margin-block: 1lh;
-		    text-align: justify;
-		    text-wrap: balance;
-		    hyphenate-limit-chars: 5;
-		    hyphens: auto;
+      figcaption {
 
-		    display: -webkit-box;
-			  -webkit-line-clamp: 3;
-			  -webkit-box-orient: vertical;*/
-  			max-width: 75ch;
-        margin: 0 auto;
-        margin-block: 1lh;
-        text-align: justify;
-        text-wrap: balance;
-        hyphenate-limit-chars: 5;
-        hyphens: auto;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        align-items: center;
-      }
+      	h2{
+      		text-align: left;
+      		text-decoration: underline;
+      	}
+
+      	p {
+	      	/*width: auto;*/
+			    /*max-width: 75ch;
+			    margin: 0 auto;
+			    margin-block: 1lh;
+			    text-align: justify;
+			    text-wrap: balance;
+			    hyphenate-limit-chars: 5;
+			    hyphens: auto;
+
+			    display: -webkit-box;
+				  -webkit-line-clamp: 3;
+				  -webkit-box-orient: vertical;*/
+	  			max-width: 75ch;
+	        margin: 0 auto;
+	        margin-block: 1lh;
+	        text-align: justify;
+	        text-wrap: balance;
+	        hyphenate-limit-chars: 5;
+	        hyphens: auto;
+	        display: -webkit-box;
+	        -webkit-line-clamp: 3;
+	        -webkit-box-orient: vertical;
+	        overflow: hidden;
+	        align-items: center;
+	      }
+    	}
     }
   }
 }
@@ -787,8 +795,10 @@ a {
 			padding: 40px 0;
 			figure {
 				padding: 10px;
-				figcaption p {
-					max-width: 80%;
+				figcaption {
+					p {
+						max-width: 80%;
+					}
 				}
 			}
 		}
