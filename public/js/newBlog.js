@@ -30,7 +30,7 @@ async function getItem() {
     console.log(result.rows[0]);
 // rows[0]rows[0][0]rows[0]
     // result.forEach((rows) => {
-      newPageContent(result.rows[0][1],result.rows[0][2],result.rows[0][3],result.rows[0][4],result.rows[0][0],result.rows[0][5],rows[0][6]);
+      newPageContent(result.rows[0][1],result.rows[0][2],result.rows[0][3],result.rows[0][4],result.rows[0][0],result.rows[0][6],rows[0][7]);
     // })
     
 }
