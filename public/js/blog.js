@@ -21,22 +21,22 @@ async function getHome() {
       });
 
   result.forEach((rows) => {
-    content(rows.title,rows.images,rows.paragraph,rows.link);
+    content(rows.title,rows.images,rows.paragraph,rows.link,rows.id);
   })
 }
 
-function content(title, filename, paragraph,link) {
+function content(title, filename, paragraph,link,id) {
   let l = link.split('/');
   // console.log(l);
   if(l[0] != "https:") link = `https://${link}`;
-  console.log(link);
+  // console.log(link);
   newDiv.innerHTML += `
         <article>
           <h2>${title}</h2>
           <figure>
             <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
               <figcaption>
-                <p><a href="${link}" title="${title}" target="_blank">${paragraph}</a></p>
+                <p><a href="new.html" title="${title}" target="_blank" value="${id}">${paragraph}</a></p>
               </figcaption>
           </figure>
         </article>   
@@ -45,4 +45,26 @@ function content(title, filename, paragraph,link) {
   blog.insertBefore(newDiv, item);
 }
 
- getHome();
+getHome();
+
+newDiv.addEventListener('click', (e) => {
+  if(e.target.tagName === "A") {
+    let result = await fetch(`${urlAddArticle}/${e.target.value}`, {
+      method: "GET",
+      // headers: {
+      //   Authorization: `Bearer ${token}`,
+      //   "Access-Control-Allow-Origin": "*",
+      //   "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
+      // },
+    })
+    .then((resp) => resp.json())
+    .catch((error) => {
+          console.error("Error:", error.message);
+          blog.style.color = "#990000";
+          blog.innerText = error.message;
+        });
+
+    newPageContent(rows.title,rows.images,rows.paragraph,rows.link,rows.id);
+  }
+})
+
