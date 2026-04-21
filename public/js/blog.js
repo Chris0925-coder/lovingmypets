@@ -3,6 +3,8 @@ const item = blog.querySelector('.item:nth-child(2)');
 let newDiv = document.createElement('div');
 const urlAddArticle =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/home";
+  const urlGetItem =
+  "https://visits-christian-guardias-projects.vercel.app/lovingmypets";
 
 async function getHome() {
   let result = await fetch(urlAddArticle, {
@@ -49,7 +51,7 @@ getHome();
 
 async function getItem(value) {
   console.log(value)
-  let result = await fetch(`${urlAddArticle}/${value}`, {
+  let result = await fetch(`${urlGetItem}/${value}`, {
       method: "GET",
       // headers: {
       //   Authorization: `Bearer ${token}`,
@@ -92,8 +94,8 @@ function newPageContent(title, filename, paragraph,link,id) {
     // console.log(l);
     if(l[0] != "https:") link = `https://${link}`;
 
-  // head.title.innerHTML = title;
-    console.log(head);
+  head[0].innerHTML = title;
+
   newDivBlog.innerHTML = `
       <section>
         <h1>${title}</h1>
