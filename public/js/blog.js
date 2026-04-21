@@ -23,8 +23,8 @@ async function getHome() {
 console.log(result);
   result.forEach((rows) => {
     console.log(rows);
-    
-    content(rows.title, rows.images, rows.paragraph, rows.link,rows.id, rows.date, rows.update);
+
+    content(rows.title, rows.images, rows.paragraph, rows.link,rows.id, rows.date, rows.modify);
   })
 }
 
