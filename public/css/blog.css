@@ -297,12 +297,13 @@ a {
       gap: .7em;
 
       figcaption {
-
+      	width: 100%;
       	h4 {
       		text-align: left;
           text-decoration: underline;
           max-width: 80%;
           margin: 0 auto;
+          padding: 0;
 
       	}
 
@@ -319,7 +320,7 @@ a {
 			    display: -webkit-box;
 				  -webkit-line-clamp: 3;
 				  -webkit-box-orient: vertical;*/
-	  			max-width: 75ch;
+	  			max-width: 80%;
 	        margin: 0 auto;
 	        margin-block: 1lh;
 	        text-align: justify;
