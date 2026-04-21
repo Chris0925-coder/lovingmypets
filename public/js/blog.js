@@ -48,6 +48,7 @@ function content(title, filename, paragraph,link,id) {
 getHome();
 
 async function getItem(value) {
+  console.log(value)
   let result = await fetch(`${urlAddArticle}/${value}`, {
       method: "GET",
       // headers: {
@@ -63,10 +64,10 @@ async function getItem(value) {
           blog.innerText = error.message;
         });
 
-    console.log(result);
-
+    // console.log(result.rows[0]);
+// rows[0]rows[0][0]rows[0]
     // result.forEach((rows) => {
-      newPageContent(result.title,result.images,result.paragraph,result.link,result.id);
+      newPageContent(result.rows[0][1],result.rows[0][2],result.rows[0][3],result.rows[0][4],result.rows[0][0]);
     // })
     
 }
