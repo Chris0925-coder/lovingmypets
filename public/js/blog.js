@@ -47,7 +47,7 @@ function content(title, filename, paragraph,link,id) {
 
 getHome();
 
-newDiv.addEventListener('click', (e) => {
+newDiv.addEventListener('click', (e) async => {
   if(e.target.tagName === "A") {
     let result = await fetch(`${urlAddArticle}/${e.target.value}`, {
       method: "GET",
