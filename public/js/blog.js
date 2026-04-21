@@ -84,7 +84,7 @@ function newPageContent(title, filename, paragraph,link,id) {
     if(l[0] != "https:") link = `https://${link}`;
 
   head.title.innerHTML = title;
-  newDiv.innerHTML = `
+  newDivBlog.innerHTML = `
       <section>
         <h1>${title}</h1>
         <figure>
