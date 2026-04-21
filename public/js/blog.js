@@ -63,7 +63,10 @@ async function getItem(value) {
           blog.innerText = error.message;
         });
 
-    newPageContent(result.title,result.images,result.paragraph,result.link,result.id);
+    result.forEach((rows) => {
+      newPageContent(rows.title,rows.images,rows.paragraph,rows.link,rows.id);
+    })
+    
 }
 
 
