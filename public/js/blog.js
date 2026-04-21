@@ -22,8 +22,7 @@ async function getHome() {
       });
 console.log(result);
   result.forEach((rows) => {
-    console.log(rows);
-
+ 
     content(rows.title, rows.images, rows.paragraph, rows.link,rows.id, rows.date, rows.modify);
   })
 }
@@ -48,14 +47,14 @@ function content(title, filename, paragraph,link,id, date,update) {
   blog.insertBefore(newDiv, item);
 }
 
-getHome();
-
 newDiv.addEventListener('click', (e) => {
   // console.log(e)
 
   if(e.target.tagName === "A") {
     // console.log(e.target.value)
     setCookie("article", e.target.attributes[3].value, 365);
-    getItem(e.target.attributes[3].value)
+    // getItem(e.target.attributes[3].value)
   }
 })
+
+getHome();
