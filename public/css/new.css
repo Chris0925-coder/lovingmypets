@@ -33,6 +33,11 @@ body {
 	/*	min-height: 100lvh;*/
 }
 
+main {
+	height: 100dvh;
+	place-content: center;
+}
+
 a {
 	text-decoration: none;
 	color: var(--gray);
@@ -57,22 +62,24 @@ p {
 
 h1, h2 {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 figure {
 	width: 90%;
-	height: 400px;
+	height: auto;
+	margin: 0 auto;
 	img {
 		display: block;
 		width: 100%;
-		height: 100%;
+		height: 500px;
 		margin: 0 auto;
 		object-fit: contain;
 	}
 }
 
 #new-blog span{
+	display: block;
 	text-align: right;
 	margin-right: 10px;
 }
