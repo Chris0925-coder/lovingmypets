@@ -601,5 +601,3 @@ blackyA();
 pakaA();
 ladyA();
 malososA();
-
-date.append(today.getFullYear ());
