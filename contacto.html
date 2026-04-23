@@ -11,20 +11,30 @@
 	<title>Contacto | LovingMyPets</title>
 	<meta name="description" content="Contacto y comentarios | LovingMypets">
 	<meta name="keywords" content="LovingMyPets, mascotas, animales, perros, loros, pericos, commenta">
-	<link rel="stylesheet" type="text/css" href="public/css/contacto.css">
-	<script type="text/javascript" src="public/js/contacto.js" defer></script>
+	<!-- <link rel="stylesheet" type="text/css" href="public/css/contacto.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="public/css/cookie_banner.css">
+
+  <link rel="stylesheet" type="text/css" href="public/css/header.css">
+
+  <link rel="stylesheet" type="text/css" href="public/css/hero.css">
+
+  <link rel="stylesheet" type="text/css" href="public/css/contacto.css">
+
+  <link rel="stylesheet" type="text/css" href="public/css/footer.css">
+
+	<script defer type="text/javascript" src="public/js/cookies.js"></script>
+
+	<script defer type="text/javascript" src="public/js/nav.js"></script>
+
+	<script defer type="text/javascript" src="public/js/views.js"></script>
 </head>
 <body>
-	<header class="hero">
+	<header>
 		<nav class="nav container">
-			<div class="nav__logo">
-				<!-- <img src="favicons/logo.png" alt="logo"> -->
-				<!-- <h2 class="nav__title">LovingMyPets</h2> -->
-			</div>
+			<div class="nav__logo"></div>
 			<div class="nav__collapse">
 				<button class="nav__menu"><img src="public/img/menu.svg" class="nav__img" alt="icon-menu"></button>
-			<!-- </div> -->
-
 				<ul class="nav__link nav__link--menu">
 					<li class="nav__items">
 						<a href="index.html" class="nav__links">Inicio</a>
@@ -36,27 +46,23 @@
 						<a href="blog.html" class="nav__links">LovingMyPets Blog</a>
 					</li>
 					<li class="nav__items active">
-						<a href="#" class="nav__links">Contacto</a>
+						<a href="contacto.html" class="nav__links">Contacto</a>
 					</li>
 					<li class="nav__items">
-						<a href="productos.html" class="nav__links">Productos Recomendados</a>
+						<a href="productos.html" class="nav__links"><i class="bi bi-amazon"></i> Productos Recomendados</a>
 					</li>
-					<!-- <li class="nav__items">
-						<a href="#" class="nav__links">Blog</a>
-					</li> -->
 					<button class="nav__close"><img src="public/img/close.svg" alt="close-btn"></button>
 				</ul>
 			</div>
-			
 		</nav>
-
-		<section class="hero__container container">
-			<h1 class="hero__title">LovingMyPets <p>Espacio de  mis mascotas</p></h1>
-			<p class="hero__paragraph">Lo mejor de nuestras mascotas. Síguenos en nuestras redes sociales (<a href="https://www.instagram.com/loving.my_pets?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">loving.my_pets</a>) y conoce más sobre estas.</p>
-			<!-- <a href="https://www.instagram.com/loving.my_pets/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="cta">Instagram</a> -->
-		</section>
 	</header>
 	<main>
+		<section class="container hero">
+			<div class="hero__title-container">
+				<h1>LovingMyPets<span>Deja tu comentario</span></h1>
+				<p class="hero__paragraph">Lo mejor de nuestras mascotas. Síguenos en nuestras redes sociales (<a href="https://www.instagram.com/loving.my_pets?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">loving.my_pets</a>) y conoce más sobre estas.</p>
+			</div>		
+		</section>
 		<section>
 			<div class="container ms-auto">
         	<div id="contacto-body">
@@ -113,6 +119,13 @@
 	</main>
 
 	<footer>
+		<div class="cajacookies">
+    		<p>Hacemos uso de cookies propias y de terceros para proporcionar una mejor experiencia de usuario. Al seguir navegando entendemos que acepta nuestra <a rel="nofollow" href="cookies.html" id="open_preferences_center">Política de Cookies</a>.</p>
+    		<ul class="btnRGPD">
+	        <li><button class="botonRGPD--cancel">Cancelar</button></li>
+	        <li><button class="botonRGPD">Aceptar</button></li>
+	      </ul>
+    	</div>
 		<div class="foot">
 			<article class="foot__socialicon">
 				<div>

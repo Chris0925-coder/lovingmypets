@@ -20,7 +20,7 @@ async function getHome() {
         blog.style.color = "#990000";
         blog.innerText = error.message;
       });
-console.log(result);
+
   result.forEach((rows) => {
  
     content(rows.title, rows.images, rows.paragraph, rows.link,rows.id, rows.date, rows.modify);

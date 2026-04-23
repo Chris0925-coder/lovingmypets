@@ -14,4 +14,4 @@ navBoton.addEventListener('click', () => {
 
 let date = document.querySelector('.date');
 
-date.append(new Date ().getFullYear ());
+date.append(today.getFullYear ());

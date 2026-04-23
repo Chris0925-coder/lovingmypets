@@ -289,12 +289,7 @@ p {
 
 .first__content {
 	width: auto;
-/*	height: 50dvh;*/
-/*	min-height: 600px;*/
-/*	max-height: 40lvh;*/
 	position: relative;
-/*	display: grid;*/
-/*	grid-template-rows: 100px 20%;*/
 	align-items: center;
 	color: #fff;
 	display: flex;

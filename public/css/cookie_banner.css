@@ -1,0 +1,41 @@
+.cajacookies {
+	display: none;
+	background-color:#000;
+	color:#fff;
+	position:fixed;
+	bottom:50px;
+	bottom:0px;
+	width:100%;
+	padding:10px 20px;
+	font-size:18px;
+	opacity:0.9;
+	z-index: 6000;
+}
+
+.btnRGPD {
+	display: flex;
+	list-style: none;
+	gap: 1em;
+	margin: 0 auto;
+}
+
+.botonRGPD,
+.botonRGPD__cancel  {
+	position: relative;
+	cursor: pointer;
+	border: none;
+	padding: .3em;
+}
+
+.cajacookies a{color:#fff;}
+.cajacookies a:hover{color:#ccc;}
+.cajacookies p, 
+.cajacookies div{display:inline-block; font-size: 0.6rem;}
+.cajacookies p{width:85%;}
+.cajacookies ul{color: #303030;width:200px;padding:10px;border:1px solid #000;background-color:#ccc;text-align:center;position:relative;top:10px;justify-content: center;}
+.cajacookies button:hover{background-color:#c2c2c2;cursor:pointer;}
+
+.botonRGPD:hover,
+.botonRGPD__cancel:hover {
+	color: #30303090;
+}

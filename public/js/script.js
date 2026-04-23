@@ -2,27 +2,15 @@ const gallery = document.querySelector('.gallery__item');
 const galleryB = document.querySelector('.gallery__itemB');
 const galleryC = document.querySelector('.gallery__itemC');
 const galleryD = document.querySelector('.gallery__itemD');
-// const blacky = document.getElementById("blacky");
-// const lady = document.getElementById("lady");
-// const paka = document.getElementById("paka");
-// const inicio = document.getElementById("inicio");
 const galleryContent = document.querySelector(".gallery__content--titulo");
 const galleryContentB = document.querySelector(".gallery__content--tituloB");
 const galleryContentC = document.querySelector(".gallery__content--tituloC");
 const galleryContentD = document.querySelector(".gallery__content--tituloD");
-// const firstTitle = document.querySelector(".primary__gallery--title");
-// const firstTitleB = document.querySelector(".primary__gallery--titleB");
-// const firstTitleC = document.querySelector(".primary__gallery--titleC");
-// const firstTitleD = document.querySelector(".primary__gallery--titleD");
 const rowGal = document.querySelector(".primary__gallery--content");
 const rowGalB = document.querySelector(".primary__gallery--contentB");
 const rowGalC = document.querySelector(".primary__gallery--contentC");
 const rowGalD = document.querySelector(".primary__gallery--contentD");
-// const galleryPrimaryB = document.querySelector(".primary__galleryB");
-// const ss = rowGalB.querySelector(".item:first-child");
-const navBoton = document.querySelector(".nav__menu");
-const navLink = document.querySelector(".nav__link");
-const navBotonClose = document.querySelector('.nav__close');
+
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const prevB = document.querySelector(".prevB");
@@ -31,14 +19,6 @@ const prevC = document.querySelector(".prevC");
 const nextC = document.querySelector(".nextC");
 const prevD = document.querySelector(".prevD");
 const nextD = document.querySelector(".nextD");
-navBotonClose.addEventListener('click', () => {
-	navLink.classList.toggle("nav__link--menu");
-});
-
-navBoton.addEventListener('click', () => {
-	navLink.classList.toggle("nav__link--menu");
-});
-
 
 let title = [
 	"PAKA ALEJANDRA",
@@ -263,14 +243,7 @@ let galleryItems = [{
 					<span>Yellow-crowned Parrot</span>
 				</h3>
 			</figcaption>`,
-	// fotoH: `<img src="public/img/.jpg" alt="Loro" class="item__image">
-	// 		<figcaption class="item__description">
-	// 			<h3 class="item__name">Loro Coroniamarillo</h3>
-	// 			<h4 class="item__role">
-	// 				<span>Amazona ochrocephala</span>
-	// 				<span>Yellow-crowned Parrot</span>
-	// 			</h4>
-	// 		</figcaption>`
+
 }];
 
 let galleryCont = {
@@ -314,11 +287,6 @@ const begin = [
 	galleryItems[3].fotoA
 ];
 
-// console.log(begin);
-// gallery.appendChild(galleryItems.foto);
-// boton[0].children[1].style.opacity = 0.2;
-// let i = gallery.innerHTML = begin[0];
-// galleryItems.style.zIndex = -1;
 
 let boton = document.querySelector('.button__sliders');
 let botonB = document.querySelector('.button__slidersB');
@@ -343,44 +311,6 @@ boton.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton
 botonB.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
 botonC.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
 botonD.innerHTML = sliderBoton[0] + sliderBoton[1] + sliderBoton[2] + sliderBoton[3] + sliderBoton[4] + sliderBoton[5] + sliderBoton[6] + sliderBoton[7] + sliderBoton[8] + sliderBoton[9];
- // + sliderBoton[8]
-// boton.append(b);
-// console.log(bb);
-// let a = `<button class="slide"></button>`;
-// document.boton.append(`<button class="slide"></button>`);
-// console.log(v.innerText);
-// boton.children[1].style.opacity = "0.2";
-// boton.children[3].style.display = "none";
-// boton.children[4].style.display = "none";
-// boton.children[5].style.display = "none";
-
-// boton.children[0].addEventListener('click', () => {
-
-// 	boton.children[0].style.opacity = 0.2;
-// 	boton.children[1].style.opacity = 1;
-// 	boton.children[2].style.opacity = 1;	
-// 	gallery.innerHTML = galleryItems[3].foto;
-
-// });
-
-// boton.children[1].addEventListener('click', () => {
-
-// 	boton.children[1].style.opacity = 0.2;
-// 	boton.children[0].style.opacity = 1;
-// 	boton.children[2].style.opacity = 1;
-// 	gallery.innerHTML = galleryItems[3].fotoE;
-
-// });
-
-// boton.children[2].addEventListener('click', () => {
-
-// 	boton.children[2].style.opacity = 0.2;
-// 	boton.children[1].style.opacity = 1;
-// 	boton.children[0].style.opacity = 1;
-// 	gallery.innerHTML = galleryItems[3].fotoA;
-
-// });
-// boton.forEach((element) => console.log(element));
 
 function QQ(a, c, d) {
 	a.children[0].addEventListener('click', () => {
@@ -515,48 +445,6 @@ function arrows(a, b, c, d, e, f) {
 	});
 };
 
-
-// inicio.addEventListener('click', () => {
-// 	boton.children[3].style.display = "block";
-// 	boton.children[4].style.display = "block";
-// 	boton.children[5].style.display = "block";
-// 	items = Object.values (galleryItems[0]);
-// 	prev.style.display = "block";
-// 	next.style.display = "block";
-// 	arrows(6);
-// 	gallery.style.background = 'linear-gradient(336deg, rgb(90 200 90 / 0.7) 0%, rgba(0, 0, 0, 0.0)100%)';
-// 	gallery.innerHTML = begin[0];
-// 	firstTitle.innerHTML = title[1];
-// 	rowGal.style.flexDirection = "row-reverse";
-
-// 	galleryContent.innerHTML = galleryCont.malosos;
-// 	boton.children[1].style.opacity = 0.2;
-// 	boton.children[0].style.opacity = 1;
-// 	boton.children[2].style.opacity = 1;
-// 	boton.children[3].style.opacity = 1;
-// 	boton.children[4].style.opacity = 1;
-// });
-
-
-// blacky.addEventListener('click', () => {
-// 	boton.children[3].style.display = "block";
-// 	boton.children[4].style.display = "none";
-// 	boton.children[5].style.display = "none";
-// 	prev.style.display = "block";
-// 	next.style.display = "block";
-// 	items = Object.values (galleryItems[1]);
-// 	arrows(4);
-// 	gallery.style.background = 'linear-gradient(336deg, #654321 0%, rgba(0, 0, 0, 0.0)100%)';
-// 	gallery.innerHTML = begin[1];
-// 	rowGal.style.flexDirection = "row-reverse";
-// 	firstTitle.innerHTML = title[3];
-
-// 	galleryContent.innerHTML = galleryCont.blacky;
-// 	boton.children[1].style.opacity = 0.2;
-// 	boton.children[0].style.opacity = 1;
-// 	boton.children[2].style.opacity = 1;
-// 	boton.children[3].style.opacity = 1;
-// });
 function showArrows(a,b,c){
 	
 
@@ -631,18 +519,10 @@ widthOutput = window.innerWidth;
 
 
 function ladyA() {
-	// botonB.children[3].style.display = "block";
-	// botonB.children[4].style.display = "block";
-	// botonB.children[5].style.display = "block";
 	botonB.children[6].style.display = "none";
 	botonB.children[7].style.display = "none";
 	botonB.children[8].style.display = "none";
 	botonB.children[9].style.display = "none";
-	// botonB.children[8].style.display = "none";
-	// slideIndex = 0;
- 	// slideIndexB = 0;
-	// prevB.style.display = "block";
-	// nextB.style.display = "block";
 	items = Object.values (galleryItems[2]);
 	// arrows(6);
 	arrows(6, galleryB, botonB,prevB,nextB,items);
@@ -654,14 +534,6 @@ function ladyA() {
 
 	galleryContentB.innerHTML = galleryCont.lady;
 	botonB.children[1].style.opacity = 0.2;
-	// botonB.children[0].style.opacity = 1;
-	// botonB.children[2].style.opacity = 1;
-	// botonB.children[3].style.opacity = 1;
-	// botonB.children[4].style.opacity = 1;
-	// botonB.children[5].style.opacity = 1;
-	// botonB.children[6].style.opacity = 1;
-	// botonB.children[7].style.opacity = 1;
-	// botonB.children[8].style.opacity = 1;
 };
 function malososA() {
 	// botonC.children[3].style.display = "block";
@@ -688,18 +560,8 @@ function malososA() {
 
 	galleryContentC.innerHTML = galleryCont.malosos;
 	botonC.children[1].style.opacity = 0.2;
-	// botonC.children[0].style.opacity = 1;
-	// botonC.children[2].style.opacity = 1;
-	// botonC.children[3].style.opacity = 1;
-	// botonC.children[4].style.opacity = 1;
-	// boton.children[5].style.opacity = 1;
 };
 function pakaA() {
-	// boton.children[3].style.display = "block";
-	// boton.children[4].style.display = "block";
-	// boton.children[5].style.display = "block";
-	// boton.children[6].style.display = "block";
-	// boton.children[7].style.display = "block";
 	boton.children[8].style.display = "none";
 	boton.children[9].style.display = "none";
 	// boton.children[8].style.display = "none";
@@ -718,22 +580,9 @@ function pakaA() {
 
 	galleryContent.innerHTML = galleryCont.paka;
 	boton.children[1].style.opacity = 0.2;
-	// boton.children[0].style.opacity = 1;
-	// boton.children[2].style.opacity = 1;
-	// boton.children[3].style.opacity = 1;
-	// boton.children[4].style.opacity = 1;
-	// boton.children[5].style.opacity = 1;
+
 };
 function blackyA() {
-	// botonD.children[3].style.display = "block";
-	// botonD.children[4].style.display = "block";
-	// botonD.children[5].style.display = "block";
-	// botonD.children[6].style.display = "block";
-	// botonD.children[7].style.display = "block";
-	// botonD.children[8].style.display = "block";
-	// botonD.children[9].style.display = "block";
-	// prevD.style.display = "block";
-	// nextD.style.display = "block";
 	items = Object.values (galleryItems[1]);
 	// arrows(4);
 	arrows(10, galleryD, botonD,prevD,nextD,items);
@@ -746,35 +595,11 @@ function blackyA() {
 
 	galleryContentD.innerHTML = galleryCont.blacky;
 	botonD.children[1].style.opacity = 0.2;
-	// botonD.children[0].style.opacity = 1;
-	// botonD.children[2].style.opacity = 1;
-	// botonD.children[3].style.opacity = 1;
 };
+
 blackyA();
 pakaA();
 ladyA();
 malososA();
 
-// const btn = document.querySelector(".comment__button");
-// const commentId = document.getElementById('comments');
-// btn.addEventListener('click', () => {
-// 	if (commentId.value != "") {
-// 		alert('Gracias por tu comentario.');
-// 	} 
-// });
-
-
-
-// FB.api(
-//   '/122134103930225454',
-//   'GET',
-//   {},
-//   function(response) {
-//   }
-// );
-
-
-
-let date = document.querySelector('.date');
-
-date.append(new Date ().getFullYear ());
+date.append(today.getFullYear ());

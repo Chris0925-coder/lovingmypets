@@ -1,16 +1,3 @@
-const navBoton = document.querySelector(".nav__menu");
-const navLink = document.querySelector(".nav__link");
-const navBotonClose = document.querySelector('.nav__close');
-// const urlA = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
-
-navBotonClose.addEventListener('click', () => {
-	navLink.classList.toggle("nav__link--menu");
-});
-
-navBoton.addEventListener('click', () => {
-	navLink.classList.toggle("nav__link--menu");
-});
-
 const prev = document.getElementsByClassName('carousel-control-prev');
 const next = document.getElementsByClassName('carousel-control-next');
         
@@ -345,8 +332,3 @@ var anchoV = window.innerWidth;
 
 // resize();
 // }();
-
-
-let date = document.querySelector('.date');
-
-date.append(new Date ().getFullYear ());

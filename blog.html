@@ -11,25 +11,31 @@
 	<meta name="description" content="Blog, consejos para nuestras mascotas | LovingMyPets">
 	<meta name="keywords" content="blog, tips, consejos, mascotas, animales, perros, loros, pericos">
 
+	<link rel="stylesheet" type="text/css" href="public/css/cookie_banner.css">
+
+	<link rel="stylesheet" type="text/css" href="public/css/header.css">
+
+	<link rel="stylesheet" type="text/css" href="public/css/hero.css">
+
 	<link rel="stylesheet" type="text/css" href="public/css/blog.css">
 
+	<link rel="stylesheet" type="text/css" href="public/css/footer.css">
+
 	<script defer type="text/javascript" src="public/js/cookies.js"></script>
+
+	<script defer type="text/javascript" src="public/js/views.js"></script>
 
 	<script defer type="text/javascript" src="public/js/nav.js"></script>
 
 	<script defer type="text/javascript" src="public/js/blog.js"></script>
+
 </head>
 <body>
-	<header class="hero">
-		<nav class="nav">
-			<div class="nav__logo">
-				<!-- <img src="favicons/logo.png" alt="logo"> -->
-				<!-- <h2 class="nav__title">LovingMyPets</h2> -->
-			</div>
+	<header>
+		<nav class="nav container">
+			<div class="nav__logo"></div>
 			<div class="nav__collapse">
-				<button class="nav__menu" title="boton menu"><img src="public/img/menu.svg" class="nav__img" alt="icon-menu"></button>
-			<!-- </div> -->
-
+				<button class="nav__menu"><img src="public/img/menu.svg" class="nav__img" alt="icon-menu"></button>
 				<ul class="nav__link nav__link--menu">
 					<li class="nav__items">
 						<a href="index.html" class="nav__links">Inicio</a>
@@ -44,28 +50,29 @@
 						<a href="contacto.html" class="nav__links">Contacto</a>
 					</li>
 					<li class="nav__items">
-						<a href="productos.html" class="nav__links">Productos Recomendados</a>
+						<a href="productos.html" class="nav__links"><i class="bi bi-amazon"></i> Productos Recomendados</a>
 					</li>
-					<!-- <li class="nav__items">
-						<a href="#" class="nav__links">Blog</a>
-					</li> -->
 					<button class="nav__close"><img src="public/img/close.svg" alt="close-btn"></button>
 				</ul>
 			</div>
 		</nav>
-
-		<section class="hero__container container">
-			<h1 class="hero__title">LovingMyPets <p>Consejos para nuestras mascotas</p></h1>
-			<p class="hero__paragraph">Lo mejor de nuestras mascotas. Síguenos en nuestras redes sociales (<a href="https://www.instagram.com/loving.my_pets?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">loving.my_pets</a>) y conoce más sobre estas.</p>
-			<!-- <a href="https://www.instagram.com/loving.my_pets/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="cta">Instagram</a> -->
-		</section>
 	</header>
 	<main>
+		<section class="container hero">
+			<div class="hero__title-container">
+				<h1 class="hero__title">LovingMyPets | BLOG <span>Consejos para nuestras mascotas</span></h1>
+				<p class="hero__paragraph">Tips, cuidados y recomendaciones hechas con amor para que nuestros peludos y emplumadas mascotas vivan felices y saludables. Visita nuestras redes (<a href="https://www.instagram.com/loving.my_pets?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">loving.my_pets</a>) y conoce más sobre estas.</p>
+				<div class="container__paragraph">
+					<i class="bi bi-backpack"></i>
+					<p class="hero__paragraph--b"> Hecho con amor por Paka, Bebé y Lady Margot <i class="bi bi-heart-fill"></i></p>
+				</div>
+			</div>		
+		</section>
 		<section id="blog">
 			<h2>BLOG</h2>
 		</section>
 		<section>
-			<div class="container">
+			<div class="container slider">
 				<!-- <div class="tips__text">
 					<article id="advice">
 						<h2>Recomendaciones para su cuidado</h2>
@@ -80,15 +87,24 @@
 					<p>A nuestra Paka Alejandra, le encanta comer frutas. Algunas de sus favoritas son: mango, naranja, cereza, carambola, manzana, banana, papaya, el coco... entre otras.</p>
 					</article>
 					<div class="content__items">
+						<div>
 						<picture class="item A"><img src="public/img/resize/mango.jpg" alt="loro"></picture>
 						<picture class="item B"><img src="public/img/resize/fruta.jpg" alt="loro"></picture>
 						<picture class="item C"><img src="public/img/resize/coco.jpg" alt="loro"></picture>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer>
+		<div class="cajacookies">
+    		<p>Hacemos uso de cookies propias y de terceros para proporcionar una mejor experiencia de usuario. Al seguir navegando entendemos que acepta nuestra <a rel="nofollow" href="cookies.html" id="open_preferences_center">Política de Cookies</a>.</p>
+    		<ul class="btnRGPD">
+	        <li><button class="botonRGPD--cancel">Cancelar</button></li>
+	        <li><button class="botonRGPD">Aceptar</button></li>
+	      </ul>
+    	</div>
 		<div class="foot">
 			<article class="foot__socialicon">
 				<div>
