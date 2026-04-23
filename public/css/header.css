@@ -167,6 +167,10 @@ p {
 	padding: 10px;
 	a {
 		color: var(--white);
+		display: flex;
+		gap: .6em;
+    align-items: anchor-center;
+
 	}
 	&:hover a {
 		color: var(--light-grey);
