@@ -28,7 +28,7 @@ function cli() {
     })
 }
 
-// cli();
+cli();
 
 function count() {
     let analyticsData = {
@@ -41,4 +41,4 @@ function count() {
     navigator.sendBeacon(urlA, JSON.stringify(analyticsData));
 }
 
-// count();
+count();
