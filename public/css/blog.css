@@ -4,6 +4,10 @@
 	background-color: #fafafa;
 	padding: 25px 0;
 	margin: 0 auto;
+	h2 img {
+		width: auto;
+		height: auto;
+	}
 	div article {
 		display: flex;
     flex-direction: column;
@@ -14,7 +18,7 @@
     /* height: 400px; */
     margin: 0 auto 40px auto;
     text-align: center;
-    background-color: #e0ffffea;
+    background-color: #e0ffffae;
     border-radius: 15px;
     /* border: 1px solid; */
     overflow: hidden; 
@@ -42,24 +46,15 @@
       	}
 
       	p {
-	      	/*width: auto;*/
-			    /*max-width: 75ch;
-			    margin: 0 auto;
-			    margin-block: 1lh;
-			    text-align: justify;
-			    text-wrap: balance;
-			    hyphenate-limit-chars: 5;
-			    hyphens: auto;
-
-			    display: -webkit-box;
-				  -webkit-line-clamp: 3;
-				  -webkit-box-orient: vertical;*/
-				  line-height: none;
+				  /*line-height: none;*/
+				  font-size: .6rem;
 	  			max-width: 80%;
 	        margin: 0 auto;
 	        margin-block: 1lh;
-	        text-align: justify;
-	        text-wrap: balance;
+	        padding: 0;
+	        text-align: left;
+	        /*text-wrap: balance;*/
+	        text-wrap-style: pretty;
 	        hyphenate-limit-chars: 5;
 	        hyphens: auto;
 	        display: -webkit-box;
@@ -67,6 +62,7 @@
 	        -webkit-box-orient: vertical;
 	        overflow: hidden;
 	        align-items: center;
+
 	      }
     	}
     }
@@ -365,7 +361,7 @@
       height: 300px;
       /*border: 1px solid yellow;*/
       border-radius: 10px;
-      background-color: #fafafa;
+      background-color: #e0ffffae;
       min-width: stretch;
 	}
 
@@ -381,7 +377,7 @@
 		/*width: 100%;*/
 		object-position: center;
 		/*min-width: 400px;*/
-		/*object-fit: fill;*/
+		object-fit: contain;
 		border-radius: 10px;
 		/*border: 1px solid red;*/
 	}
