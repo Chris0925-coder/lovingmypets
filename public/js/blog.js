@@ -34,14 +34,15 @@ function content(title, filename, paragraph,link,id, date,update) {
   // console.log(link);
   newDiv.innerHTML += `
         <article>
-          <figure>
+          <div>
+            <h4><a href="new.html" title="${title}" target="_blank" value="${id}">${title}</a></h4>
+             <p>${paragraph}</p>
+            <span>${date}</span>
+            <button><a href="new.html" title="${title}" target="_blank" value="${id}">Leer articulo &rarr;</a></button>
+          </div>
+          <picture>
             <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
-              <figcaption>
-                <h4><a href="new.html" title="${title}" target="_blank" value="${id}">${title}</a></h4>
-                <p><a href="new.html" title="${title}" target="_blank" value="${id}">${paragraph}</a></p>
-              </figcaption>
-          </figure>
-          <span>${date}</span>
+          </picture>
         </article>   
   `;
   blog.insertBefore(newDiv, item);
