@@ -57,7 +57,9 @@ function newPageContent(title, filename, paragraph,paragraphs,link,id,date,updat
         <h2>${title}</h2>
         <figure>
           <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
+
             <figcaption>
+              <p>${paragraph}</p>
               <ul>
                 ${paragraphs}
               </ul>
