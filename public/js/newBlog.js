@@ -9,8 +9,6 @@ const urlGetItem =
 
 let article = getCookie("article");
 
-console.log(article);
-
 if(!article) article = 7;
 
 async function getItem() {
