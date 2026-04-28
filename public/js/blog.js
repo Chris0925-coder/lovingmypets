@@ -20,8 +20,9 @@ async function getHome() {
         blog.style.color = "#990000";
         blog.innerText = error.message;
       });
+  console.log(result);
 
-  let para = rows.paragraph;
+  let para = result.paragraph;
 
   if(para === null) para = [];
 
