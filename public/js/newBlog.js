@@ -35,7 +35,7 @@ async function getItem() {
     let paragraph = JSON.parse(result.rows[0][4]);
     console.log(paragraph);
 
-    
+    if(paragraph === null) paragraph = [];
 
     paragraph.forEach((element) => {
       // console.log(element);
