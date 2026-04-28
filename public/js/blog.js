@@ -20,13 +20,11 @@ async function getHome() {
         blog.style.color = "#990000";
         blog.innerText = error.message;
       });
-  console.log(result);
-
-  let para = result.paragraph;
-
-  if(para === null) para = [];
-
+  
   result.forEach((rows) => {
+    let para = rows.paragraph;
+
+    if(para === null) para = [];
  
     content(rows.title, rows.images, para, rows.link,rows.id, rows.date, rows.modify);
   })
