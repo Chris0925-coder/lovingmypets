@@ -63,9 +63,13 @@ figure {
 }
 
 @media (width <= 786px) {
-  #new-blog {
-    ul {
-      padding-left: 40px;
-    }
-  }
+	main {
+		padding: 0;
+	}
+	
+	#new-blog {
+		ul {
+		  padding-left: 40px;
+		}
+	}
 }
