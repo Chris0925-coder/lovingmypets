@@ -14,13 +14,13 @@
   --light: #f8f9fa;
   --gray-dark: #343a40;
   --dark: #212529;
-  --principal-color:#004481;
+  /*--principal-color:#004481;*/
   --show: block;
   --hidden: none;
   --all-width: 100%;
-  --box: inset -15.5em 0 0 0 #004481,inset 15.5em 0 0 0 #00448199;
-  --backgroundtransparent: #0075be68;
-  --box-two: inset -.1em 0 0 0 #004481,inset .1em 0 0 0 #00448199;
+  /*--box: inset -15.5em 0 0 0 #004481,inset 15.5em 0 0 0 #00448199;*/
+  /*--backgroundtransparent: #0075be68;*/
+  /*--box-two: inset -.1em 0 0 0 #004481,inset .1em 0 0 0 #00448199;*/
   --gray100: hsl(0,0%,100%);
   --gray70: hsl(0,0%,70%);
   --gray0: hsl(0,0%,0%);

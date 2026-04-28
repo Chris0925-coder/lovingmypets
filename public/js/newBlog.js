@@ -35,7 +35,7 @@ async function getItem() {
     paragraph.forEach((element) => {
       // console.log(element);
       if (element.includes("<p>")) paragraphs.push(`</ul>${element}<ul>`);
-      if (element.includes("</li>")) paragraphs.push(element);
+         if (element.includes("</li>")) paragraphs.push(element);
     });
 
     let showContent = paragraphs.join("");
