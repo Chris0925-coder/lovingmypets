@@ -21,9 +21,13 @@ async function getHome() {
         blog.innerText = error.message;
       });
 
+  let para = rows.paragraph;
+
+  if(para === null) para = [];
+
   result.forEach((rows) => {
  
-    content(rows.title, rows.images, rows.paragraph, rows.link,rows.id, rows.date, rows.modify);
+    content(rows.title, rows.images, para, rows.link,rows.id, rows.date, rows.modify);
   })
 }
 
