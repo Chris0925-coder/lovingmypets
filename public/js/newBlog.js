@@ -9,6 +9,8 @@ const urlGetItem =
 
 let article = getCookie("article");
 
+console.log(article);
+
 if(!article) article = 7;
 
 async function getItem() {
@@ -30,7 +32,7 @@ async function getItem() {
 
     console.log(result.rows);
 
-    let paragraph = JSON.parse(result.rows[0][8]);
+    let paragraph = JSON.parse(result.rows[0][4]);
     console.log(paragraph);
 
     
@@ -43,7 +45,7 @@ async function getItem() {
 
     console.log(paragraphs);
 
-      newPageContent(result.rows[0][1], result.rows[0][2], result.rows[0][3], paragraphs, result.rows[0][4], result.rows[0][0], result.rows[0][6], result.rows[0][7]);
+      newPageContent(result.rows[0][1], result.rows[0][2], result.rows[0][3], paragraphs, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
     
 }
 
