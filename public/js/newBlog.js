@@ -28,10 +28,12 @@ async function getItem() {
           blog.innerText = error.message;
         });
 
+    console.log(result.rows);
+
     let paragraph = JSON.parse(result.rows[0][8]);
     console.log(paragraph);
 
-    console.log(result.rows);
+    
 
     paragraph.forEach((element) => {
       // console.log(element);
