@@ -5,13 +5,14 @@ let newDivBlog = document.createElement('main');
 const urlGetItem =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
 
-let article = 1;
+// let article = 1;
 
-article = getCookie("article");
+let article = getCookie("article");
 
 if(!article) article = 7;
 
 async function getItem() {
+  let paragraphs = [];
   let result = await fetch(`${urlGetItem}/${article}`, {
       method: "GET",
       // headers: {
@@ -27,14 +28,24 @@ async function getItem() {
           blog.innerText = error.message;
         });
 
-// rows[0]rows[0][0]rows[0]
-    // result.forEach((rows) => {
-      newPageContent(result.rows[0][1], result.rows[0][2], result.rows[0][3], result.rows[0][4], result.rows[0][0], result.rows[0][6], result.rows[0][7]);
-    // })
+    let paragraph = JSON.parse(result.rows[0][8]);
+    console.log(paragraph);
+
+    console.log(result.rows);
+
+    paragraph.forEach((element) => {
+      // console.log(element);
+      if (element.includes("<p>")) paragraphs.push(`</ul>${element}<ul>`);
+      if (element.includes("</li>")) paragraphs.push(element);
+    });
+
+    console.log(paragraphs);
+
+      newPageContent(result.rows[0][1], result.rows[0][2], result.rows[0][3], paragraphs, result.rows[0][4], result.rows[0][0], result.rows[0][6], result.rows[0][7]);
     
 }
 
-function newPageContent(title, filename, paragraph,link,id,date,update) {
+function newPageContent(title, filename, paragraph,paragraphs,link,id,date,update) {
   let l = link.split('/');
     // console.log(l);
     if(l[0] != "https:") link = `https://${link}`;
@@ -47,11 +58,13 @@ function newPageContent(title, filename, paragraph,link,id,date,update) {
         <figure>
           <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
             <figcaption>
-              <p><a href="${link}" title="${title}" target="_blank">${paragraph}</a></p>
+              <ul>
+                ${paragraphs}
+              </ul>
             </figcaption>
         </figure>
         <span>${date}</span>
-      </section>   
+      </section>  
   `;
 
   newBlog.insertBefore(newDivBlog, item2);
