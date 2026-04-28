@@ -30,7 +30,7 @@ async function getItem() {
 
     let paragraph = JSON.parse(result.rows[0][4]);
 
-    let para = JSON.parse(result.rows[0][3]);
+    let para = result.rows[0][3];
 
     if(para === null) para = [];
 
