@@ -7,16 +7,46 @@
 
 	<link rel="stylesheet" type="text/css" href="public/css/cookie_banner.css">
 
+	<link rel="stylesheet" type="text/css" href="public/css/header.css">
+
 	<link rel="stylesheet" type="text/css" href="public/css/new.css">
 
 	<link rel="stylesheet" type="text/css" href="public/css/footer.css">
 
 	<script defer type="text/javascript" src="public/js/cookies.js"></script>
 
-	<!-- <script type="text/javascript" src="public/js/blog.js" defer></script> -->
+	<script defer type="text/javascript" src="public/js/nav.js"></script>
+
 	<script type="text/javascript" src="public/js/newBlog.js" defer></script>
 </head>
 <body>
+	<header>
+		<nav class="nav container">
+			<div class="nav__logo"></div>
+			<div class="nav__collapse">
+				<button class="nav__menu"><img src="public/svg/menu.svg" class="nav__img" alt="icon-menu"></button>
+				<ul class="nav__link nav__link--menu">
+					<li class="nav__items active">
+						<a href="index.html" class="nav__links">Inicio</a>
+					</li>
+					<li class="nav__items">
+						<a href="acercade.html" class="nav__links">Acerca de</a>
+					</li>
+					<li class="nav__items">
+						<a href="blog.html" class="nav__links">LovingMyPets Blog</a>
+					</li>
+					<li class="nav__items">
+						<a href="contacto.html" class="nav__links">Contacto</a>
+					</li>
+					<li class="nav__items">
+						<a href="productos.html" class="nav__links"><img src="public/svg/amazon.svg" alt="amazon logo"> Productos Recomendados</a>
+					</li>
+					<button class="nav__close"><img src="public/svg/close.svg" alt="close-btn"></button>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<h1>BLOG</h1>
 	<div id="new-blog"></div>
 
 	<footer>
