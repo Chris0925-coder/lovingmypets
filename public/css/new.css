@@ -6,6 +6,7 @@ main {
   /*border: 1px solid red;*/
   margin: auto;
   padding: 40px;
+  min-height: 100dvh;
 }
 
 figure {
@@ -66,7 +67,7 @@ figure {
 	main {
 		padding: 0;
 	}
-	
+
 	#new-blog {
 		ul {
 		  padding-left: 40px;
