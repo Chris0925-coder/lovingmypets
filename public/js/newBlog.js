@@ -30,10 +30,7 @@ async function getItem() {
           blog.innerText = error.message;
         });
 
-    console.log(result.rows);
-
     let paragraph = JSON.parse(result.rows[0][4]);
-    console.log(paragraph);
 
     if(paragraph === null) paragraph = [];
 
@@ -43,9 +40,10 @@ async function getItem() {
       if (element.includes("</li>")) paragraphs.push(element);
     });
 
-    console.log(paragraphs);
+    let showContent = paragraphs.join("");
 
-      newPageContent(result.rows[0][1], result.rows[0][2], result.rows[0][3], paragraphs, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
+
+      newPageContent(result.rows[0][1], result.rows[0][2], result.rows[0][3], showContent, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
     
 }
 

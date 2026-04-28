@@ -51,7 +51,7 @@ p {
   max-width: 75ch;
   margin: 0 auto;
   margin-block: 1lh;
-  text-align: justify;
+  /*text-align: justify;*/
   text-wrap: balance;
   hyphenate-limit-chars: 5;
   hyphens: auto;
@@ -60,7 +60,7 @@ p {
   /*-webkit-box-orient: vertical;*/
   /*overflow: hidden;*/
   /*align-items: center;*/
-  color: var(--gray);
+  /*color: var(--gray);*/
   padding: 30px;
 }
 
@@ -99,8 +99,14 @@ figure {
     width: fit-content;
     padding-left: 80px;
     /* margin-left: auto; */
+    color: var(--gray);
     li {
-      line-height: 1.6;
+      line-height: 1.2;
+      &:first-child {
+      	text-align: center;
+      	list-style: none;
+      	color: var(--dark);
+      }
     }
   }
 }
