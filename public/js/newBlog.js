@@ -30,6 +30,11 @@ async function getItem() {
 
     let paragraph = JSON.parse(result.rows[0][4]);
 
+    let para = JSON.parse(result.rows[0][3]);
+
+    if(para === null) para = [];
+
+
     if(paragraph === null) paragraph = [];
 
     paragraph.forEach((element) => {
@@ -41,7 +46,7 @@ async function getItem() {
     let showContent = paragraphs.join("");
 
 
-      newPageContent(result.rows[0][1], result.rows[0][2], result.rows[0][3], showContent, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
+      newPageContent(result.rows[0][1], result.rows[0][2], para, showContent, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
     
 }
 
