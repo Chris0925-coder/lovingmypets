@@ -109,6 +109,12 @@ figure {
       }
     }
   }
+
+  span {
+  	float: right;
+  	font-size: .6rem;
+  	font-weight: 900;
+  }
 }
 
 .hidden {
