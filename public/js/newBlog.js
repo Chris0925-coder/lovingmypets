@@ -46,7 +46,7 @@ async function getItem() {
 
     for (let p of string) {
       console.log(p);
-      if(p.includes(" ")) paragraphs.push('</p><br><p>');
+      if(p === "\r") paragraphs.push('</p><br><p>');
       paragraphs.push(p);
       if (p.includes("https://")) {
         let links = p.split(" ");
