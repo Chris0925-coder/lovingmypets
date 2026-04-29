@@ -68,7 +68,7 @@ async function getItem() {
     // });
 
 
-    console.log(paragraphs);
+    // console.log(paragraphs);
     let showContent = paragraphs.join("");
 
 
