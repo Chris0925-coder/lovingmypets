@@ -40,20 +40,20 @@ async function getItem() {
 
     if(paragraph === null) paragraph = [];
     
-    let string = para.split(/\n\n/);
+    let string = para.split(/\r?\n/);
     console.log(string);
 
 
     for (let p of string) {
       console.log(p);
-      paragraphs.push(`<p>${p}</p><br>`);
+      paragraphs.push(`<p>${p}</p>`);
       if (p.includes("https://")) {
         let links = p.split(" ");
         // console.log(links);
         for (link of links) {
           // console.log(link);
           if (link.includes("https")) {
-            paragraphs.push(`<a href="${link}">${link}</a><br>`);
+            paragraphs.push(`<a href="${link}">${link}</a>`);
           }
         }
       }
