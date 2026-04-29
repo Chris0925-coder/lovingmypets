@@ -40,7 +40,7 @@ async function getItem() {
 
     if(paragraph === null) paragraph = [];
     
-    let string = para.split("\n\n");
+    let string = para.split[0]("\n\n");
     console.log(string);
 
 
@@ -65,7 +65,7 @@ async function getItem() {
     // });
 
 
-
+    console.log(paragraphs);
     let showContent = paragraphs.join("");
 
 
