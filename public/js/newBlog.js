@@ -36,17 +36,35 @@ async function getItem() {
 
 
     if(paragraph === null) paragraph = [];
+    
+    let string = para.split("\n\n");
 
-    paragraph.forEach((element) => {
+    for (let p of string) {
+      paragraphs.push(`<p>${p}</p><br>`);
+      if (p.includes("https://")) {
+
+      links = p.split(" ");
+      // console.log(links);
+      for (link of links) {
+        // console.log(link);
+        if (link.includes("https")) {
+          paragraphs.push(`<a href="${link}">${link}</a><br>`);
+        }
+      }
+    }
+  }
+    // paragraph.forEach((element) => {
       // console.log(element);
-      if (element.includes("<p>")) paragraphs.push(`</ul>${element}<ul>`);
-      if (element.includes("</li>")) paragraphs.push(element);
-    });
+    //   if (element.includes("<p>")) paragraphs.push(`</ul>${element}<ul>`);
+    //   if (element.includes("</li>")) paragraphs.push(element);
+    // });
+
+
 
     let showContent = paragraphs.join("");
 
 
-      newPageContent(result.rows[0][1], result.rows[0][2], para, showContent, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
+      newPageContent(result.rows[0][1], result.rows[0][2],  showContent, paragraph, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
     
 }
 
@@ -64,10 +82,7 @@ function newPageContent(title, filename, paragraph,paragraphs,link,id,date,updat
           <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
 
             <figcaption>
-              <p>${paragraph}</p>
-              <ul>
-                ${paragraphs}
-              </ul>
+              <div>${paragraph}</div>
             </figcaption>
         </figure>
         <span>${date}</span>
