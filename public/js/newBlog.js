@@ -40,7 +40,7 @@ async function getItem() {
 
     if(paragraph === null) paragraph = [];
     
-    let string = para.split(/\r?\n/);
+    let string = para.split(/\n/);
     console.log(string);
 
 
