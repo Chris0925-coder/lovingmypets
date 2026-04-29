@@ -40,20 +40,21 @@ async function getItem() {
 
     if(paragraph === null) paragraph = [];
     
-    let string = para.split(/\n?\n/);
+    let string = para.split(/\r?\n/);
     console.log(string);
 
 
     for (let p of string) {
       console.log(p);
-      paragraphs.push(`<p>${p}</p>`);
+      if(p.includes("/\r/")) paragraphs.push('</p><p>');
+      paragraphs.push(`${p}`);
       if (p.includes("https://")) {
         let links = p.split(" ");
         // console.log(links);
         for (link of links) {
           // console.log(link);
           if (link.includes("https")) {
-            paragraphs.push(`<a href="${link}">${link}</a>`);
+            paragraphs.push(`<a href="${link}">${link}</a><br>`);
           }
         }
       }
@@ -87,7 +88,7 @@ function newPageContent(title, filename, paragraph,paragraphs,link,id,date,updat
           <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
 
             <figcaption>
-              <div>${paragraph}</div>
+              <p>${paragraph}</p>
             </figcaption>
         </figure>
         <span>${date}</span>
