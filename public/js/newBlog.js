@@ -28,9 +28,12 @@ async function getItem() {
           blog.innerText = error.message;
         });
 
+    console.log(result);
+
     let paragraph = JSON.parse(result.rows[0][4]);
 
     let para = result.rows[0][3];
+    console.log(para);
 
     if(para === null) para = [];
 
@@ -38,21 +41,23 @@ async function getItem() {
     if(paragraph === null) paragraph = [];
     
     let string = para.split("\n\n");
+    console.log(string);
+
 
     for (let p of string) {
+      console.log(p);
       paragraphs.push(`<p>${p}</p><br>`);
       if (p.includes("https://")) {
-
-      links = p.split(" ");
-      // console.log(links);
-      for (link of links) {
-        // console.log(link);
-        if (link.includes("https")) {
-          paragraphs.push(`<a href="${link}">${link}</a><br>`);
+        let links = p.split(" ");
+        // console.log(links);
+        for (link of links) {
+          // console.log(link);
+          if (link.includes("https")) {
+            paragraphs.push(`<a href="${link}">${link}</a><br>`);
+          }
         }
       }
     }
-  }
     // paragraph.forEach((element) => {
       // console.log(element);
     //   if (element.includes("<p>")) paragraphs.push(`</ul>${element}<ul>`);
