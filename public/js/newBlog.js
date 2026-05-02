@@ -11,6 +11,8 @@ let article = getCookie("article");
 
 if(!article) article = 7;
 
+newBlog.setAttribute('class', 'load');
+
 async function getItem() {
   let paragraphs = [];
   let result = await fetch(`${urlGetItem}/${article}`, {
@@ -71,8 +73,13 @@ async function getItem() {
     // console.log(paragraphs);
     let showContent = paragraphs.join("");
 
-
+    if (!result.error) {
       newPageContent(result.rows[0][1], result.rows[0][2],  showContent, paragraph, result.rows[0][5], result.rows[0][0], result.rows[0][7], result.rows[0][8]);
+
+      newBlog.removeAttribute('class');
+    }
+
+      
     
 }
 
@@ -84,17 +91,14 @@ function newPageContent(title, filename, paragraph,paragraphs,link,id,date,updat
   head[0].innerHTML = title;
 
   newDivBlog.innerHTML = `
-      <section>
-        <h2>${title}</h2>
-        <figure>
-          <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
-
-            <figcaption>
-              <p>${paragraph}</p>
-            </figcaption>
-        </figure>
+        <article>
+          <div>
+            <h5>${title}</h5>
+            <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
+          </div>
+          <p>${paragraph}</p>
+        </article>
         <span>${date}</span>
-      </section>  
   `;
 
   newBlog.insertBefore(newDivBlog, item2);

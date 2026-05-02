@@ -311,6 +311,19 @@
 }
 */
 
+.load {
+  /*display: flex;*/
+    position: relative;
+    /*transform: translate(-50%, -50%);*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*width: 50px;*/
+    /*max-height: 50px;*/
+  background:  url('../svg/load.svg') center / contain no-repeat;
+  /*border: 2px solid red;*/
+  margin: auto;
+}
+
 @media screen and (max-width: 768px) {
 	
 	.tips__text {

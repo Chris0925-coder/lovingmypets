@@ -3,7 +3,8 @@ const item = blog.querySelector('.item:nth-child(2)');
 let newDiv = document.createElement('div');
 const urlAddArticle =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
-  
+
+blog.setAttribute('class', 'load');
 
 async function getHome() {
   let result = await fetch(urlAddArticle, {
@@ -20,14 +21,21 @@ async function getHome() {
         blog.style.color = "#990000";
         blog.innerText = error.message;
       });
-  
-  result.forEach((rows) => {
-    let para = rows.paragraph;
 
-    if(para === null) para = [];
- 
-    content(rows.title, rows.images, para, rows.link,rows.id, rows.date, rows.modify);
-  })
+  if(!result.error) {
+
+      result.forEach((rows) => {
+        let para = rows.paragraph;
+
+        if(para === null) para = [];
+     
+        content(rows.title, rows.images, para, rows.link,rows.id, rows.date, rows.modify);
+
+        blog.removeAttribute('class');
+    })
+
+  }
+  
 }
 
 function content(title, filename, paragraph,link,id, date,update) {
