@@ -94,9 +94,11 @@ function newPageContent(title, filename, paragraph,paragraphs,link,id,date,updat
 
   newDivBlog.innerHTML = `
         <article>
+          <h2>${title}</h2>
           <div>
-            <h5>${title}</h5>
-            <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
+            <picture>
+              <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
+            </picture>
           </div>
         
           <p id="first-p">${paragraph}</p>

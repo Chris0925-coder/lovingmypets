@@ -27,8 +27,9 @@ article {
   align-items: baseline;
   max-width: 700px;
   margin: 0 auto;
-  div {
+  div picture {
     width: 200px;
+    height: 259px;
     float: left;
     padding: 10px;
     img {
@@ -58,10 +59,15 @@ article {
     max-width: fit-content;
     line-height: 1.6;
     padding: 0;
+    font-size: 1.2rem;
+    color: #2b2b2b;
         /*margin-top: 85px;*/
-     margin-left: auto; 
+     /*margin-left: auto; */
   }
 
+  a {
+    text-decoration: underline;
+  }
   /*ul {*/
     /* list-style: none; */
     /*width: fit-content;
@@ -86,6 +92,8 @@ article {
   	font-weight: 600;
     margin-left: auto;
   }
+
+
 }
 
 /*#new-blog article p {
@@ -98,10 +106,10 @@ article {
 
 
 
-#new-blog #first-p {
+/*#new-blog #first-p {
   margin-top: 85px;
 }
-
+*/
 
 .hidden {
   display: none;
