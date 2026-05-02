@@ -25,6 +25,8 @@ article {
   margin: 0 auto; */
   margin-top: 40px;
   align-items: baseline;
+  max-width: 700px;
+  margin: 0 auto;
   div {
     width: 200px;
     float: left;
@@ -50,11 +52,14 @@ article {
     margin: 0 auto;
   }*/
   p {
+    &:first-child {
+      margin-top: 85px;
+    }
     margin: 0;
     max-width: fit-content;
     line-height: 1.6;
-    padding: 10px;
-    margin-top: 85px;
+    padding: 0;
+    /*margin-top: 85px;*/
     /* margin-left: auto; */
   }
 
