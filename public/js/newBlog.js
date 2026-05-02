@@ -9,7 +9,7 @@ const urlGetItem =
 
 let article = getCookie("article");
 
-if(!article) article = 7;
+if(!article) article = 22;
 
 newBlog.setAttribute('class', 'load');
 
@@ -51,13 +51,15 @@ async function getItem() {
       if(p === "\r") paragraphs.push('</p><br><p>');
       paragraphs.push(p);
       if (p.includes("https://")) {
+         paragraphs.pop(p);
         let links = p.split(" ");
         // console.log(links);
         for (link of links) {
           // console.log(link);
           if (link.includes("https")) {
             paragraphs.push(`<a href="${link}">${link}</a><br>`);
-          } else {
+          } 
+          else {
             paragraphs.push(link + " ");
           }
         }
@@ -96,9 +98,12 @@ function newPageContent(title, filename, paragraph,paragraphs,link,id,date,updat
             <h5>${title}</h5>
             <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
           </div>
-          <p>${paragraph}</p>
+        
+          <p id="first-p">${paragraph}</p>
+          <span>${date}</span>
+
         </article>
-        <span>${date}</span>
+        
   `;
 
   newBlog.insertBefore(newDivBlog, item2);

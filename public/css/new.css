@@ -51,16 +51,15 @@ article {
     max-width: 700px;
     margin: 0 auto;
   }*/
+
   p {
-    &:first-child {
-      margin-top: 85px;
-    }
+    
     margin: 0;
     max-width: fit-content;
     line-height: 1.6;
     padding: 0;
-    /*margin-top: 85px;*/
-    /* margin-left: auto; */
+        /*margin-top: 85px;*/
+     margin-left: auto; 
   }
 
   /*ul {*/
@@ -88,6 +87,21 @@ article {
     margin-left: auto;
   }
 }
+
+/*#new-blog article p {
+  margin-top: 95px;
+}*/
+
+/*#new-blog p:not(:first-child) {
+  margin-top: 0;
+}*/
+
+
+
+#new-blog #first-p {
+  margin-top: 85px;
+}
+
 
 .hidden {
   display: none;
