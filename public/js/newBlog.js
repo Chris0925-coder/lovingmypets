@@ -80,9 +80,6 @@ async function getItem() {
 
       newBlog.removeAttribute('class');
     }
-
-      
-    
 }
 
 function newPageContent(title, filename, paragraph,paragraphs,link,id,date,update) {
