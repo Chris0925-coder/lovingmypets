@@ -33,7 +33,7 @@ async function getItem() {
     });
   // let para = JSON.parse(result[0].paragraphs);
   // console.log(JSON.parse(result[0].paragraphs));
-  // console.log(result);
+  console.log(result);
 
   let titles = JSON.parse(result.rows[0][1]);
 
@@ -43,7 +43,7 @@ async function getItem() {
 
   let images = JSON.parse(result.rows[0][2]);
 
-  let createDate = result.rows[0][7];
+  let createdDate = result.rows[0][7];
 
   let update = result.rows[0][8];
 
@@ -99,6 +99,7 @@ async function getItem() {
                               </picture>
                               </div>
                               <p>${paragraphs.join("")}</p>
+                              <span>${createdDate}</span>
                             </article>
                           `;
 
@@ -140,7 +141,7 @@ async function getItem() {
       //                         </article>
       //                       `;
       if (!result.error) {
-        newPageContent(element, images, index, s, aLink, date, update);
+        newPageContent(element, images, index, s, aLink, createdDate, update);
       }
     });
   }
