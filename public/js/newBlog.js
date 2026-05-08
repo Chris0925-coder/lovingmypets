@@ -103,6 +103,8 @@ async function getItem() {
                             </article>
                           `;
 
+    newBlog.insertBefore(newDivBlog, item2);
+
   } else {
     titles = JSON.parse(result.rows[0][1]);
     paragraph = JSON.parse(result.rows[0][3]);
