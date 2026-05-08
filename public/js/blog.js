@@ -31,7 +31,12 @@ async function getHome() {
         let images = JSON.parse(rows.images)[0];
         let para = JSON.parse(rows.paragraph)[0];
 
-        // if(title.length > 3) title = rows.title;
+        // title = JSON.parse(rows.title)[0];
+        if(title.length > 3) {
+          title = rows.title;
+          images = rows.images;
+          para = rows.paragraph;
+        };
 
         if(para === null) para = [];
      
