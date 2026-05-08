@@ -25,6 +25,7 @@ async function getHome() {
   if(!result.error) {
 
       result.forEach((rows) => {
+        console.log(rows);
         let para = rows.paragraph;
 
         if(para === null) para = [];
