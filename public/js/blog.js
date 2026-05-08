@@ -26,11 +26,16 @@ async function getHome() {
 
       result.forEach((rows) => {
         console.log(rows);
-        let para = rows.paragraph;
+
+        let title = JSON.parse(rows.title)[0];
+        let images = JSON.parse(rows.images)[0];
+        let para = JSON.parse(rows.paragraph)[0];
+
+        // if(title.length > 3) title = rows.title;
 
         if(para === null) para = [];
      
-        content(rows.title, rows.images, para, rows.link,rows.id, rows.date, rows.modify);
+        content(title, images, para, rows.link,rows.id, rows.date, rows.modify);
 
         blog.removeAttribute('class');
     })
