@@ -25,17 +25,15 @@ async function getHome() {
   if(!result.error) {
 
       result.forEach((rows) => {
-        console.log(rows);
 
-        let title = JSON.parse(rows.title)[0];
-        let images = JSON.parse(rows.images)[0];
-        let para = JSON.parse(rows.paragraph)[0];
+        let title = rows.title;
+         let images = rows.images;
+         let para = rows.paragraph;
 
-        // title = JSON.parse(rows.title)[0];
-        if(title.length > 3) {
-          title = rows.title;
-          images = rows.images;
-          para = rows.paragraph;
+        if(title.includes("[")) {
+          title = JSON.parse(rows.title)[0];
+          images = JSON.parse(rows.images)[0];
+          para = JSON.parse(rows.paragraph)[0];
         };
 
         if(para === null) para = [];
