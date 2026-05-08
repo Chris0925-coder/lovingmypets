@@ -33,15 +33,13 @@ async function getItem() {
     });
   // let para = JSON.parse(result[0].paragraphs);
   // console.log(JSON.parse(result[0].paragraphs));
-  console.log(result);
 
-  let titles = JSON.parse(result.rows[0][1]);
+  let titles = result.rows[0][1];
 
-  // console.log(titles);
-  let paragraph = JSON.parse(result.rows[0][3]);
+  let paragraph = result.rows[0][3];
   // console.log(paragraph);
 
-  let images = JSON.parse(result.rows[0][2]);
+  let images = result.rows[0][2];
 
   let createdDate = result.rows[0][7];
 
@@ -64,7 +62,9 @@ async function getItem() {
   // }
   // console.log(paragraphs);
 
-  if (typeof titles != "object") {
+  if (!titles.includes("[")) {
+    
+
     let string = paragraph.split(/\r\n\r\n/);
     // console.log(string);
     // for (let p of string) {
@@ -104,6 +104,10 @@ async function getItem() {
                           `;
 
   } else {
+    titles = JSON.parse(result.rows[0][1]);
+    paragraph = JSON.parse(result.rows[0][3]);
+    images = JSON.parse(result.rows[0][2]);
+
     titles.map((element, index) => {
 
       list = {
