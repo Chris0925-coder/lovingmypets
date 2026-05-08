@@ -2,6 +2,7 @@ const head = document.getElementsByTagName("title");
 const newBlog = document.getElementById("new-blog");
 const item2 = newBlog.querySelector(".item:nth-child(2)");
 let newDivBlog = document.createElement("main");
+const cDateDiv = document.getElementById("create-date");
 
 // const figu = document.getElementsByTagName("figcaption");
 // console.log(figu);
@@ -46,6 +47,8 @@ async function getItem() {
   let update = result.rows[0][8];
 
   let aLink = result.rows[0][5];
+
+
   // console.log(paragraph);
   // let innerPARA = JSON.parse(paragraph);
 
@@ -63,7 +66,8 @@ async function getItem() {
   // console.log(paragraphs);
 
   if (!titles.includes("[")) {
-    
+    if (update) createdDate = update;
+
 
     let string = paragraph.split(/\r\n\r\n/);
     // console.log(string);
@@ -169,6 +173,8 @@ function newPageContent(
   // if (l[0] != "https:") link = `https://${link}`;
   if (update) date = update;
 
+
+
   head[0].innerHTML = title;
   // /img-storage
   newDivBlog.innerHTML += `
@@ -180,11 +186,12 @@ function newPageContent(
                       </picture>
                     </div>
                     <p>${paragraphs.join("")}</p>
-                    <span>${date}</span>
                   </article>
   `;
 
   newBlog.insertBefore(newDivBlog, item2);
+
+  cDateDiv.innerHTML = `<span>${date}</span>`;
 }
 
 getItem();
