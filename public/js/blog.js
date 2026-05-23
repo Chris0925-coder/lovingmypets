@@ -37,8 +37,12 @@ async function getHome() {
         };
 
         if(para === null) para = [];
+
+        d = rows.date.split(',');
+        // console.log(d);
+        let date = d[0] + "," + d[1];
      
-        content(title, images, para, rows.link,rows.id, rows.date, rows.modify);
+        content(title, images, para, rows.link,rows.id, date, rows.modify);
 
         blog.removeAttribute('class');
     })

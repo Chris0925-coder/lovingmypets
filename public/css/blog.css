@@ -37,16 +37,13 @@
     	width: 60%;
     	margin: 10px auto;
     	/*border: 1px solid green;*/
-    
     		h4 {
       		text-align: left;
           text-decoration: underline;
           max-width: 80%;
           margin: 0 auto;
           padding: 0;
-
       	}
-
       	p {
 				  /*line-height: none;*/
 				  font-size: .8rem;
@@ -64,19 +61,17 @@
 	        -webkit-box-orient: vertical;
 	        overflow: hidden;
 	        align-items: center;
-
 	      }
-
 	      span {
 		    	display: block;
 		    	text-align: right;
 		    	/*margin-right: 10px;*/
 		    	width: 80%;
 		    	margin: 0 auto;
+		    	font-size: 0.6rem;
 		    }
 
 		    button {
-
             background: none;
             border: 1px solid var(--brand-color);
             width: fit-content;
