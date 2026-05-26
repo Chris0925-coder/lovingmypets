@@ -26,7 +26,7 @@ const pageUrl = encodeURIComponent(`https://www.lovingmypets.pro/new.html?id=${i
 const pageText = encodeURIComponent("Check this out!");
 function shareOnFacebook(id) {
   window.open(
-    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://www.lovingmypets.pro/new.html" +"?id="+${id})}`,
+    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://www.lovingmypets.pro/new.html" +"?id="+id)}`,
     "_blank",
     "width=600,height=400",
   );
@@ -34,7 +34,7 @@ function shareOnFacebook(id) {
 
 function shareOnTwitter(id) {
   window.open(
-    `https://twitter.com/intent/tweet?text=${encodeURIComponent(pageText)}&url=${encodeURIComponent("https://www.lovingmypets.pro/new.html" +"?id="+${id})},
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(pageText)}&url=${encodeURIComponent("https://www.lovingmypets.pro/new.html" +"?id="+id)},
     "_blank",
     "width=600,height=400",
   );
