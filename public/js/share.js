@@ -22,7 +22,7 @@ async function shareBtn(id) {
 }
 
 
-const pageUrl = encodeURIComponent(`https://www.lovingmypets.pro/new.html?id=${id}`);
+// const pageUrl = encodeURIComponent(`https://www.lovingmypets.pro/new.html?id=${id}`);
 const pageText = encodeURIComponent("Check this out!");
 function shareOnFacebook(id) {
   window.open(
