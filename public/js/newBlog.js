@@ -10,15 +10,36 @@ const item3 = newBlog.querySelector(".item:nth-child(3)");
 let newUl = document.createElement("ul");
 const urlGetItem = "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
 
-let article = getCookie("article");
+function getQueryParam(paramName) {
+    try {
+        // Create a URLSearchParams object from the current URL's query string
+        const params = new URLSearchParams(window.location.search);
 
-if(!article) article = 22;
+        // Get the parameter value (returns null if not found)
+        const value = params.get("id");
+
+        
+        return value; // Can be null if parameter doesn't exist
+    } catch (error) {
+        console.error("Error reading URL parameters:", error);
+        return null;
+    }
+}
+
+let idParams = getQueryParam();
+
+// setCookie("article",idParams, 365);
+
+
+// let article = getCookie("article")
+
+// if(!article) article = 22;
 
 // console.log(article);
 let paragraphs = [];
 
 async function getItem() {
-  let result = await fetch(`${urlGetItem}/${article}`, {
+  let result = await fetch(`${urlGetItem}/${idParams}`, {
     method: "GET",
     // headers: {
     //   Authorization: `Bearer ${token}`,

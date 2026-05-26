@@ -3,7 +3,9 @@ const item = blog.querySelector('.item:nth-child(2)');
 let newDiv = document.createElement('div');
 const urlAddArticle =
   "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
-const webLink = window.location.href; 
+const webLink = window.location.href;
+
+
 
 blog.setAttribute('class', 'load');
 
@@ -64,11 +66,22 @@ function content(title, filename, paragraph,link,id, date,update) {
              <p>${paragraph}</p>
             <span>${date}</span>
 
-            <button><a href="new.html" title="${title}" target="_blank" value="${id}">Leer articulo &rarr;</a></button>
+            <button><a href="new.html?id=${id}" title="${title}" target="_blank" value="${id}">Leer articulo &rarr;</a></button>
 
 
 
               <a href="instagram://story-camera?background_top_color=%23a8c0ff&background_bottom_color=%233f2b96" style="text-decoration: none;">
+
+
+              <button onclick="shareOnFacebook()">Share on Facebook</button>
+              <button onclick="shareOnTwitter()">Share on Twitter</button>
+
+
+              <button onclick="shareBtn()">
+                <a href="#" title="${title}" target="_blank" value="${id}" id="shareBtn"
+                  >Compartir este sitio web</a
+                >
+              </button>
 
               
                 <button style="background-color: #E1306C; color: white; padding: 7px 17px; border: none; border-radius: 50px; font-size: 10px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 10px;">

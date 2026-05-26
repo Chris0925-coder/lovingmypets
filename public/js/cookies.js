@@ -4,7 +4,7 @@ function setCookie(cname, cvalue, exdays) {
         today.setTime(today.getTime() + (exdays*24*60*60*1000));
         let expires = "expires="+ today.toUTCString();
 
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;";
     };
 
 

@@ -1,7 +1,8 @@
-const shareBtn = document.getElementById('shareBtn');
+// const shareBtn = document.getElementById('shareBtn');
   // const webLink = window.location.href; 
 
-  shareBtn.addEventListener('click', async (event) => {
+  // shareBtn.addEventListener('click', async (event) => {
+async function shareBtn() {
     event.preventDefault();
 
     console.log(navigator)
@@ -20,4 +21,5 @@ const shareBtn = document.getElementById('shareBtn');
     } else {
       alert('Tu navegador no soporta la función de compartir nativa. Copia el enlace manualmente.');
     }
-  });
+  // });
+}
