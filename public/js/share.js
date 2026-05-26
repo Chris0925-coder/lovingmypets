@@ -22,7 +22,7 @@ async function shareBtn(id) {
 }
 
 
-const pageUrl = encodeURIComponent(window.location.href);
+// const pageUrl = encodeURIComponent(window.location.href);
 const pageText = encodeURIComponent("Check this out!");
 function shareOnFacebook(id) {
   window.open(
