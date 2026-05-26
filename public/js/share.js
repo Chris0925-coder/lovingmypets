@@ -23,3 +23,22 @@ async function shareBtn() {
     }
   // });
 }
+
+
+const pageUrl = encodeURIComponent(window.location.href);
+const pageText = encodeURIComponent("Check this out!");
+function shareOnFacebook(id) {
+  window.open(
+    `https://facebook.com/${pageUrl}?id=${id}`,
+    "_blank",
+    "width=600,height=400",
+  );
+}
+
+function shareOnTwitter(id) {
+  window.open(
+    `https://x.com/${pageUrl}?id=${id}&text=${pageText}`,
+    "_blank",
+    "width=600,height=400",
+  );
+}

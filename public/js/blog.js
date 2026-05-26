@@ -73,8 +73,8 @@ function content(title, filename, paragraph,link,id, date,update) {
               <a href="instagram://story-camera?background_top_color=%23a8c0ff&background_bottom_color=%233f2b96" style="text-decoration: none;">
 
 
-              <button onclick="shareOnFacebook()">Share on Facebook</button>
-              <button onclick="shareOnTwitter()">Share on Twitter</button>
+              <button onclick="shareOnFacebook(${id})">Share on Facebook</button>
+              <button onclick="shareOnTwitter(${id})">Share on Twitter</button>
 
 
               <button onclick="shareBtn()">
