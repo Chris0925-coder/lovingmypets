@@ -89,8 +89,8 @@ newDiv.addEventListener('click', (e) => {
   // console.log(e)
 
   if(e.target.tagName === "A") {
-    console.log(e.target.attributes)
-    console.log(e.target.attributes[3].value)
+    // console.log(e.target.attributes)
+    // console.log(e.target.attributes[3].value)
     setCookie("article", e.target.attributes[3].value, 365);
     // getItem(e.target.attributes[3].value)
   }
