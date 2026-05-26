@@ -34,7 +34,7 @@ function shareOnFacebook(id) {
 
 function shareOnTwitter(id) {
   window.open(
-    `https://twitter.com/intent/tweet?text=${encodeURIComponent(pageText)}&url=${encodeURIComponent("https://www.lovingmypets.pro/new.html" +"?id="+id)},
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(pageText)}&url=${encodeURIComponent("https://www.lovingmypets.pro/new.html" +"?id="+id)}`,
     "_blank",
     "width=600,height=400",
   );
