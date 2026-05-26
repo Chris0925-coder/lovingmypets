@@ -72,9 +72,7 @@ function content(title, filename, paragraph,link,id, date,update) {
               <button onclick="shareOnTwitter(${id})">Share on Twitter</button>
 
               <button onclick="shareBtn(${id})">
-                <a href="#" title="${title}" target="_blank" value="${id}" id="shareBtn"
-                  >Compartir articulo</a
-                >
+                Compartir articulo
               </button>
           </div>
           <picture>
