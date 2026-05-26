@@ -2,12 +2,12 @@
   // const webLink = window.location.href; 
 
   // shareBtn.addEventListener('click', async (event) => {
-async function shareBtn(id) {
+async function shareBtn(id,title) {
     // event.preventDefault();
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Título de tu página',
+          title: title,
           text: '¡Echa un vistazo a este enlace!',
           url: webLink+"?id="+id
         });
