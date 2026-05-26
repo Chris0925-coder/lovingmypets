@@ -9,7 +9,7 @@ async function shareBtn(id) {
         await navigator.share({
           title: "title",
           text: '¡Echa un vistazo a este enlace!',
-          url: webLink+"?id="+id
+          url: "https://www.lovingmypets.pro/new.html?id="+id
         });
         console.log('Enlace compartido exitosamente');
       } catch (err) {
@@ -26,7 +26,7 @@ const pageUrl = encodeURIComponent(window.location.href);
 const pageText = encodeURIComponent("Check this out!");
 function shareOnFacebook(id) {
   window.open(
-    `https://facebook.com/${pageUrl}?id=${id}`,
+    `https://facebook.com/https://www.lovingmypets.pro/new.html?id=${id}`,
     "_blank",
     "width=600,height=400",
   );
@@ -34,7 +34,7 @@ function shareOnFacebook(id) {
 
 function shareOnTwitter(id) {
   window.open(
-    `https://x.com/${pageUrl}?id=${id}&text=${pageText}`,
+    `https://x.com/https://www.lovingmypets.pro/new.html?id=${id}&text=${pageText}`,
     "_blank",
     "width=600,height=400",
   );
