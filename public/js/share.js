@@ -2,17 +2,14 @@
   // const webLink = window.location.href; 
 
   // shareBtn.addEventListener('click', async (event) => {
-async function shareBtn() {
-    event.preventDefault();
-
-    console.log(navigator)
-
+async function shareBtn(id) {
+    // event.preventDefault();
     if (navigator.share) {
       try {
         await navigator.share({
           title: 'Título de tu página',
           text: '¡Echa un vistazo a este enlace!',
-          url: webLink
+          url: webLink+"?id="+id
         });
         console.log('Enlace compartido exitosamente');
       } catch (err) {
