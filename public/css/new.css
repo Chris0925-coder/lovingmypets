@@ -17,7 +17,7 @@ main {
   flex-grow: 2;
 }
 
-#new-blog article {
+#new-blog div article {
   display: inline-block;
   /* width: 350px;
   height: auto;
