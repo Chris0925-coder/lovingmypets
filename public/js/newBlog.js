@@ -6,7 +6,7 @@ const cDateDiv = document.getElementById("create-date");
 
 // const figu = document.getElementsByTagName("figcaption");
 // console.log(figu);
-const item3 = newBlog.querySelector(".item:nth-child(2)");
+const item3 = newBlog.querySelector(".item:nth-child(3)");
 let newUl = document.createElement("ul");
 const urlGetItem = "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
 

@@ -126,6 +126,8 @@ main {
 .ads {
   display: block;
   overflow: hidden;
+  max-width: 90vw;
+  place-content: center;
 }
 
 footer {
