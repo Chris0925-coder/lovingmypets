@@ -1,12 +1,12 @@
 const head = document.getElementsByTagName("title");
 const newBlog = document.getElementById("new-blog");
-const item2 = newBlog.querySelector(".item:nth-child(1)");
+const item2 = newBlog.querySelector(".item:nth-child(2)");
 let newDivBlog = document.createElement("div");
 const cDateDiv = document.getElementById("create-date");
 
 // const figu = document.getElementsByTagName("figcaption");
 // console.log(figu);
-const item3 = newBlog.querySelector(".item:nth-child(3)");
+const item3 = newBlog.querySelector(".item:nth-child(2)");
 let newUl = document.createElement("ul");
 const urlGetItem = "https://visits-christian-guardias-projects.vercel.app/lovingmypets/blog";
 

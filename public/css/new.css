@@ -18,7 +18,7 @@ main {
 }
 
 #new-blog div article {
-  display: inline-block;
+  display: block;
   /* width: 350px;
   height: auto;
   margin: 0 auto; */
