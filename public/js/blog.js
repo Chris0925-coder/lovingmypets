@@ -69,6 +69,8 @@ function content(title, filename, paragraph,link,id, date,update) {
               <button onclick="shareBtn(${id})">
                 Compartir
               </button>
+    
+             <button><a href="new.html?id=${id}" title="${title}" target="_blank" value="${id}">Leer articulo &rarr;</a></button>
           </div>
           <picture>
             <img src='https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/lovingmypets/${filename}' alt='${title}'>
