@@ -1,7 +1,7 @@
 const head = document.getElementsByTagName("title");
 const newBlog = document.getElementById("new-blog");
 const item2 = newBlog.querySelector(".item:nth-child(2)");
-let newDivBlog = document.createElement("main");
+let newDivBlog = document.createElement("div");
 const cDateDiv = document.getElementById("create-date");
 
 // const figu = document.getElementsByTagName("figcaption");
