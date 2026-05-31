@@ -28,7 +28,7 @@ main {
   margin: 0 auto;
   div picture {
     width: 200px;
-    height: fit-content;
+    height: 230px;
     float: left;
     padding: 10px;
     /* border: 1px solid red; */
@@ -36,7 +36,7 @@ main {
       display: block;
       /*width: 100%;*/
       width: 100%;
-      height: fit-content;
+      height: 100%;
       margin: 0;
       object-fit: contain;
     }
@@ -53,7 +53,7 @@ main {
 
   p {
     margin: 0;
-    margin-bottom: 0.7em;
+    /*margin-bottom: 0.7em;*/
     /* max-width: fit-content; */
     line-height: 1.4;
     margin-block: 1lh;
@@ -129,6 +129,11 @@ main {
   max-width: 90vw;
   /*place-content: center;*/
   justify-content: center;
+}
+
+#create-date {
+  text-align: right;
+  padding: 15px;
 }
 
 footer {
