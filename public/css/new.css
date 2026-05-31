@@ -122,6 +122,12 @@ main {
   /*border: 2px solid red;*/
   margin: auto;
 }
+
+.ads {
+  display: block;
+  overflow: hidden;
+}
+
 footer {
   width: 100%;
   max-width: 1200px;

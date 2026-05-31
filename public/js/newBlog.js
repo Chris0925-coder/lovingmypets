@@ -1,6 +1,6 @@
 const head = document.getElementsByTagName("title");
 const newBlog = document.getElementById("new-blog");
-const item2 = newBlog.querySelector(".item:nth-child(2)");
+const item2 = newBlog.querySelector(".item:nth-child(1)");
 let newDivBlog = document.createElement("div");
 const cDateDiv = document.getElementById("create-date");
 
