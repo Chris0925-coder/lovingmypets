@@ -66,13 +66,8 @@ function content(title, filename, paragraph,link,id, date,update) {
              <p>${paragraph}</p>
             <span>${date}</span>
 
-            <button><a href="new.html?id=${id}" title="${title}" target="_blank" value="${id}">Leer articulo &rarr;</a></button>
-
-              <button onclick="shareOnFacebook(${id})">Share on Facebook</button>
-              <button onclick="shareOnTwitter(${id})">Share on Twitter</button>
-
               <button onclick="shareBtn(${id})">
-                Compartir articulo
+                Compartir
               </button>
           </div>
           <picture>
