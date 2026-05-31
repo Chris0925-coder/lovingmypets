@@ -124,10 +124,11 @@ main {
 }
 
 .ads {
-  display: block;
+  display: flex;
   overflow: hidden;
   max-width: 90vw;
-  place-content: center;
+  /*place-content: center;*/
+  justify-content: center;
 }
 
 footer {
