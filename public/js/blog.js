@@ -62,7 +62,7 @@ function content(title, filename, paragraph,link,id, date,update) {
   newDiv.innerHTML += `
         <article id="${id}">
           <div>
-            <h4><a href="new.html" title="${title}" target="_blank" value="${id}">${title}</a></h4>
+            <h4><a href="new.html?id=${id}" title="${title}" target="_blank" value="${id}">${title}</a></h4>
              <p>${paragraph}</p>
             <span>${date}</span>
 
