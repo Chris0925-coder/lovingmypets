@@ -8,14 +8,14 @@
         <image:loc>https://www.lovingmypets.pro/favicons/favicon.png</image:loc>
     </image:image>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.lovingmypets.pro/acercade.html</loc>
     <lastmod>2024-04-12T19:27:57+01:00</lastmod>
     <priority>0.80</priority>
     <image:image>
         <image:loc>https://www.lovingmypets.pro/favicons/favicon.png</image:loc>
     </image:image>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.lovingmypets.pro/blog.html</loc>
     <lastmod>2024-04-12T19:27:57+01:00</lastmod>
