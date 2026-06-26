@@ -29,6 +29,8 @@
 	      "@type": "Organization",
 	      "@id": "https://www.lovingmypets.pro/#organization",
 	      "name": "LovingMyPets",
+	      "description": "LovingMyPets: fotos, videos y momentos especiales de nuestras mascotas.",
+		  "foundingDate": "2024",
 	      "url": "https://www.lovingmypets.pro/",
 	      "logo": {
 	        "@id": "https://www.lovingmypets.pro/#logo"
@@ -51,16 +53,16 @@
 	      "@id": "https://www.lovingmypets.pro/#gallery",
 	      "name": "Galería de Mascotas — LovingMyPets",
 	      "description": "Fotos de Paka, Bebé y Blacky, las mascotas de LovingMyPets.",
-	      "url": "https://www.lovingmypets.pro/",
+	      "mainEntityOfPage": { "@id": "https://www.lovingmypets.pro/#webpage" 
+	      },
 	      "associatedMedia": [
 	        {
 	          "@type": "ImageObject",
 	          "@id": "https://www.lovingmypets.pro/#paka",
-	          "url": "https://www.lovingmypets.pro/",
+	          "url": "https://www.lovingmypets.pro/public/img/ladyD.jpg",
 	          "contentUrl": "https://www.lovingmypets.pro/public/img/ladyD.jpg",
 	          "name": "Paka",
 	          "description": "Foto de Paka, mascota de LovingMyPets.",
-	          "inLanguage": "es",
 	          "license": "https://www.lovingmypets.pro/",
 	          "acquireLicensePage": "https://www.lovingmypets.pro/",
 	          "creditText": "LovingMyPets",
@@ -72,11 +74,10 @@
 	        {
 	          "@type": "ImageObject",
 	          "@id": "https://www.lovingmypets.pro/#bebe",
-	          "url": "https://www.lovingmypets.pro/acercade.html",
+	          "url": "https://www.lovingmypets.pro/public/img/bebe.jpg",
 	          "contentUrl": "https://www.lovingmypets.pro/public/img/bebe.jpg",
 	          "name": "Bebé",
 	          "description": "Foto de Bebé, mascota de LovingMyPets.",
-	          "inLanguage": "es",
 	          "license": "https://www.lovingmypets.pro/",
 	          "acquireLicensePage": "https://www.lovingmypets.pro/",
 	          "creditText": "LovingMyPets",
@@ -88,11 +89,10 @@
 	        {
 	          "@type": "ImageObject",
 	          "@id": "https://www.lovingmypets.pro/#blacky",
-	          "url": "https://www.lovingmypets.pro/blog.html",
+	          "url": "https://www.lovingmypets.pro/public/img/pakaE.jpg",
 	          "contentUrl": "https://www.lovingmypets.pro/public/img/pakaE.jpg",
-	          "name": "Blacky",
+	          "name": "Paka Alejandra",
 	          "description": "Foto de Blacky, mascota de LovingMyPets.",
-	          "inLanguage": "es",
 	          "license": "https://www.lovingmypets.pro/",
 	          "acquireLicensePage": "https://www.lovingmypets.pro/",
 	          "creditText": "LovingMyPets",
@@ -107,26 +107,52 @@
 	      "@type": "BreadcrumbList",
 	      "@id": "https://www.lovingmypets.pro/#breadcrumb",
 	      "itemListElement": [
+	      	{ 
+	      		"@type": "ListItem",
+	      		"position": 1, 
+	      		"name": "Inicio", 
+	      		"item": "https://www.lovingmypets.pro/" 
+	      	},
 	        {
 	          "@type": "ListItem",
-	          "position": 1,
+	          "position": 2,
 	          "name": "Mascotas",
 	          "item": "https://www.lovingmypets.pro/acercade.html"
 	        },
 	        {
 	          "@type": "ListItem",
-	          "position": 2,
+	          "position": 3,
 	          "name": "Blog",
 	          "item": "https://www.lovingmypets.pro/blog.html"
 	        },
 	        {
 	          "@type": "ListItem",
-	          "position": 3,
+	          "position": 4,
 	          "name": "Productos recomendados",
 	          "item": "https://www.lovingmypets.pro/productos.html"
 	        }
 	      ]
-	    }
+	    },
+	    {
+		  "@type": "WebPage",
+		  "@id": "https://www.lovingmypets.pro/#webpage",
+		  "url": "https://www.lovingmypets.pro/",
+		  "name": "LovingMyPets — Fotos, videos y consejos de mascotas",
+		  "isPartOf": { "@id": "https://www.lovingmypets.pro/#website" },
+		  "breadcrumb": { "@id": "https://www.lovingmypets.pro/#breadcrumb" },
+		  "datePublished": "2024-01-01",
+		  "dateModified": "2026-06-24"
+		},
+		{
+		  "@type": "Person",
+		  "@id": "https://www.lovingmypets.pro/#author",
+		  "name": "[Synthi P.]",
+		  "url": "https://www.lovingmypets.pro/acercade.html",
+		  "sameAs": [
+		    "https://www.instagram.com/loving.my_pets/",
+		    "https://www.tiktok.com/@lovemypets30"
+		  ]
+		}
 	  ]
 	}
 	</script>
