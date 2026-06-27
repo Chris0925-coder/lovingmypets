@@ -163,7 +163,7 @@ footer {
 
   #new-blog {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     align-items: center;
     div {
       /*padding-left: 40px;*/
