@@ -72,3 +72,92 @@
 	transition: all .3s ease-in-out;
 	transform: translatex(-10px);
 }
+
+
+.ads-container {
+  position: fixed;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  z-index: 9000;
+  scrollbar-width: none;
+  top: 25vh;
+  right: 0;
+  border-radius: 15px;
+  place-content: center;
+  background-color: #fafafa;
+  padding: 5px 10px;
+  h2 {
+    display: block;
+    font-size: 1rem;
+    color: initial;
+    span {
+      display: block;
+    }
+  }
+  img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  a {
+    display: inline-block;
+    color: initial;
+    text-decoration-line: blink;
+    padding: 7px 13px;
+    opacity: 0.7;   
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      text-decoration-line: underline;
+      opacity: 1;
+    }   
+  }
+}
+
+.ads {
+  position: relative;
+  height: auto;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(240,240,240,0.8);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot.active {
+    background: #2b2b2b99;
+}
+
+.close {
+  display: block;
+  font-size: .7rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: .1ch;
+  &:hover {
+    background-color:#2b2b2b55;
+  }
+}
+
